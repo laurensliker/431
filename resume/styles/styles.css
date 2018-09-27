@@ -1,0 +1,66 @@
+/*contact info under header, different margin than p & li*/
+.contact {
+  margin-left: 3em;
+  padding-bottom: 1em;
+}
+
+/*headings font properties*/
+/*name/title, size specification*/
+h1 {
+  font-size: 1em;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+/*header 2- section titles, size specification*/
+h2 {
+  font-size: .8em;
+}
+
+/*subheads specifications*/
+h3 {
+  font-style: bold;
+  margin-top: 1em;
+}
+
+/*headings font/weight*/
+.headings {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+/*from wrapper, all information within sections*/
+left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+/*from wrapper, all section titles*/
+right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+/*non-title text properties*/
+.small-text {
+  font-family: garamond;
+  font-size: .7em;
+  line-height: 2em;
+  margin-top: .8em;
+}
+
+ul {
+  margin-left: -3.5em;
+}
+
+/*wrapper for sections and contents 'right/left,' left margin to add breathing room*/
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 19em;
+      grid-template-columns: 100px 19em;
+  margin-left: 2em;
+}
+/*# sourceMappingURL=styles.css.map */
