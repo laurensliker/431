@@ -1,0 +1,61 @@
+* {
+    background: #1F2420;
+}
+
+.bottomhalf {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(7, 35em);
+    grid-template-rows: 1fr;
+    font-family: helvetica;
+}
+
+.firstcoloumn {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22vw;
+    position: absolute;
+    bottom: 0;
+}
+
+h2 {
+    font-size: 2 vw;
+}
+
+h3 {
+    font-size: 1.3vw;
+}
+
+p {
+    font-size: 1.3vw;
+}
+
+li {
+    font-size: 1.3vw;
+}
+
+.outerwrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0px;
+    color: #FAFAF2;
+}
+
+.secondcoloumn {
+    grid-column: 4/8;
+    grid-row: 1/2;
+}
+
+.tophalf {
+    grid-row: 1/2;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+}

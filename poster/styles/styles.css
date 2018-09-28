@@ -1,0 +1,80 @@
+* {
+  background: #1F2420;
+}
+
+.bottomhalf {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (35em)[7];
+      grid-template-columns: repeat(7, 35em);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  font-family: helvetica;
+}
+
+.firstcoloumn {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22vw;
+  position: absolute;
+  bottom: 0;
+}
+
+h2 {
+  font-size: 2 vw;
+}
+
+h3 {
+  font-size: 1.3vw;
+}
+
+p {
+  font-size: 1.3vw;
+}
+
+li {
+  font-size: 1.3vw;
+}
+
+.outerwrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 0px;
+  color: #FAFAF2;
+}
+
+.secondcoloumn {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.tophalf {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=styles.css.map */
