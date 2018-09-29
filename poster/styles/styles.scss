@@ -5,7 +5,7 @@
 .bottomhalf {
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: repeat(7, 35em);
+    grid-template-columns: repeat(7, 35vw);
     grid-template-rows: 1fr;
     font-family: helvetica;
 }
@@ -15,11 +15,16 @@
     grid-row: 1/2;
 }
 
+/*google fonts*/
+$abstract-display:'Megrim',
+cursive;
+$thin-display:'Josefin Sans',
+sans-serif;
+$thick-display:'Raleway',
+sans-serif;
+
 h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 22vw;
-    position: absolute;
-    bottom: 0;
+    font-size: 16vw;
 }
 
 h2 {
@@ -27,10 +32,6 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3vw;
-}
-
-p {
     font-size: 1.3vw;
 }
 
@@ -44,6 +45,11 @@ li {
     grid-template-rows: 1fr 1fr;
     grid-gap: 0px;
     color: #FAFAF2;
+    margin: 20px;
+}
+
+p {
+    font-size: 1.3vw;
 }
 
 .secondcoloumn {
@@ -51,9 +57,40 @@ li {
     grid-row: 1/2;
 }
 
+.span {
+    display: inline-block;
+}
+
+.titlefirstletter {
+    font-family: $abstract-display;
+}
+
+.titlesecondletter {
+    font-family: $abstract-display;
+}
+
+.titlethirdletter {
+    font-family: $thin-display;
+}
+
+.titlefourthletter {
+    font-family: $thin-display;
+}
+
+.titlefifthletter {
+    font-family: $thick-display;
+}
+
+.titlesixthletter {
+    font-family: $thin-display;
+}
+
+.titleseventhletter {
+    font-family: $thin-display;
+}
+
 .tophalf {
     grid-row: 1/2;
-    position: relative;
 }
 
 ul {

@@ -8,8 +8,8 @@
   grid-row: 2/3;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (35em)[7];
-      grid-template-columns: repeat(7, 35em);
+  -ms-grid-columns: (35vw)[7];
+      grid-template-columns: repeat(7, 35vw);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   font-family: helvetica;
@@ -24,11 +24,9 @@
   grid-row: 1/2;
 }
 
+/*google fonts*/
 h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 22vw;
-  position: absolute;
-  bottom: 0;
+  font-size: 16vw;
 }
 
 h2 {
@@ -36,10 +34,6 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3vw;
-}
-
-p {
   font-size: 1.3vw;
 }
 
@@ -56,6 +50,11 @@ li {
       grid-template-rows: 1fr 1fr;
   grid-gap: 0px;
   color: #FAFAF2;
+  margin: 20px;
+}
+
+p {
+  font-size: 1.3vw;
 }
 
 .secondcoloumn {
@@ -67,11 +66,42 @@ li {
   grid-row: 1/2;
 }
 
+.span {
+  display: inline-block;
+}
+
+.titlefirstletter {
+  font-family: "Megrim", cursive;
+}
+
+.titlesecondletter {
+  font-family: "Megrim", cursive;
+}
+
+.titlethirdletter {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.titlefourthletter {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.titlefifthletter {
+  font-family: "Raleway", sans-serif;
+}
+
+.titlesixthletter {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.titleseventhletter {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .tophalf {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  position: relative;
 }
 
 ul {
