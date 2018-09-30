@@ -8,6 +8,8 @@
     grid-template-columns: repeat(7, 35vw);
     grid-template-rows: 1fr;
     font-family: helvetica;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .firstcoloumn {
@@ -25,8 +27,8 @@ sans-serif;
 
 h1 {
     width: 100%;
-    font-size: 25vw;
-    margin-top: 0px;
+    font-size: 26vw;
+    margin-top: -10vw;
     margin-bottom: 0px;
     display: grid;
     grid-template-columns: repeat(7, 14vw);
@@ -88,8 +90,11 @@ p {
 
 .titlefifthletter {
     font-family: $thick-display;
+    font-size: 28vw;
     grid-column: 5/6;
     grid-row: 1/7;
+    margin-left: -1vw;
+    transform: rotate(-30deg);
 }
 
 .titlesixthletter {
