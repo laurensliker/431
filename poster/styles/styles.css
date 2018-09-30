@@ -26,7 +26,16 @@
 
 /*google fonts*/
 h1 {
-  font-size: 16vw;
+  width: 100%;
+  font-size: 25vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (14vw)[7];
+      grid-template-columns: repeat(7, 14vw);
+  -ms-grid-rows: (4vw)[20];
+      grid-template-rows: repeat(20, 4vw);
 }
 
 h2 {
@@ -44,13 +53,12 @@ li {
 .outerwrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  -ms-grid-columns: 90%;
+      grid-template-columns: 90%;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 0px;
   color: #FAFAF2;
-  margin: 20px;
 }
 
 p {
@@ -62,46 +70,85 @@ p {
   -ms-grid-column-span: 4;
   grid-column: 4/8;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.span {
-  display: inline-block;
+  -ms-grid-row-span: 20;
+  grid-row: 1/21;
 }
 
 .titlefirstletter {
   font-family: "Megrim", cursive;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 9;
+  grid-row: 12/21;
 }
 
 .titlesecondletter {
   font-family: "Megrim", cursive;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 15;
+  -ms-grid-row-span: 6;
+  grid-row: 15/21;
 }
 
 .titlethirdletter {
   font-family: "Josefin Sans", sans-serif;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 4;
+  grid-row: 12/16;
 }
 
 .titlefourthletter {
   font-family: "Josefin Sans", sans-serif;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 6;
+  grid-row: 14/20;
 }
 
 .titlefifthletter {
   font-family: "Raleway", sans-serif;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
 }
 
 .titlesixthletter {
   font-family: "Josefin Sans", sans-serif;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6/7;
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 6;
+  grid-row: 14/20;
 }
 
 .titleseventhletter {
   font-family: "Josefin Sans", sans-serif;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7/8;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 6;
+  grid-row: 10/16;
 }
 
 .tophalf {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  margin-top: 0px;
 }
 
 ul {

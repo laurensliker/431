@@ -24,7 +24,13 @@ $thick-display:'Raleway',
 sans-serif;
 
 h1 {
-    font-size: 16vw;
+    width: 100%;
+    font-size: 25vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 14vw);
+    grid-template-rows: repeat(20, 4vw);
 }
 
 h2 {
@@ -41,11 +47,10 @@ li {
 
 .outerwrapper {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 90%;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0px;
     color: #FAFAF2;
-    margin: 20px;
 }
 
 p {
@@ -54,43 +59,54 @@ p {
 
 .secondcoloumn {
     grid-column: 4/8;
-    grid-row: 1/2;
-}
-
-.span {
-    display: inline-block;
+    grid-row: 1/21;
 }
 
 .titlefirstletter {
     font-family: $abstract-display;
+    grid-column: 1/2;
+    grid-row: 12/21;
 }
 
 .titlesecondletter {
     font-family: $abstract-display;
+    grid-column: 2/3;
+    grid-row: 15/21;
 }
 
 .titlethirdletter {
     font-family: $thin-display;
+    grid-column: 3/4;
+    grid-row: 12/16;
 }
 
 .titlefourthletter {
     font-family: $thin-display;
+    grid-column: 4/5;
+    grid-row: 14/20;
 }
 
 .titlefifthletter {
     font-family: $thick-display;
+    grid-column: 5/6;
+    grid-row: 1/7;
 }
 
 .titlesixthletter {
     font-family: $thin-display;
+    grid-column: 6/7;
+    grid-row: 14/20;
 }
 
 .titleseventhletter {
     font-family: $thin-display;
+    grid-column: 7/8;
+    grid-row: 10/16;
 }
 
 .tophalf {
     grid-row: 1/2;
+    margin-top: 0px;
 }
 
 ul {
