@@ -1,10 +1,11 @@
 body {
-  background: #1F2420;
+  background: #202221;
 }
 
 /*all responsive values used becauses the composition and margins are so particular*/
 /*google fonts*/
 /*body text font size and weight*/
+/*margins for body*/
 .body-lineone {
   margin-top: 6vw;
 }
@@ -45,6 +46,7 @@ body {
 
 .body-linetwelve {
   margin-left: 12vw;
+  margin-bottom: -2vw;
 }
 
 .body-linethirteen {
@@ -81,7 +83,7 @@ body {
 }
 
 .body-linetwentytwo {
-  margin-top: 8.2vw;
+  margin-top: 10vw;
   margin-left: 20vw;
 }
 
@@ -105,15 +107,15 @@ body {
 }
 
 .body-linetwentyseven {
-  margin-left: 16vw;
+  margin-left: 8vw;
 }
 
 .body-linetwentyeight {
-  margin-left: 14vw;
+  margin-left: 6vw;
 }
 
 .body-linetwentynine {
-  margin-left: 10vw;
+  margin-left: 4vw;
 }
 
 .body-linethirty {
@@ -221,12 +223,12 @@ body {
   margin-top: -3.5vw;
 }
 
+/*bottom half grid establishing 2 columns*/
 .bottomhalf {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   grid-column: span;
-  margin-left: 1vw;
   margin-top: 0;
   display: -ms-grid;
   display: grid;
@@ -253,7 +255,7 @@ body {
 /*header in top half*/
 h1 {
   width: 100%;
-  font-size: 26vw;
+  font-size: 24vw;
   margin-top: -10vw;
   margin-bottom: 0px;
   display: -ms-grid;
@@ -265,7 +267,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.7vw;
+  font-size: 2.6vw;
   font-weight: bold;
 }
 
@@ -387,6 +389,129 @@ p {
 
 ul {
   list-style-type: none;
-  padding: 0;
+}
+
+@media (max-width: 500px) and (min-width: 0px) {
+  /*body text font size and weight*/
+  /*redefined margins for body*/
+  .body-lineone {
+    padding-top: 10vw;
+  }
+  .body-linefour {
+    margin-left: 44vw;
+  }
+  .body-linefive {
+    margin-top: -4vw;
+    margin-left: 34vw;
+  }
+  .body-linetwelve {
+    margin-bottom: -3vw;
+  }
+  .body-linetwentyfive {
+    margin-left: 6vw;
+  }
+  .body-linetwentytwo {
+    margin-top: 10vw;
+    margin-left: 20vw;
+    margin-bottom: 10vw;
+  }
+  .body-linethirty {
+    margin-bottom: -3vw;
+  }
+  .body-linethirtyone {
+    margin-left: 6vw;
+  }
+  .body-linethirtytwo {
+    margin-left: 2vw;
+  }
+  .body-linethirtytwosecond {
+    margin-left: 0vw;
+  }
+  .body-linefortythree {
+    margin-top: -7.5vw;
+    margin-left: 50vw;
+    margin-bottom: -4vw;
+  }
+  .body-linefortyfour {
+    margin-left: 47vw;
+  }
+  .body-linefortyfive {
+    margin-left: 43vw;
+  }
+  .body-linefortysix {
+    margin-left: 38vw;
+  }
+  .body-linefortyseven {
+    margin-left: 33vw;
+  }
+  .body-linefortyeight {
+    margin-left: 26vw;
+  }
+  .body-linefortynine {
+    margin-left: 22vw;
+  }
+  .body-linefifty {
+    margin-left: 15vw;
+  }
+  .body-linefiftyone {
+    margin-left: 8vw;
+  }
+  .body-linefiftytwo {
+    margin-left: 15vw;
+  }
+  .body-linefiftythree {
+    display: block;
+    font-size: 1.2vw;
+    margin-left: 55vw;
+    margin-top: -7vw;
+  }
+  /*bottom half grid establishes 1 column*/
+  .bottomhalf {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    font-size: 3vw;
+    line-height: 4vw;
+    margin-left: 6vw;
+  }
+  .firstcoloumn {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  h2 {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  li {
+    font-size: 3vw;
+  }
+  .outerwrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  p {
+    font-size: 3vw;
+  }
+  .secondcoloumn {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
