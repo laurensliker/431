@@ -1,0 +1,167 @@
+* {
+  background: #1F2420;
+}
+
+.bottomhalf {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (35vw)[7];
+      grid-template-columns: repeat(7, 35vw);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  font-family: helvetica;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.firstcoloumn {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+/*google fonts*/
+/*fonts weights*/
+h1 {
+  width: 100%;
+  font-size: 26vw;
+  margin-top: -10vw;
+  margin-bottom: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (14vw)[7];
+      grid-template-columns: repeat(7, 14vw);
+  -ms-grid-rows: (4vw)[20];
+      grid-template-rows: repeat(20, 4vw);
+}
+
+h2 {
+  font-size: 2.1vw;
+}
+
+h3 {
+  font-size: 1.7vw;
+}
+
+li {
+  font-size: 1.7vw;
+  line-height: 2vw;
+  font-weight: 200;
+}
+
+.outerwrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90%;
+      grid-template-columns: 90%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 0px;
+  color: #FAFAF2;
+}
+
+p {
+  font-size: 1.3vw;
+  font-weight: 200;
+}
+
+.secondcoloumn {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 20;
+  grid-row: 1/21;
+}
+
+.titlefirstletter {
+  font-family: "Megrim", cursive;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 9;
+  grid-row: 12/21;
+}
+
+.titlesecondletter {
+  font-family: "Megrim", cursive;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 15;
+  -ms-grid-row-span: 6;
+  grid-row: 15/21;
+}
+
+.titlethirdletter {
+  font-family: "Josefin Sans", sans-serif;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 4;
+  grid-row: 12/16;
+}
+
+.titlefourthletter {
+  font-family: "Josefin Sans", sans-serif;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 6;
+  grid-row: 14/20;
+}
+
+.titlefifthletter {
+  font-family: "Raleway", sans-serif;
+  font-size: 28vw;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+  margin-left: -6vw;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.titlesixthletter {
+  font-family: "Josefin Sans", sans-serif;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6/7;
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 6;
+  grid-row: 14/20;
+}
+
+.titleseventhletter {
+  font-family: "Josefin Sans", sans-serif;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7/8;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 6;
+  grid-row: 10/16;
+}
+
+.tophalf {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,133 @@
+* {
+    background: #1F2420;
+}
+
+.bottomhalf {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(7, 35vw);
+    grid-template-rows: 1fr;
+    line-height: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-family: $abstract-display;
+}
+
+.firstcoloumn {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+/*google fonts*/
+$abstract-display:'Megrim',
+cursive;
+$thin-display:'Josefin Sans',
+sans-serif;
+$thick-display:'Raleway',
+sans-serif;
+
+/*body text font size and weight*/
+$font-size: 1.7vw;
+$font-weight: 200;
+
+
+h1 {
+    width: 100%;
+    font-size: 26vw;
+    margin-top: -10vw;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 14vw);
+    grid-template-rows: repeat(20, 4vw);
+
+}
+
+h2 {
+    font-family: $abstract-display;
+    font-size: 2.1vw;
+    font-weight: 400;
+
+}
+
+h3 {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+li {
+    font-size: $font-size;
+    font-weight: $font-weight;
+
+}
+
+.outerwrapper {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0px;
+    color: #FAFAF2;
+}
+
+p {
+    font-size: $body-size;
+    font-weight: $thin-weight;
+}
+
+.secondcoloumn {
+    grid-column: 4/8;
+    grid-row: 1/21;
+}
+
+.titlefirstletter {
+    font-family: $abstract-display;
+    grid-column: 1/2;
+    grid-row: 12/21;
+}
+
+.titlesecondletter {
+    font-family: $abstract-display;
+    grid-column: 2/3;
+    grid-row: 15/21;
+}
+
+.titlethirdletter {
+    font-family: $thin-display;
+    grid-column: 3/4;
+    grid-row: 12/16;
+}
+
+.titlefourthletter {
+    font-family: $thin-display;
+    grid-column: 4/5;
+    grid-row: 14/20;
+}
+
+.titlefifthletter {
+    font-family: $thick-display;
+    font-size: 28vw;
+    grid-column: 5/6;
+    grid-row: 1/7;
+    margin-left: -6vw;
+    transform: rotate(-30deg);
+}
+
+.titlesixthletter {
+    font-family: $thin-display;
+    grid-column: 6/7;
+    grid-row: 14/20;
+}
+
+.titleseventhletter {
+    font-family: $thin-display;
+    grid-column: 7/8;
+    grid-row: 10/16;
+}
+
+.tophalf {
+    grid-row: 1/2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
