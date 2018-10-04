@@ -2,6 +2,8 @@
   background: #1F2420;
 }
 
+/*google fonts*/
+/*body text font size and weight*/
 .bottomhalf {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -12,9 +14,10 @@
       grid-template-columns: repeat(7, 35vw);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  font-family: helvetica;
+  line-height: 2vw;
   padding-left: 2vw;
   padding-right: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .firstcoloumn {
@@ -26,8 +29,6 @@
   grid-row: 1/2;
 }
 
-/*google fonts*/
-/*fonts weights*/
 h1 {
   width: 100%;
   font-size: 26vw;
@@ -43,15 +44,16 @@ h1 {
 
 h2 {
   font-size: 2.1vw;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.7vw;
+  font-weight: 200;
 }
 
 li {
   font-size: 1.7vw;
-  line-height: 2vw;
   font-weight: 200;
 }
 
@@ -67,7 +69,7 @@ li {
 }
 
 p {
-  font-size: 1.3vw;
+  font-size: 1.7vw;
   font-weight: 200;
 }
 

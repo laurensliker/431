@@ -2,22 +2,6 @@
     background: #1F2420;
 }
 
-.bottomhalf {
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(7, 35vw);
-    grid-template-rows: 1fr;
-    line-height: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    font-family: $abstract-display;
-}
-
-.firstcoloumn {
-    grid-column: 1/4;
-    grid-row: 1/2;
-}
-
 /*google fonts*/
 $abstract-display:'Megrim',
 cursive;
@@ -30,6 +14,22 @@ sans-serif;
 $font-size: 1.7vw;
 $font-weight: 200;
 
+.bottomhalf {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(7, 35vw);
+    grid-template-rows: 1fr;
+    line-height: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.firstcoloumn {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
 
 h1 {
     width: 100%;
@@ -43,7 +43,6 @@ h1 {
 }
 
 h2 {
-    font-family: $abstract-display;
     font-size: 2.1vw;
     font-weight: 400;
 
@@ -69,8 +68,8 @@ li {
 }
 
 p {
-    font-size: $body-size;
-    font-weight: $thin-weight;
+    font-size: $font-size;
+    font-weight: $font-weight;
 }
 
 .secondcoloumn {
