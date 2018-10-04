@@ -375,6 +375,10 @@ ul {
         margin-bottom: -3vw;
     }
 
+    .body-linetwentyfive {
+        margin-left: 6vw;
+    }
+
     .body-linetwentytwo {
         margin-top: 10vw;
         margin-left: 20vw;
@@ -385,10 +389,22 @@ ul {
         margin-bottom: -3vw;
     }
 
+    .body-linethirtyone {
+        margin-left: 6vw;
+    }
+
+    .body-linethirtytwo {
+        margin-left: 2vw;
+    }
+
+    .body-linethirtytwosecond {
+        margin-left: 0vw;
+    }
+
     .body-linefortythree {
-        margin-top: -10vw;
+        margin-top: -7.5vw;
         margin-left: 50vw;
-        margin-bottom: -5vw;
+        margin-bottom: -4vw;
     }
 
     .body-linefortyfour {
@@ -430,8 +446,8 @@ ul {
     .body-linefiftythree {
         display: block;
         font-size: 1.2vw;
-        margin-left: 60vw;
-        margin-top: -8vw;
+        margin-left: 55vw;
+        margin-top: -7vw;
     }
 
     /*bottom half grid establishes 1 column*/
@@ -440,7 +456,7 @@ ul {
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
         font-size: $font-sizemediaq;
-        line-height: 5vw;
+        line-height: 4vw;
         margin-left: 6vw;
     }
 
