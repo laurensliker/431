@@ -1,23 +1,244 @@
-* {
+body {
   background: #1F2420;
 }
 
+/*all responsive values used becauses the composition and margins are so particular*/
 /*google fonts*/
 /*body text font size and weight*/
+.body-lineone {
+  margin-top: 6vw;
+}
+
+.body-linetwo {
+  margin-left: 4vw;
+}
+
+.body-linethree {
+  margin-left: 8vw;
+}
+
+.body-linefour {
+  margin-top: 2vw;
+  margin-left: 30vw;
+}
+
+.body-linefive {
+  margin-top: -2vw;
+  margin-left: 16vw;
+}
+
+.body-linesix {
+  margin-left: 4vw;
+}
+
+.body-lineeight {
+  margin-left: 4vw;
+}
+
+.body-lineten {
+  margin-left: 12vw;
+}
+
+.body-lineeleven {
+  margin-left: 8vw;
+}
+
+.body-linetwelve {
+  margin-left: 12vw;
+}
+
+.body-linethirteen {
+  margin-top: -1.5vw;
+  margin-left: 12vw;
+}
+
+.body-linefourteen {
+  margin-left: 8vw;
+}
+
+.body-linefifteen {
+  margin-left: 4vw;
+}
+
+.body-linesixteen {
+  margin-left: 8vw;
+}
+
+.body-lineeighteen {
+  margin-left: 4vw;
+}
+
+.body-linenineteen {
+  margin-left: 6vw;
+}
+
+.body-linetwenty {
+  margin-left: 12vw;
+}
+
+.body-linetwentyone {
+  margin-left: 16vw;
+}
+
+.body-linetwentytwo {
+  margin-top: 8.2vw;
+  margin-left: 20vw;
+}
+
+.body-linetwentythree {
+  margin-top: 0;
+  margin-left: 16vw;
+}
+
+.body-linetwentyfour {
+  margin-top: -1vw;
+  margin-left: 14vw;
+  margin-bottom: -1.5vw;
+}
+
+.body-linetwentyfive {
+  margin-left: 7vw;
+}
+
+.body-linetwentysix {
+  margin-left: 10vw;
+}
+
+.body-linetwentyseven {
+  margin-left: 16vw;
+}
+
+.body-linetwentyeight {
+  margin-left: 14vw;
+}
+
+.body-linetwentynine {
+  margin-left: 10vw;
+}
+
+.body-linethirty {
+  margin-left: 16vw;
+  margin-bottom: -1.5vw;
+}
+
+.body-linethirtyone {
+  margin-left: 8vw;
+}
+
+.body-linethirtytwo {
+  margin-left: 4vw;
+}
+
+.body-linethirtytwosecond {
+  margin-left: 2vw;
+}
+
+.body-linethirtythree {
+  margin-left: 8vw;
+}
+
+.body-linethirtyfour {
+  display: inline-block;
+  margin-top: 2vw;
+  margin-left: 18vw;
+}
+
+.body-linethirtyfive {
+  margin-left: 16vw;
+}
+
+.body-linethirtysix {
+  margin-left: 13.6vw;
+}
+
+.body-linethirtyseven {
+  margin-left: 10.8vw;
+}
+
+.body-linethirtyeight {
+  margin-left: 8.4vw;
+}
+
+.body-linethirtynine {
+  margin-left: 6vw;
+}
+
+.body-lineforty {
+  margin-left: 4vw;
+}
+
+.body-linefortyone {
+  margin-left: 2vw;
+}
+
+.body-linefortythree {
+  display: block;
+  margin-top: -4.3vw;
+  margin-left: 30vw;
+  margin-bottom: -2vw;
+}
+
+.body-linefortyfour {
+  margin-left: 28vw;
+}
+
+.body-linefortyfive {
+  margin-left: 25vw;
+}
+
+.body-linefortysix {
+  margin-left: 21vw;
+}
+
+.body-linefortyseven {
+  margin-left: 18vw;
+}
+
+.body-linefortyeight {
+  margin-left: 15vw;
+}
+
+.body-linefortynine {
+  margin-left: 11vw;
+}
+
+.body-linefifty {
+  margin-left: 8vw;
+}
+
+.body-linefiftyone {
+  margin-left: 4vw;
+}
+
+.body-linefiftytwo {
+  margin-left: 8vw;
+}
+
+.body-linefiftythree {
+  display: block;
+  font-size: .7vw;
+  margin-left: 36vw;
+  margin-top: -3.5vw;
+}
+
 .bottomhalf {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  grid-column: span;
+  margin-left: 1vw;
+  margin-top: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (35vw)[7];
-      grid-template-columns: repeat(7, 35vw);
+  -ms-grid-columns: (45vw)[7];
+      grid-template-columns: repeat(7, 45vw);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   line-height: 2vw;
   padding-left: 2vw;
   padding-right: 2vw;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.2vw;
 }
 
 .firstcoloumn {
@@ -29,6 +250,7 @@
   grid-row: 1/2;
 }
 
+/*header in top half*/
 h1 {
   width: 100%;
   font-size: 26vw;
@@ -43,8 +265,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2.1vw;
-  font-weight: 400;
+  font-size: 2.7vw;
+  font-weight: bold;
 }
 
 h3 {
@@ -75,8 +297,8 @@ p {
 
 .secondcoloumn {
   -ms-grid-column: 4;
-  -ms-grid-column-span: 4;
-  grid-column: 4/8;
+  -ms-grid-column-span: 808;
+  grid-column: 4/812;
   -ms-grid-row: 1;
   -ms-grid-row-span: 20;
   grid-row: 1/21;
@@ -160,6 +382,7 @@ p {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  grid-column: span;
 }
 
 ul {
