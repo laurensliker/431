@@ -456,12 +456,12 @@ ul {
         margin-top: -7vw;
     }
 
-    /*bottom half grid establishes 1 column*/
+    /*bottom half grid establishes and styles 1 column for better readablity*/
     .bottomhalf {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
-        font-size: $font-sizemediaq;
+        font-size: $font-sizemediaqone;
         line-height: 4vw;
         margin-left: 6vw;
     }
@@ -477,11 +477,11 @@ ul {
     }
 
     h3 {
-        font-size: $font-sizemediaq;
+        font-size: $font-sizemediaqone;
     }
 
     li {
-        font-size: $font-sizemediaq;
+        font-size: $font-sizemediaqone;
     }
 
 
@@ -505,6 +505,9 @@ ul {
 }
 
 @media (max-width:450px) and (min-width:0px) {
+
+
+    /*create breathing room between title and content*/
     .body-lineone {
         margin-top: 20vw;
     }
@@ -516,6 +519,10 @@ ul {
     /*fix center alignment issue that column units would change*/
     .outerwrapper {
         margin-left: -2vw;
+    }
+
+    .titlesecondletter {
+        margin-top: 1vw;
     }
 
     .titlethirdletter {

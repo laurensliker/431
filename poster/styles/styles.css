@@ -470,7 +470,7 @@ ul {
     margin-left: 60vw;
     margin-top: -7vw;
   }
-  /*bottom half grid establishes 1 column*/
+  /*bottom half grid establishes and styles 1 column for better readablity*/
   .bottomhalf {
     display: -ms-grid;
     display: grid;
@@ -500,10 +500,7 @@ ul {
   li {
     font-size: 3vw;
   }
-  /*fix center alignment issue that column units would change*/
-  .outerwrapper {
-    margin-left: -1vw;
-  }
+  /*change template for two columngrid and fix center alignment issue that column units would change*/
   .outerwrapper {
     display: -ms-grid;
     display: grid;
@@ -511,6 +508,7 @@ ul {
         grid-template-columns: 90%;
     -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
+    margin-left: -1vw;
   }
   p {
     font-size: 3vw;
@@ -525,6 +523,7 @@ ul {
 }
 
 @media (max-width: 450px) and (min-width: 0px) {
+  /*create breathing room between title and content*/
   .body-lineone {
     margin-top: 20vw;
   }
@@ -534,6 +533,9 @@ ul {
   /*fix center alignment issue that column units would change*/
   .outerwrapper {
     margin-left: -2vw;
+  }
+  .titlesecondletter {
+    margin-top: 1vw;
   }
   .titlethirdletter {
     margin-left: -3vw;
