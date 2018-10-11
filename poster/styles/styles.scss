@@ -352,36 +352,36 @@ ul {
     list-style-type: none;
 }
 
-@media (max-width:900px) and (min-width:0px) {
-    /*body text font size and weight*/
+@media (max-width:850px) and (min-width:0px) {
+    /*body text font size and weight CHANGE*/
     $font-sizemediaq: 3vw;
 
     /*redefined margins for body*/
     .body-lineone {
-        padding-top: 10vw;
+        padding-top: 1vw;
     }
 
     .body-linefour {
-        margin-left: 44vw;
+        margin-left: 49vw;
     }
 
     .body-linefive {
-        margin-top: -4vw;
-        margin-left: 34vw;
+        margin-top: -3vw;
+        margin-left: 39vw;
     }
 
     .body-linetwelve {
         margin-bottom: -3vw;
     }
 
-    .body-linetwentyfive {
-        margin-left: 6vw;
+    .body-linetwentytwo {
+        margin-top: 0;
+        margin-left: 29vw;
+        margin-bottom: 4vw;
     }
 
-    .body-linetwentytwo {
-        margin-top: 10vw;
-        margin-left: 20vw;
-        margin-bottom: 10vw;
+    .body-linetwentyfive {
+        margin-left: 6vw;
     }
 
     .body-linethirty {
@@ -445,7 +445,7 @@ ul {
     .body-linefiftythree {
         display: block;
         font-size: 1.2vw;
-        margin-left: 55vw;
+        margin-left: 60vw;
         margin-top: -7vw;
     }
 
@@ -492,3 +492,5 @@ ul {
         grid-row: 2/2;
     }
 }
+
+@media (max-width:850px) and (min-width:0px) {}
