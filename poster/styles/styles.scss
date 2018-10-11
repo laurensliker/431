@@ -361,7 +361,7 @@ ul {
 @media (max-width:850px) and (min-width:0px) {
 
     /*body text font size and weight CHANGE*/
-    $font-sizemediaq: 3vw;
+    $font-sizemediaqone: 3vw;
 
     /*redefined margins for body*/
     .body-lineone {
@@ -485,19 +485,17 @@ ul {
     }
 
 
-    /*fix center alignment issue that column units would change*/
-    .outerwrapper {
-        margin-left: -1vw;
-    }
+    /*change template for two columngrid and fix center alignment issue that column units would change*/
 
     .outerwrapper {
         display: grid;
         grid-template-columns: 90%;
         grid-template-rows: 50% 50%;
+        margin-left: -1vw;
     }
 
     p {
-        font-size: $font-sizemediaq;
+        font-size: $font-sizemediaqone;
     }
 
     .secondcoloumn {
