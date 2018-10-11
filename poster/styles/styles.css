@@ -240,7 +240,7 @@ body {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   line-height: 2vw;
-  padding-left: vw;
+  padding-left: 2vw;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2.2vw;
 }
@@ -307,6 +307,7 @@ p {
   grid-row: 1/21;
 }
 
+/* title letter fonts and locations */
 .titlefirstletter {
   font-family: "Megrim";
   -ms-grid-column: 1;

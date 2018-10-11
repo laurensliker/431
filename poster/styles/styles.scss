@@ -245,7 +245,7 @@ $font-weight: 200;
     grid-template-columns: repeat(7, 45vw);
     grid-template-rows: 1fr;
     line-height: 2vw;
-    padding-left: vw;
+    padding-left: 2vw;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.2vw;
 }
@@ -298,6 +298,7 @@ p {
     grid-row: 1/21;
 }
 
+/* title letter fonts and locations */
 .titlefirstletter {
     font-family: $abstract-display;
     grid-column: 1/2;
