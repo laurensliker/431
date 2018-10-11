@@ -228,7 +228,9 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  grid-column: span;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
   margin-top: 0;
   display: -ms-grid;
   display: grid;
@@ -512,6 +514,88 @@ ul {
     grid-column: 1/2;
     -ms-grid-row: 2;
     grid-row: 2/2;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 0px) {
+  h1 {
+    width: 100%;
+    font-size: 28vw;
+    margin-top: -10vw;
+    margin-bottom: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (14vw)[7];
+        grid-template-columns: repeat(7, 14vw);
+    -ms-grid-rows: (4vw)[20];
+        grid-template-rows: repeat(20, 4vw);
+  }
+  .titlefirstletter {
+    font-family: "Megrim";
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 9;
+    grid-row: 12/21;
+  }
+  .titlesecondletter {
+    font-family: "Megrim";
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 15;
+    -ms-grid-row-span: 6;
+    grid-row: 15/21;
+  }
+  .titlethirdletter {
+    font-family: "Josefin Sans", sans-serif;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 4;
+    grid-row: 12/16;
+  }
+  .titlefourthletter {
+    font-family: "Josefin Sans", sans-serif;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 6;
+    grid-row: 14/20;
+  }
+  .titlefifthletter {
+    font-family: "Raleway", sans-serif;
+    font-size: 28vw;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 6;
+    grid-row: 1/7;
+    margin-left: -6vw;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  .titlesixthletter {
+    font-family: "Josefin Sans", sans-serif;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
+    grid-column: 6/7;
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 6;
+    grid-row: 14/20;
+  }
+  .titleseventhletter {
+    font-family: "Josefin Sans", sans-serif;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
+    grid-column: 7/8;
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 6;
+    grid-row: 10/16;
   }
 }
 /*# sourceMappingURL=styles.css.map */
