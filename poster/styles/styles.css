@@ -282,6 +282,7 @@ li {
   font-weight: 200;
 }
 
+/*container for whole compostion seperating in top and bottom halves*/
 .outerwrapper {
   display: -ms-grid;
   display: grid;
@@ -290,6 +291,7 @@ li {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 0;
+  padding-left: 0;
   color: #FAFAF2;
 }
 
@@ -498,6 +500,10 @@ ul {
   li {
     font-size: 3vw;
   }
+  /*fix center alignment issue that column units would change*/
+  .outerwrapper {
+    margin-left: -1vw;
+  }
   .outerwrapper {
     display: -ms-grid;
     display: grid;
@@ -524,6 +530,10 @@ ul {
   }
   h1 {
     font-size: 32vw;
+  }
+  /*fix center alignment issue that column units would change*/
+  .outerwrapper {
+    margin-left: -2vw;
   }
   .titlethirdletter {
     margin-left: -3vw;

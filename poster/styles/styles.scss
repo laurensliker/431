@@ -280,11 +280,14 @@ li {
     font-weight: $font-weight;
 }
 
+/*container for whole compostion seperating in top and bottom halves*/
+
 .outerwrapper {
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0;
+    padding-left: 0;
     color: #FAFAF2;
 }
 
@@ -356,6 +359,7 @@ ul {
 }
 
 @media (max-width:850px) and (min-width:0px) {
+
     /*body text font size and weight CHANGE*/
     $font-sizemediaq: 3vw;
 
@@ -480,6 +484,12 @@ ul {
         font-size: $font-sizemediaq;
     }
 
+
+    /*fix center alignment issue that column units would change*/
+    .outerwrapper {
+        margin-left: -1vw;
+    }
+
     .outerwrapper {
         display: grid;
         grid-template-columns: 90%;
@@ -503,6 +513,11 @@ ul {
 
     h1 {
         font-size: 32vw;
+    }
+
+    /*fix center alignment issue that column units would change*/
+    .outerwrapper {
+        margin-left: -2vw;
     }
 
     .titlethirdletter {
