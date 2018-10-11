@@ -298,7 +298,7 @@ p {
     grid-row: 1/21;
 }
 
-/* title letter fonts and locations */
+/* title letters- different fonts and locations */
 .titlefirstletter {
     font-family: $abstract-display;
     grid-column: 1/2;
@@ -343,6 +343,8 @@ p {
     grid-column: 7/8;
     grid-row: 10/16;
 }
+
+/*title location within outer wrapper*/
 
 .tophalf {
     grid-row: 1/2;

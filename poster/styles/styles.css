@@ -307,7 +307,7 @@ p {
   grid-row: 1/21;
 }
 
-/* title letter fonts and locations */
+/* title letters- different fonts and locations */
 .titlefirstletter {
   font-family: "Megrim";
   -ms-grid-column: 1;
@@ -382,6 +382,7 @@ p {
   grid-row: 10/16;
 }
 
+/*title location within outer wrapper*/
 .tophalf {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
