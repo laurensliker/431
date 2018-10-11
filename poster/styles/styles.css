@@ -5,7 +5,7 @@ body {
 /*all responsive values used becauses the composition and margins are so particular*/
 /*google fonts*/
 /*body text font size and weight*/
-/*margins for body*/
+/*left and right margins for body (set in span tag)*/
 .body-lineone {
   margin-top: 6vw;
 }
@@ -216,6 +216,7 @@ body {
   margin-left: 8vw;
 }
 
+/*display block to move up like in poster*/
 .body-linefiftythree {
   display: block;
   font-size: .7vw;
@@ -223,7 +224,7 @@ body {
   margin-top: -3.5vw;
 }
 
-/*bottom half grid establishing 2 columns*/
+/*bottom half grid establishing 2 columns and text properties*/
 .bottomhalf {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -239,8 +240,7 @@ body {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   line-height: 2vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: vw;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2.2vw;
 }
@@ -256,7 +256,6 @@ body {
 
 /*header in top half*/
 h1 {
-  width: 100%;
   font-size: 24vw;
   margin-top: -10vw;
   margin-bottom: 0px;
@@ -290,7 +289,7 @@ li {
       grid-template-columns: 90%;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  grid-gap: 0px;
+  grid-gap: 0;
   color: #FAFAF2;
 }
 
