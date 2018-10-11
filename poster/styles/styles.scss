@@ -5,8 +5,7 @@ body {
 /*all responsive values used becauses the composition and margins are so particular*/
 
 /*google fonts*/
-$abstract-display:'Megrim',
-cursive;
+$abstract-display:'Megrim';
 $thin-display:'Josefin Sans',
 sans-serif;
 $thick-display:'Raleway',
@@ -353,7 +352,7 @@ ul {
     list-style-type: none;
 }
 
-@media (max-width:500px) and (min-width:0px) {
+@media (max-width:900px) and (min-width:0px) {
     /*body text font size and weight*/
     $font-sizemediaq: 3vw;
 

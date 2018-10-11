@@ -307,7 +307,7 @@ p {
 }
 
 .titlefirstletter {
-  font-family: "Megrim", cursive;
+  font-family: "Megrim";
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -317,7 +317,7 @@ p {
 }
 
 .titlesecondletter {
-  font-family: "Megrim", cursive;
+  font-family: "Megrim";
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -391,7 +391,7 @@ ul {
   list-style-type: none;
 }
 
-@media (max-width: 500px) and (min-width: 0px) {
+@media (max-width: 900px) and (min-width: 0px) {
   /*body text font size and weight*/
   /*redefined margins for body*/
   .body-lineone {
