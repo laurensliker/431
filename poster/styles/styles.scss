@@ -12,222 +12,224 @@ $thick-display:'Raleway',
 sans-serif;
 
 /*left and right margins for body (set in span tag)*/
-.line__one {
-    margin-top: 6vw;
-}
+.line__ {
+    &one {
+        margin-top: 6vw;
+    }
 
-.line__two {
-    margin-left: 4vw;
-}
+    &two {
+        margin-left: 4vw;
+    }
 
-.line__three {
-    margin-left: 8vw;
-}
+    &three {
+        margin-left: 8vw;
+    }
 
-.line__four {
-    margin-top: 2vw;
-    margin-left: 30vw;
-}
+    &four {
+        margin-top: 2vw;
+        margin-left: 30vw;
+    }
 
-.line__five {
-    margin-top: -2vw;
-    margin-left: 16vw;
-}
+    &five {
+        margin-top: -2vw;
+        margin-left: 16vw;
+    }
 
-.line__six {
-    margin-left: 4vw;
-}
+    &six {
+        margin-left: 4vw;
+    }
 
-.line__eight {
-    margin-left: 4vw;
-}
+    &eight {
+        margin-left: 4vw;
+    }
 
-.line__ten {
-    margin-left: 12vw;
-}
+    &ten {
+        margin-left: 12vw;
+    }
 
-.line__eleven {
-    margin-left: 8vw;
-}
+    &eleven {
+        margin-left: 8vw;
+    }
 
-.line__twelve {
-    margin-left: 12vw;
-    margin-bottom: -2vw;
-}
+    &twelve {
+        margin-left: 12vw;
+        margin-bottom: -2vw;
+    }
 
-.line__thirteen {
-    margin-top: -1.5vw;
-    margin-left: 12vw;
-}
+    &thirteen {
+        margin-top: -1.5vw;
+        margin-left: 12vw;
+    }
 
-.line__fourteen {
-    margin-left: 8vw;
-}
+    &fourteen {
+        margin-left: 8vw;
+    }
 
-.line__fifteen {
-    margin-left: 4vw;
-}
+    &fifteen {
+        margin-left: 4vw;
+    }
 
-.line__sixteen {
-    margin-left: 8vw;
-}
+    &sixteen {
+        margin-left: 8vw;
+    }
 
-.line__eighteen {
-    margin-left: 4vw;
-}
+    &eighteen {
+        margin-left: 4vw;
+    }
 
-.line__nineteen {
-    margin-left: 6vw;
-}
+    &nineteen {
+        margin-left: 6vw;
+    }
 
-.line__twenty {
-    margin-left: 12vw;
-}
+    &twenty {
+        margin-left: 12vw;
+    }
 
-.line__twentyone {
-    margin-left: 16vw;
-}
+    &twentyone {
+        margin-left: 16vw;
+    }
 
-.line__twentytwo {
-    margin-top: 10vw;
-    margin-left: 20vw;
-}
+    &twentytwo {
+        margin-top: 10vw;
+        margin-left: 20vw;
+    }
 
-.line__twentythree {
-    margin-top: 0;
-    margin-left: 16vw;
-}
+    &twentythree {
+        margin-top: 0;
+        margin-left: 16vw;
+    }
 
-.line__twentyfour {
-    margin-top: -1vw;
-    margin-left: 14vw;
-    margin-bottom: -1.5vw;
-}
+    &twentyfour {
+        margin-top: -1vw;
+        margin-left: 14vw;
+        margin-bottom: -1.5vw;
+    }
 
-.line__twentyfive {
-    margin-left: 7vw;
-}
+    &twentyfive {
+        margin-left: 7vw;
+    }
 
-.line__twentysix {
-    margin-left: 10vw;
-}
+    &twentysix {
+        margin-left: 10vw;
+    }
 
-.line__twentyseven {
-    margin-left: 8vw;
-}
+    &twentyseven {
+        margin-left: 8vw;
+    }
 
-.line__twentyeight {
-    margin-left: 6vw;
-}
+    &twentyeight {
+        margin-left: 6vw;
+    }
 
-.line__twentynine {
-    margin-left: 4vw;
-}
+    &twentynine {
+        margin-left: 4vw;
+    }
 
-.line__thirty {
-    margin-left: 16vw;
-    margin-bottom: -1.5vw;
-}
+    &thirty {
+        margin-left: 16vw;
+        margin-bottom: -1.5vw;
+    }
 
-.line__thirtyone {
-    margin-left: 8vw;
-}
+    &thirtyone {
+        margin-left: 8vw;
+    }
 
-.line__thirtytwo {
-    margin-left: 4vw;
-}
+    &thirtytwo {
+        margin-left: 4vw;
+    }
 
-.line__thirtytwosecond {
-    margin-left: 2vw;
-}
+    &thirtytwosecond {
+        margin-left: 2vw;
+    }
 
-.line__thirtythree {
-    margin-left: 8vw;
-}
+    &thirtythree {
+        margin-left: 8vw;
+    }
 
-.line__thirtyfour {
-    display: inline-block;
-    margin-top: 2vw;
-    margin-left: 18vw;
-}
+    &thirtyfour {
+        display: inline-block;
+        margin-top: 2vw;
+        margin-left: 18vw;
+    }
 
-.line__thirtyfive {
-    margin-left: 16vw;
-}
+    &thirtyfive {
+        margin-left: 16vw;
+    }
 
-.line__thirtysix {
-    margin-left: 13.6vw;
-}
+    &thirtysix {
+        margin-left: 13.6vw;
+    }
 
-.line__thirtyseven {
-    margin-left: 10.8vw;
-}
+    &thirtyseven {
+        margin-left: 10.8vw;
+    }
 
-.line__thirtyeight {
-    margin-left: 8.4vw;
-}
+    &thirtyeight {
+        margin-left: 8.4vw;
+    }
 
-.line__thirtynine {
-    margin-left: 6vw;
-}
+    &thirtynine {
+        margin-left: 6vw;
+    }
 
-.line__forty {
-    margin-left: 4vw;
-}
+    &forty {
+        margin-left: 4vw;
+    }
 
-.line__fortyone {
-    margin-left: 2vw;
-}
+    &fortyone {
+        margin-left: 2vw;
+    }
 
-.line__fortythree {
-    display: block;
-    margin-top: -4.3vw;
-    margin-left: 30vw;
-}
+    &fortythree {
+        display: block;
+        margin-top: -4.3vw;
+        margin-left: 30vw;
+    }
 
-.line__fortyfour {
-    margin-left: 28vw;
-}
+    &fortyfour {
+        margin-left: 28vw;
+    }
 
-.line__fortyfive {
-    margin-left: 25vw;
-}
+    &fortyfive {
+        margin-left: 25vw;
+    }
 
-.line__fortysix {
-    margin-left: 21vw;
-}
+    &fortysix {
+        margin-left: 21vw;
+    }
 
-.line__fortyseven {
-    margin-left: 18vw;
-}
+    &fortyseven {
+        margin-left: 18vw;
+    }
 
-.line__fortyeight {
-    margin-left: 15vw;
-}
+    &fortyeight {
+        margin-left: 15vw;
+    }
 
-.line__fortynine {
-    margin-left: 11vw;
-}
+    &fortynine {
+        margin-left: 11vw;
+    }
 
-.line__fifty {
-    margin-left: 8vw;
-}
+    &fifty {
+        margin-left: 8vw;
+    }
 
-.line__fiftyone {
-    margin-left: 4vw;
-}
+    &fiftyone {
+        margin-left: 4vw;
+    }
 
-.line__fiftytwo {
-    margin-left: 8vw;
-}
+    &fiftytwo {
+        margin-left: 8vw;
+    }
 
-/*display block to move up like in poster*/
+    /*display block to move up like in poster*/
 
-.line__fiftythree {
-    display: block;
-    font-size: .7vw;
-    margin-left: 36vw;
-    margin-top: -3.5vw;
+    &fiftythree {
+        display: block;
+        font-size: .7vw;
+        margin-left: 36vw;
+        margin-top: -3.5vw;
+    }
 }
 
 /*bottom half grid establishing 2 columns and text properties*/
@@ -348,92 +350,92 @@ ul {
 @media (max-width:850px) and (min-width:0px) {
 
     /*redefined margins for body*/
-    .line__one {
+    &one {
         padding-top: 1vw;
     }
 
-    .line__four {
+    &four {
         margin-left: 49vw;
     }
 
-    .line__five {
+    &five {
         margin-top: -3vw;
         margin-left: 39vw;
     }
 
-    .line__twelve {
+    &twelve {
         margin-bottom: -3vw;
     }
 
-    .line__twentytwo {
+    &twentytwo {
         margin-top: 0;
         margin-left: 29vw;
         margin-bottom: 4vw;
     }
 
-    .line__twentyfive {
+    &twentyfive {
         margin-left: 6vw;
     }
 
-    .line__thirty {
+    &thirty {
         margin-bottom: -3vw;
     }
 
-    .line__thirtyone {
+    &thirtyone {
         margin-left: 6vw;
     }
 
-    .line__thirtytwo {
+    &thirtytwo {
         margin-left: 2vw;
     }
 
-    .line__thirtytwosecond {
+    &thirtytwosecond {
         margin-left: 0vw;
     }
 
-    .line__fortythree {
+    &fortythree {
         margin-top: -7.5vw;
         margin-left: 50vw;
         margin-bottom: -4vw;
     }
 
-    .line__fortyfour {
+    &fortyfour {
         margin-left: 47vw;
     }
 
-    .line__fortyfive {
+    &fortyfive {
         margin-left: 43vw;
     }
 
-    .line__fortysix {
+    &fortysix {
         margin-left: 38vw;
     }
 
-    .line__fortyseven {
+    &fortyseven {
         margin-left: 33vw;
     }
 
-    .line__fortyeight {
+    &fortyeight {
         margin-left: 26vw;
     }
 
-    .line__fortynine {
+    &fortynine {
         margin-left: 22vw;
     }
 
-    .line__fifty {
+    &fifty {
         margin-left: 15vw;
     }
 
-    .line__fiftyone {
+    &fiftyone {
         margin-left: 8vw;
     }
 
-    .line__fiftytwo {
+    &fiftytwo {
         margin-left: 15vw;
     }
 
-    .line__fiftythree {
+    &fiftythree {
         display: block;
         font-size: 1.2vw;
         margin-left: 60vw;
@@ -486,7 +488,7 @@ ul {
 
 
     /*create breathing room between title and content*/
-    .line__one {
+    &one {
         margin-top: 20vw;
     }
 

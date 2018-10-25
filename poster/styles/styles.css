@@ -5,6 +5,10 @@ body {
 /*all responsive values used becauses the composition and margins are so particular*/
 /*google fonts*/
 /*left and right margins for body (set in span tag)*/
+.line__ {
+  /*display block to move up like in poster*/
+}
+
 .line__one {
   margin-top: 6vw;
 }
@@ -214,7 +218,6 @@ body {
   margin-left: 8vw;
 }
 
-/*display block to move up like in poster*/
 .line__fiftythree {
   display: block;
   font-size: .7vw;
@@ -389,72 +392,72 @@ ul {
 
 @media (max-width: 850px) and (min-width: 0px) {
   /*redefined margins for body*/
-  .line__one {
+  one {
     padding-top: 1vw;
   }
-  .line__four {
+  four {
     margin-left: 49vw;
   }
-  .line__five {
+  five {
     margin-top: -3vw;
     margin-left: 39vw;
   }
-  .line__twelve {
+  twelve {
     margin-bottom: -3vw;
   }
-  .line__twentytwo {
+  twentytwo {
     margin-top: 0;
     margin-left: 29vw;
     margin-bottom: 4vw;
   }
-  .line__twentyfive {
+  twentyfive {
     margin-left: 6vw;
   }
-  .line__thirty {
+  thirty {
     margin-bottom: -3vw;
   }
-  .line__thirtyone {
+  thirtyone {
     margin-left: 6vw;
   }
-  .line__thirtytwo {
+  thirtytwo {
     margin-left: 2vw;
   }
-  .line__thirtytwosecond {
+  thirtytwosecond {
     margin-left: 0vw;
   }
-  .line__fortythree {
+  fortythree {
     margin-top: -7.5vw;
     margin-left: 50vw;
     margin-bottom: -4vw;
   }
-  .line__fortyfour {
+  fortyfour {
     margin-left: 47vw;
   }
-  .line__fortyfive {
+  fortyfive {
     margin-left: 43vw;
   }
-  .line__fortysix {
+  fortysix {
     margin-left: 38vw;
   }
-  .line__fortyseven {
+  fortyseven {
     margin-left: 33vw;
   }
-  .line__fortyeight {
+  fortyeight {
     margin-left: 26vw;
   }
-  .line__fortynine {
+  fortynine {
     margin-left: 22vw;
   }
-  .line__fifty {
+  fifty {
     margin-left: 15vw;
   }
-  .line__fiftyone {
+  fiftyone {
     margin-left: 8vw;
   }
-  .line__fiftytwo {
+  fiftytwo {
     margin-left: 15vw;
   }
-  .line__fiftythree {
+  fiftythree {
     display: block;
     font-size: 1.2vw;
     margin-left: 60vw;
@@ -510,7 +513,7 @@ ul {
 
 @media (max-width: 450px) and (min-width: 0px) {
   /*create breathing room between title and content*/
-  .line__one {
+  one {
     margin-top: 20vw;
   }
   h1 {
