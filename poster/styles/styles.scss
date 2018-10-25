@@ -34,7 +34,11 @@ li {
     font-weight: 200;
 }
 
-/*container for whole compostion seperating in top and bottom halves*/
+ul {
+    list-style-type: none;
+}
+
+/*container for whole compostion separating in top and bottom halves*/
 .outerwrapper {
     display: grid;
     grid-template-columns: 90%;
@@ -44,7 +48,41 @@ li {
     color: #FAFAF2;
 }
 
-/*left and right margins for body (set in span tag)*/
+/*title location within outer wrapper*/
+.tophalf {
+    grid-row: 1/2;
+    grid-column: span;
+}
+
+/*bottom half grid establishing 2 columns and text properties*/
+.bottomhalf {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 45vw);
+    grid-template-rows: 1fr;
+    line-height: 2vw;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.2vw;
+}
+
+.column__ {
+    &first {
+        grid-column: 1/4;
+        grid-row: 1/2;
+
+    }
+
+    &second {
+        grid-column: 4/8;
+        grid-row: 1/21;
+
+    }
+}
+
+/*left and right margins for body (set in div tags)*/
 .line__ {
     &one {
         margin-top: 6vw;
@@ -265,34 +303,6 @@ li {
     }
 }
 
-/*bottom half grid establishing 2 columns and text properties*/
-.bottomhalf {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    margin-top: 0;
-    display: grid;
-    grid-template-columns: repeat(7, 45vw);
-    grid-template-rows: 1fr;
-    line-height: 2vw;
-    padding-left: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2.2vw;
-}
-
-.column__ {
-    &first {
-        grid-column: 1/4;
-        grid-row: 1/2;
-
-    }
-
-    &second {
-        grid-column: 4/8;
-        grid-row: 1/21;
-
-    }
-}
-
 /* title letters- different fonts and locations */
 title-letter__ {
 
@@ -340,17 +350,6 @@ title-letter__ {
         grid-column: 7/8;
         grid-row: 10/16;
     }
-}
-
-/*title location within outer wrapper*/
-
-.tophalf {
-    grid-row: 1/2;
-    grid-column: span;
-}
-
-ul {
-    list-style-type: none;
 }
 
 @media (max-width:850px) {
