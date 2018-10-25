@@ -288,8 +288,7 @@ h1 {
 }
 
 .line__fiftythree {
-  display: block;
-  font-size: .7vw;
+  font-size: .7vw !important;
   margin-left: 36vw;
   margin-top: -3.5vw;
 }
