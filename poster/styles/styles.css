@@ -1,9 +1,48 @@
+/*all responsive values used becauses the composition and margins are so particular*/
+/*google fonts*/
 body {
   background: #202221;
 }
 
-/*all responsive values used becauses the composition and margins are so particular*/
-/*google fonts*/
+/*header in top half*/
+h1 {
+  font-size: 24vw;
+  margin-top: -10vw;
+  margin-bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (14vw)[7];
+      grid-template-columns: repeat(7, 14vw);
+  -ms-grid-rows: (4vw)[20];
+      grid-template-rows: repeat(20, 4vw);
+}
+
+h2 {
+  font-size: 2.6vw;
+  font-weight: bold;
+}
+
+div,
+h3,
+p,
+li {
+  font-size: 1.7vw;
+  font-weight: 200;
+}
+
+/*container for whole compostion seperating in top and bottom halves*/
+.outerwrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90%;
+      grid-template-columns: 90%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 0;
+  padding-left: 0;
+  color: #FAFAF2;
+}
+
 /*left and right margins for body (set in span tag)*/
 .line__ {
   /*display block to move up like in poster*/
@@ -253,45 +292,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-}
-
-/*header in top half*/
-h1 {
-  font-size: 24vw;
-  margin-top: -10vw;
-  margin-bottom: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (14vw)[7];
-      grid-template-columns: repeat(7, 14vw);
-  -ms-grid-rows: (4vw)[20];
-      grid-template-rows: repeat(20, 4vw);
-}
-
-h2 {
-  font-size: 2.6vw;
-  font-weight: bold;
-}
-
-div,
-h3,
-p,
-li {
-  font-size: 1.7vw;
-  font-weight: 200;
-}
-
-/*container for whole compostion seperating in top and bottom halves*/
-.outerwrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 90%;
-      grid-template-columns: 90%;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  grid-gap: 0;
-  padding-left: 0;
-  color: #FAFAF2;
 }
 
 .secondcoloumn {

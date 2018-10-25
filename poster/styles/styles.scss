@@ -1,7 +1,3 @@
-body {
-    background: #202221;
-}
-
 /*all responsive values used becauses the composition and margins are so particular*/
 
 /*google fonts*/
@@ -10,6 +6,43 @@ $thin-display:'Josefin Sans',
 sans-serif;
 $thick-display:'Raleway',
 sans-serif;
+
+body {
+    background: #202221;
+}
+
+/*header in top half*/
+h1 {
+    font-size: 24vw;
+    margin-top: -10vw;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 14vw);
+    grid-template-rows: repeat(20, 4vw);
+}
+
+h2 {
+    font-size: 2.6vw;
+    font-weight: bold;
+}
+
+div,
+h3,
+p,
+li {
+    font-size: 1.7vw;
+    font-weight: 200;
+}
+
+/*container for whole compostion seperating in top and bottom halves*/
+.outerwrapper {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+    padding-left: 0;
+    color: #FAFAF2;
+}
 
 /*left and right margins for body (set in span tag)*/
 .line__ {
@@ -249,40 +282,6 @@ sans-serif;
 .firstcoloumn {
     grid-column: 1/4;
     grid-row: 1/2;
-}
-
-/*header in top half*/
-h1 {
-    font-size: 24vw;
-    margin-top: -10vw;
-    margin-bottom: 0;
-    display: grid;
-    grid-template-columns: repeat(7, 14vw);
-    grid-template-rows: repeat(20, 4vw);
-}
-
-h2 {
-    font-size: 2.6vw;
-    font-weight: bold;
-}
-
-div,
-h3,
-p,
-li {
-    font-size: 1.7vw;
-    font-weight: 200;
-}
-
-/*container for whole compostion seperating in top and bottom halves*/
-
-.outerwrapper {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0;
-    padding-left: 0;
-    color: #FAFAF2;
 }
 
 .secondcoloumn {
