@@ -27,7 +27,6 @@ h1 {
     grid-template-columns: 90%;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0;
-    padding-left: 0;
     color: #FAFAF2;
 }
 
@@ -41,7 +40,6 @@ h1 {
 .bottomhalf {
     grid-row: 2/3;
     grid-column: 1/2;
-    margin-top: 0;
     display: grid;
     grid-template-columns: repeat(7, 45vw);
     grid-template-rows: 1fr;
@@ -153,7 +151,6 @@ h1 {
     }
 
     &twentythree {
-        margin-top: 0;
         margin-left: 16vw;
     }
 
@@ -361,7 +358,6 @@ h1 {
         }
 
         &twentytwo {
-            margin-top: 0;
             margin-left: 29vw;
             margin-bottom: 4vw;
         }

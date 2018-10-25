@@ -26,7 +26,6 @@ h1 {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 0;
-  padding-left: 0;
   color: #FAFAF2;
 }
 
@@ -46,7 +45,6 @@ h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  margin-top: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (45vw)[7];
@@ -163,7 +161,6 @@ h1 {
 }
 
 .line__twentythree {
-  margin-top: 0;
   margin-left: 16vw;
 }
 
@@ -388,7 +385,6 @@ h1 {
     margin-bottom: -3vw;
   }
   .line__twentytwo {
-    margin-top: 0;
     margin-left: 29vw;
     margin-bottom: 4vw;
   }
