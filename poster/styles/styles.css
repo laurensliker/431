@@ -177,7 +177,6 @@ body {
   display: block;
   margin-top: -4.3vw;
   margin-left: 30vw;
-  margin-bottom: -2vw;
 }
 
 .body-linefortyfour {
@@ -295,7 +294,8 @@ li {
   color: #FAFAF2;
 }
 
-p {
+p,
+div {
   font-size: 1.7vw;
   font-weight: 200;
 }

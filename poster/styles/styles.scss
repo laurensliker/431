@@ -188,7 +188,6 @@ $font-weight: 200;
     display: block;
     margin-top: -4.3vw;
     margin-left: 30vw;
-    margin-bottom: -2vw;
 }
 
 .body-linefortyfour {
@@ -291,7 +290,8 @@ li {
     color: #FAFAF2;
 }
 
-p {
+p,
+div {
     font-size: $font-size;
     font-weight: $font-weight;
 }
