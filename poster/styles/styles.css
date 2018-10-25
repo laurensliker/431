@@ -4,7 +4,6 @@ body {
 
 /*all responsive values used becauses the composition and margins are so particular*/
 /*google fonts*/
-/*body text font size and weight*/
 /*left and right margins for body (set in span tag)*/
 .body-lineone {
   margin-top: 6vw;
@@ -271,11 +270,9 @@ h2 {
   font-weight: bold;
 }
 
-h3 {
-  font-size: 1.7vw;
-  font-weight: 200;
-}
-
+div,
+h3,
+p,
 li {
   font-size: 1.7vw;
   font-weight: 200;
@@ -292,12 +289,6 @@ li {
   grid-gap: 0;
   padding-left: 0;
   color: #FAFAF2;
-}
-
-p,
-div {
-  font-size: 1.7vw;
-  font-weight: 200;
 }
 
 .secondcoloumn {
@@ -397,7 +388,6 @@ ul {
 }
 
 @media (max-width: 850px) and (min-width: 0px) {
-  /*body text font size and weight CHANGE*/
   /*redefined margins for body*/
   .body-lineone {
     padding-top: 1vw;
@@ -478,7 +468,6 @@ ul {
         grid-template-columns: 1fr;
     -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
-    font-size: 3vw;
     line-height: 4vw;
     margin-left: 6vw;
   }
@@ -494,10 +483,10 @@ ul {
     font-size: 5vw;
     font-weight: bold;
   }
-  h3 {
-    font-size: 3vw;
-  }
-  li {
+  h3,
+  p,
+  li,
+  .bottomhalf {
     font-size: 3vw;
   }
   /*change template for two columngrid and fix center alignment issue that column units would change*/
@@ -509,9 +498,6 @@ ul {
     -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
     margin-left: -1vw;
-  }
-  p {
-    font-size: 3vw;
   }
   .secondcoloumn {
     -ms-grid-column: 1;

@@ -11,11 +11,6 @@ sans-serif;
 $thick-display:'Raleway',
 sans-serif;
 
-/*body text font size and weight*/
-$font-size: 1.7vw;
-$font-weight: 200;
-
-
 /*left and right margins for body (set in span tag)*/
 .body-lineone {
     margin-top: 6vw;
@@ -269,14 +264,12 @@ h2 {
     font-weight: bold;
 }
 
-h3 {
-    font-size: $font-size;
-    font-weight: $font-weight;
-}
-
+div,
+h3,
+p,
 li {
-    font-size: $font-size;
-    font-weight: $font-weight;
+    font-size: 1.7vw;
+    font-weight: 200;
 }
 
 /*container for whole compostion seperating in top and bottom halves*/
@@ -288,12 +281,6 @@ li {
     grid-gap: 0;
     padding-left: 0;
     color: #FAFAF2;
-}
-
-p,
-div {
-    font-size: $font-size;
-    font-weight: $font-weight;
 }
 
 .secondcoloumn {
@@ -359,9 +346,6 @@ ul {
 }
 
 @media (max-width:850px) and (min-width:0px) {
-
-    /*body text font size and weight CHANGE*/
-    $font-sizemediaqone: 3vw;
 
     /*redefined margins for body*/
     .body-lineone {
@@ -461,7 +445,6 @@ ul {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
-        font-size: $font-sizemediaqone;
         line-height: 4vw;
         margin-left: 6vw;
     }
@@ -476,12 +459,11 @@ ul {
         font-weight: bold;
     }
 
-    h3 {
-        font-size: $font-sizemediaqone;
-    }
-
-    li {
-        font-size: $font-sizemediaqone;
+    h3,
+    p,
+    li,
+    .bottomhalf {
+        font-size: 3vw;
     }
 
 
@@ -492,10 +474,6 @@ ul {
         grid-template-columns: 90%;
         grid-template-rows: 50% 50%;
         margin-left: -1vw;
-    }
-
-    p {
-        font-size: $font-sizemediaqone;
     }
 
     .secondcoloumn {
