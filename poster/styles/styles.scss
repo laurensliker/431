@@ -24,7 +24,7 @@ h1 {
 /*container for whole compostion separating in top and bottom halves*/
 .outerwrapper {
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0;
     color: #FAFAF2;
@@ -33,7 +33,6 @@ h1 {
 /*title location within outer wrapper*/
 .tophalf {
     grid-row: 1/2;
-    grid-column: span;
 }
 
 /*bottom half grid establishing 2 columns and text properties*/

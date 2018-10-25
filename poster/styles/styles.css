@@ -21,8 +21,8 @@ h1 {
 .outerwrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90%;
-      grid-template-columns: 90%;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 0;
@@ -34,7 +34,6 @@ h1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  grid-column: span;
 }
 
 /*bottom half grid establishing 2 columns and text properties*/
