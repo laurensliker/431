@@ -17,23 +17,6 @@ h1 {
       grid-template-rows: repeat(20, 4vw);
 }
 
-h2 {
-  font-size: 2.6vw;
-  font-weight: bold;
-}
-
-div,
-h3,
-p,
-li {
-  font-size: 1.7vw;
-  font-weight: 200;
-}
-
-ul {
-  list-style-type: none;
-}
-
 /*container for whole compostion separating in top and bottom halves*/
 .outerwrapper {
   display: -ms-grid;
@@ -74,6 +57,23 @@ ul {
   padding-left: 2vw;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2.2vw;
+}
+
+.bottomhalf h2 {
+  font-size: 2.6vw;
+  font-weight: bold;
+}
+
+.bottomhalf div,
+.bottomhalf h3,
+.bottomhalf p,
+.bottomhalf li {
+  font-size: 1.7vw;
+  font-weight: 200;
+}
+
+.bottomhalf ul {
+  list-style-type: none;
 }
 
 .column__first {
@@ -316,7 +316,7 @@ ul {
 }
 
 /* title letters- different fonts and locations */
-title-letter__first {
+.title-letter__first {
   font-family: "Megrim";
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -326,7 +326,7 @@ title-letter__first {
   grid-row: 12/21;
 }
 
-title-letter__second {
+.title-letter__second {
   font-family: "Megrim";
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -336,7 +336,7 @@ title-letter__second {
   grid-row: 15/21;
 }
 
-title-letter__third {
+.title-letter__third {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -346,7 +346,7 @@ title-letter__third {
   grid-row: 12/16;
 }
 
-title-letter__fourth {
+.title-letter__fourth {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -356,7 +356,7 @@ title-letter__fourth {
   grid-row: 14/20;
 }
 
-title-letter__fifth {
+.title-letter__fifth {
   font-family: "Raleway", sans-serif;
   font-size: 28vw;
   -ms-grid-column: 5;
@@ -370,7 +370,7 @@ title-letter__fifth {
           transform: rotate(-30deg);
 }
 
-title-letter__sixth {
+.title-letter__sixth {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-column: 6;
   -ms-grid-column-span: 1;
@@ -380,7 +380,7 @@ title-letter__sixth {
   grid-row: 14/20;
 }
 
-title-letter__seventh {
+.title-letter__seventh {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-column: 7;
   -ms-grid-column-span: 1;
@@ -474,6 +474,16 @@ title-letter__seventh {
     line-height: 4vw;
     margin-left: 6vw;
   }
+  .bottomhalf h2 {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .bottomhalf div,
+  .bottomhalf h3,
+  .bottomhalf p,
+  .bottomhalf li {
+    font-size: 3vw;
+  }
   .column__first {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -488,16 +498,6 @@ title-letter__seventh {
     grid-column: 1/2;
     -ms-grid-row: 2;
     grid-row: 2/2;
-  }
-  h2 {
-    font-size: 5vw;
-    font-weight: bold;
-  }
-  h3,
-  p,
-  li,
-  .bottomhalf {
-    font-size: 3vw;
   }
   /*change template for two columngrid and fix center alignment issue that column units would change*/
   .outerwrapper {

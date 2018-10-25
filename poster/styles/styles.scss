@@ -21,23 +21,6 @@ h1 {
     grid-template-rows: repeat(20, 4vw);
 }
 
-h2 {
-    font-size: 2.6vw;
-    font-weight: bold;
-}
-
-div,
-h3,
-p,
-li {
-    font-size: 1.7vw;
-    font-weight: 200;
-}
-
-ul {
-    list-style-type: none;
-}
-
 /*container for whole compostion separating in top and bottom halves*/
 .outerwrapper {
     display: grid;
@@ -66,6 +49,24 @@ ul {
     padding-left: 2vw;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.2vw;
+
+    h2 {
+        font-size: 2.6vw;
+        font-weight: bold;
+    }
+
+    div,
+    h3,
+    p,
+    li {
+        font-size: 1.7vw;
+        font-weight: 200;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
 }
 
 .column__ {
@@ -304,7 +305,7 @@ ul {
 }
 
 /* title letters- different fonts and locations */
-title-letter__ {
+.title-letter__ {
 
     &first {
         font-family: $abstract-display;
@@ -456,6 +457,19 @@ title-letter__ {
         grid-template-rows: 50% 50%;
         line-height: 4vw;
         margin-left: 6vw;
+
+        h2 {
+            font-size: 5vw;
+            font-weight: bold;
+        }
+
+        div,
+        h3,
+        p,
+        li {
+            font-size: 3vw;
+        }
+
     }
 
     .column__ {
@@ -469,18 +483,6 @@ title-letter__ {
             grid-row: 2/2;
 
         }
-    }
-
-    h2 {
-        font-size: 5vw;
-        font-weight: bold;
-    }
-
-    h3,
-    p,
-    li,
-    .bottomhalf {
-        font-size: 3vw;
     }
 
 
