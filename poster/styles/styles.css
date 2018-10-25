@@ -392,72 +392,72 @@ ul {
 
 @media (max-width: 850px) and (min-width: 0px) {
   /*redefined margins for body*/
-  one {
+  .line__one {
     padding-top: 1vw;
   }
-  four {
+  .line__four {
     margin-left: 49vw;
   }
-  five {
+  .line__five {
     margin-top: -3vw;
     margin-left: 39vw;
   }
-  twelve {
+  .line__twelve {
     margin-bottom: -3vw;
   }
-  twentytwo {
+  .line__twentytwo {
     margin-top: 0;
     margin-left: 29vw;
     margin-bottom: 4vw;
   }
-  twentyfive {
+  .line__twentyfive {
     margin-left: 6vw;
   }
-  thirty {
+  .line__thirty {
     margin-bottom: -3vw;
   }
-  thirtyone {
+  .line__thirtyone {
     margin-left: 6vw;
   }
-  thirtytwo {
+  .line__thirtytwo {
     margin-left: 2vw;
   }
-  thirtytwosecond {
+  .line__thirtytwosecond {
     margin-left: 0vw;
   }
-  fortythree {
+  .line__fortythree {
     margin-top: -7.5vw;
     margin-left: 50vw;
     margin-bottom: -4vw;
   }
-  fortyfour {
+  .line__fortyfour {
     margin-left: 47vw;
   }
-  fortyfive {
+  .line__fortyfive {
     margin-left: 43vw;
   }
-  fortysix {
+  .line__fortysix {
     margin-left: 38vw;
   }
-  fortyseven {
+  .line__fortyseven {
     margin-left: 33vw;
   }
-  fortyeight {
+  .line__fortyeight {
     margin-left: 26vw;
   }
-  fortynine {
+  .line__fortynine {
     margin-left: 22vw;
   }
-  fifty {
+  .line__fifty {
     margin-left: 15vw;
   }
-  fiftyone {
+  .line__fiftyone {
     margin-left: 8vw;
   }
-  fiftytwo {
+  .line__fiftytwo {
     margin-left: 15vw;
   }
-  fiftythree {
+  .line__fiftythree {
     display: block;
     font-size: 1.2vw;
     margin-left: 60vw;
@@ -513,7 +513,7 @@ ul {
 
 @media (max-width: 450px) and (min-width: 0px) {
   /*create breathing room between title and content*/
-  one {
+  .line__one {
     margin-top: 20vw;
   }
   h1 {

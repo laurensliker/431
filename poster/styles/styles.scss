@@ -350,96 +350,98 @@ ul {
 @media (max-width:850px) and (min-width:0px) {
 
     /*redefined margins for body*/
-    &one {
-        padding-top: 1vw;
-    }
+    .line__ {
+        &one {
+            padding-top: 1vw;
+        }
 
-    &four {
-        margin-left: 49vw;
-    }
+        &four {
+            margin-left: 49vw;
+        }
 
-    &five {
-        margin-top: -3vw;
-        margin-left: 39vw;
-    }
+        &five {
+            margin-top: -3vw;
+            margin-left: 39vw;
+        }
 
-    &twelve {
-        margin-bottom: -3vw;
-    }
+        &twelve {
+            margin-bottom: -3vw;
+        }
 
-    &twentytwo {
-        margin-top: 0;
-        margin-left: 29vw;
-        margin-bottom: 4vw;
-    }
+        &twentytwo {
+            margin-top: 0;
+            margin-left: 29vw;
+            margin-bottom: 4vw;
+        }
 
-    &twentyfive {
-        margin-left: 6vw;
-    }
+        &twentyfive {
+            margin-left: 6vw;
+        }
 
-    &thirty {
-        margin-bottom: -3vw;
-    }
+        &thirty {
+            margin-bottom: -3vw;
+        }
 
-    &thirtyone {
-        margin-left: 6vw;
-    }
+        &thirtyone {
+            margin-left: 6vw;
+        }
 
-    &thirtytwo {
-        margin-left: 2vw;
-    }
+        &thirtytwo {
+            margin-left: 2vw;
+        }
 
-    &thirtytwosecond {
-        margin-left: 0vw;
-    }
+        &thirtytwosecond {
+            margin-left: 0vw;
+        }
 
-    &fortythree {
-        margin-top: -7.5vw;
-        margin-left: 50vw;
-        margin-bottom: -4vw;
-    }
+        &fortythree {
+            margin-top: -7.5vw;
+            margin-left: 50vw;
+            margin-bottom: -4vw;
+        }
 
-    &fortyfour {
-        margin-left: 47vw;
-    }
+        &fortyfour {
+            margin-left: 47vw;
+        }
 
-    &fortyfive {
-        margin-left: 43vw;
-    }
+        &fortyfive {
+            margin-left: 43vw;
+        }
 
-    &fortysix {
-        margin-left: 38vw;
-    }
+        &fortysix {
+            margin-left: 38vw;
+        }
 
-    &fortyseven {
-        margin-left: 33vw;
-    }
+        &fortyseven {
+            margin-left: 33vw;
+        }
 
-    &fortyeight {
-        margin-left: 26vw;
-    }
+        &fortyeight {
+            margin-left: 26vw;
+        }
 
-    &fortynine {
-        margin-left: 22vw;
-    }
+        &fortynine {
+            margin-left: 22vw;
+        }
 
-    &fifty {
-        margin-left: 15vw;
-    }
+        &fifty {
+            margin-left: 15vw;
+        }
 
-    &fiftyone {
-        margin-left: 8vw;
-    }
+        &fiftyone {
+            margin-left: 8vw;
+        }
 
-    &fiftytwo {
-        margin-left: 15vw;
-    }
+        &fiftytwo {
+            margin-left: 15vw;
+        }
 
-    &fiftythree {
-        display: block;
-        font-size: 1.2vw;
-        margin-left: 60vw;
-        margin-top: -7vw;
+        &fiftythree {
+            display: block;
+            font-size: 1.2vw;
+            margin-left: 60vw;
+            margin-top: -7vw;
+        }
     }
 
     /*bottom half grid establishes and styles 1 column for better readablity*/
@@ -488,7 +490,7 @@ ul {
 
 
     /*create breathing room between title and content*/
-    &one {
+    .line__one {
         margin-top: 20vw;
     }
 
