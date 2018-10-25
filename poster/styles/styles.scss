@@ -1,7 +1,3 @@
-body {
-    background: #202221;
-}
-
 /*all responsive values used becauses the composition and margins are so particular*/
 
 /*google fonts*/
@@ -11,248 +7,8 @@ sans-serif;
 $thick-display:'Raleway',
 sans-serif;
 
-/*body text font size and weight*/
-$font-size: 1.7vw;
-$font-weight: 200;
-
-
-/*left and right margins for body (set in span tag)*/
-.body-lineone {
-    margin-top: 6vw;
-}
-
-.body-linetwo {
-    margin-left: 4vw;
-}
-
-.body-linethree {
-    margin-left: 8vw;
-}
-
-.body-linefour {
-    margin-top: 2vw;
-    margin-left: 30vw;
-}
-
-.body-linefive {
-    margin-top: -2vw;
-    margin-left: 16vw;
-}
-
-.body-linesix {
-    margin-left: 4vw;
-}
-
-.body-lineeight {
-    margin-left: 4vw;
-}
-
-.body-lineten {
-    margin-left: 12vw;
-}
-
-.body-lineeleven {
-    margin-left: 8vw;
-}
-
-.body-linetwelve {
-    margin-left: 12vw;
-    margin-bottom: -2vw;
-}
-
-.body-linethirteen {
-    margin-top: -1.5vw;
-    margin-left: 12vw;
-}
-
-.body-linefourteen {
-    margin-left: 8vw;
-}
-
-.body-linefifteen {
-    margin-left: 4vw;
-}
-
-.body-linesixteen {
-    margin-left: 8vw;
-}
-
-.body-lineeighteen {
-    margin-left: 4vw;
-}
-
-.body-linenineteen {
-    margin-left: 6vw;
-}
-
-.body-linetwenty {
-    margin-left: 12vw;
-}
-
-.body-linetwentyone {
-    margin-left: 16vw;
-}
-
-.body-linetwentytwo {
-    margin-top: 10vw;
-    margin-left: 20vw;
-}
-
-.body-linetwentythree {
-    margin-top: 0;
-    margin-left: 16vw;
-}
-
-.body-linetwentyfour {
-    margin-top: -1vw;
-    margin-left: 14vw;
-    margin-bottom: -1.5vw;
-}
-
-.body-linetwentyfive {
-    margin-left: 7vw;
-}
-
-.body-linetwentysix {
-    margin-left: 10vw;
-}
-
-.body-linetwentyseven {
-    margin-left: 8vw;
-}
-
-.body-linetwentyeight {
-    margin-left: 6vw;
-}
-
-.body-linetwentynine {
-    margin-left: 4vw;
-}
-
-.body-linethirty {
-    margin-left: 16vw;
-    margin-bottom: -1.5vw;
-}
-
-.body-linethirtyone {
-    margin-left: 8vw;
-}
-
-.body-linethirtytwo {
-    margin-left: 4vw;
-}
-
-.body-linethirtytwosecond {
-    margin-left: 2vw;
-}
-
-.body-linethirtythree {
-    margin-left: 8vw;
-}
-
-.body-linethirtyfour {
-    display: inline-block;
-    margin-top: 2vw;
-    margin-left: 18vw;
-}
-
-.body-linethirtyfive {
-    margin-left: 16vw;
-}
-
-.body-linethirtysix {
-    margin-left: 13.6vw;
-}
-
-.body-linethirtyseven {
-    margin-left: 10.8vw;
-}
-
-.body-linethirtyeight {
-    margin-left: 8.4vw;
-}
-
-.body-linethirtynine {
-    margin-left: 6vw;
-}
-
-.body-lineforty {
-    margin-left: 4vw;
-}
-
-.body-linefortyone {
-    margin-left: 2vw;
-}
-
-.body-linefortythree {
-    display: block;
-    margin-top: -4.3vw;
-    margin-left: 30vw;
-    margin-bottom: -2vw;
-}
-
-.body-linefortyfour {
-    margin-left: 28vw;
-}
-
-.body-linefortyfive {
-    margin-left: 25vw;
-}
-
-.body-linefortysix {
-    margin-left: 21vw;
-}
-
-.body-linefortyseven {
-    margin-left: 18vw;
-}
-
-.body-linefortyeight {
-    margin-left: 15vw;
-}
-
-.body-linefortynine {
-    margin-left: 11vw;
-}
-
-.body-linefifty {
-    margin-left: 8vw;
-}
-
-.body-linefiftyone {
-    margin-left: 4vw;
-}
-
-.body-linefiftytwo {
-    margin-left: 8vw;
-}
-
-/*display block to move up like in poster*/
-
-.body-linefiftythree {
-    display: block;
-    font-size: .7vw;
-    margin-left: 36vw;
-    margin-top: -3.5vw;
-}
-
-/*bottom half grid establishing 2 columns and text properties*/
-.bottomhalf {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    margin-top: 0;
-    display: grid;
-    grid-template-columns: repeat(7, 45vw);
-    grid-template-rows: 1fr;
-    line-height: 2vw;
-    padding-left: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2.2vw;
-}
-
-.firstcoloumn {
-    grid-column: 1/4;
-    grid-row: 1/2;
+body {
+    background: #202221;
 }
 
 /*header in top half*/
@@ -265,195 +21,413 @@ h1 {
     grid-template-rows: repeat(20, 4vw);
 }
 
-h2 {
-    font-size: 2.6vw;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: $font-size;
-    font-weight: $font-weight;
-}
-
-li {
-    font-size: $font-size;
-    font-weight: $font-weight;
-}
-
-/*container for whole compostion seperating in top and bottom halves*/
-
+/*container for whole compostion separating in top and bottom halves*/
 .outerwrapper {
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0;
-    padding-left: 0;
     color: #FAFAF2;
 }
 
-p {
-    font-size: $font-size;
-    font-weight: $font-weight;
-}
-
-.secondcoloumn {
-    grid-column: 4/8;
-    grid-row: 1/21;
-}
-
-/* title letters- different fonts and locations */
-.titlefirstletter {
-    font-family: $abstract-display;
-    grid-column: 1/2;
-    grid-row: 12/21;
-}
-
-.titlesecondletter {
-    font-family: $abstract-display;
-    grid-column: 2/3;
-    grid-row: 15/21;
-}
-
-.titlethirdletter {
-    font-family: $thin-display;
-    grid-column: 3/4;
-    grid-row: 12/16;
-}
-
-.titlefourthletter {
-    font-family: $thin-display;
-    grid-column: 4/5;
-    grid-row: 14/20;
-}
-
-.titlefifthletter {
-    font-family: $thick-display;
-    font-size: 28vw;
-    grid-column: 5/6;
-    grid-row: 1/7;
-    margin-left: -6vw;
-    transform: rotate(-30deg);
-}
-
-.titlesixthletter {
-    font-family: $thin-display;
-    grid-column: 6/7;
-    grid-row: 14/20;
-}
-
-.titleseventhletter {
-    font-family: $thin-display;
-    grid-column: 7/8;
-    grid-row: 10/16;
-}
-
 /*title location within outer wrapper*/
-
 .tophalf {
     grid-row: 1/2;
-    grid-column: span;
 }
 
-ul {
-    list-style-type: none;
+/*bottom half grid establishing 2 columns and text properties*/
+.bottomhalf {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(7, 45vw);
+    grid-template-rows: 1fr;
+    line-height: 2vw;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.2vw;
+
+    h2 {
+        font-size: 2.6vw;
+        font-weight: bold;
+    }
+
+    div,
+    h3,
+    p,
+    li {
+        font-size: 1.7vw;
+        font-weight: 200;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
 }
 
-@media (max-width:850px) and (min-width:0px) {
-
-    /*body text font size and weight CHANGE*/
-    $font-sizemediaqone: 3vw;
-
-    /*redefined margins for body*/
-    .body-lineone {
-        padding-top: 1vw;
+/*left and right margins for body (set in div tags)*/
+.line__ {
+    &one {
+        margin-top: 6vw;
     }
 
-    .body-linefour {
-        margin-left: 49vw;
+    &two {
+        margin-left: 4vw;
     }
 
-    .body-linefive {
-        margin-top: -3vw;
-        margin-left: 39vw;
-    }
-
-    .body-linetwelve {
-        margin-bottom: -3vw;
-    }
-
-    .body-linetwentytwo {
-        margin-top: 0;
-        margin-left: 29vw;
-        margin-bottom: 4vw;
-    }
-
-    .body-linetwentyfive {
-        margin-left: 6vw;
-    }
-
-    .body-linethirty {
-        margin-bottom: -3vw;
-    }
-
-    .body-linethirtyone {
-        margin-left: 6vw;
-    }
-
-    .body-linethirtytwo {
-        margin-left: 2vw;
-    }
-
-    .body-linethirtytwosecond {
-        margin-left: 0vw;
-    }
-
-    .body-linefortythree {
-        margin-top: -7.5vw;
-        margin-left: 50vw;
-        margin-bottom: -4vw;
-    }
-
-    .body-linefortyfour {
-        margin-left: 47vw;
-    }
-
-    .body-linefortyfive {
-        margin-left: 43vw;
-    }
-
-    .body-linefortysix {
-        margin-left: 38vw;
-    }
-
-    .body-linefortyseven {
-        margin-left: 33vw;
-    }
-
-    .body-linefortyeight {
-        margin-left: 26vw;
-    }
-
-    .body-linefortynine {
-        margin-left: 22vw;
-    }
-
-    .body-linefifty {
-        margin-left: 15vw;
-    }
-
-    .body-linefiftyone {
+    &three {
         margin-left: 8vw;
     }
 
-    .body-linefiftytwo {
+    &four {
+        margin-top: 2vw;
+        margin-left: 30vw;
+    }
+
+    &five {
+        margin-top: -2vw;
+        margin-left: 16vw;
+    }
+
+    &six {
+        margin-left: 4vw;
+    }
+
+    &eight {
+        margin-left: 4vw;
+    }
+
+    &ten {
+        margin-left: 12vw;
+    }
+
+    &eleven {
+        margin-left: 8vw;
+    }
+
+    &twelve {
+        margin-left: 12vw;
+        margin-bottom: -2vw;
+    }
+
+    &thirteen {
+        margin-top: -1.5vw;
+        margin-left: 12vw;
+    }
+
+    &fourteen {
+        margin-left: 8vw;
+    }
+
+    &fifteen {
+        margin-left: 4vw;
+    }
+
+    &sixteen {
+        margin-left: 8vw;
+    }
+
+    &eighteen {
+        margin-left: 4vw;
+    }
+
+    &nineteen {
+        margin-left: 6vw;
+    }
+
+    &twenty {
+        margin-left: 12vw;
+    }
+
+    &twentyone {
+        margin-left: 16vw;
+    }
+
+    &twentytwo {
+        margin-top: 10vw;
+        margin-left: 20vw;
+    }
+
+    &twentythree {
+        margin-left: 16vw;
+    }
+
+    &twentyfour {
+        margin-top: -1vw;
+        margin-left: 14vw;
+        margin-bottom: -1.5vw;
+    }
+
+    &twentyfive {
+        margin-left: 7vw;
+    }
+
+    &twentysix {
+        margin-left: 10vw;
+    }
+
+    &twentyseven {
+        margin-left: 8vw;
+    }
+
+    &twentyeight {
+        margin-left: 6vw;
+    }
+
+    &twentynine {
+        margin-left: 4vw;
+    }
+
+    &thirty {
+        margin-left: 16vw;
+        margin-bottom: -1.5vw;
+    }
+
+    &thirtyone {
+        margin-left: 8vw;
+    }
+
+    &thirtytwo {
+        margin-left: 4vw;
+    }
+
+    &thirtytwosecond {
+        margin-left: 2vw;
+    }
+
+    &thirtythree {
+        margin-left: 8vw;
+    }
+
+    &thirtyfour {
+        display: inline-block;
+        margin-top: 2vw;
+        margin-left: 18vw;
+    }
+
+    &thirtyfive {
+        margin-left: 16vw;
+    }
+
+    &thirtysix {
+        margin-left: 13.6vw;
+    }
+
+    &thirtyseven {
+        margin-left: 10.8vw;
+    }
+
+    &thirtyeight {
+        margin-left: 8.4vw;
+    }
+
+    &thirtynine {
+        margin-left: 6vw;
+    }
+
+    &forty {
+        margin-left: 4vw;
+    }
+
+    &fortyone {
+        margin-left: 2vw;
+    }
+
+    &fortythree {
+        display: block;
+        margin-top: -4.3vw;
+        margin-left: 30vw;
+    }
+
+    &fortyfour {
+        margin-left: 28vw;
+    }
+
+    &fortyfive {
+        margin-left: 25vw;
+    }
+
+    &fortysix {
+        margin-left: 21vw;
+    }
+
+    &fortyseven {
+        margin-left: 18vw;
+    }
+
+    &fortyeight {
         margin-left: 15vw;
     }
 
-    .body-linefiftythree {
-        display: block;
-        font-size: 1.2vw;
-        margin-left: 60vw;
-        margin-top: -7vw;
+    &fortynine {
+        margin-left: 11vw;
+    }
+
+    &fifty {
+        margin-left: 8vw;
+    }
+
+    &fiftyone {
+        margin-left: 4vw;
+    }
+
+    &fiftytwo {
+        margin-left: 8vw;
+    }
+
+    /*display block to move up like in poster*/
+
+    &fiftythree {
+        font-size: .7vw !important; // needed to override default paragraph font-size
+        margin-left: 36vw;
+        margin-top: -3.5vw;
+    }
+}
+
+/* title letters- different fonts and locations */
+.title-letter__ {
+
+    &first {
+        font-family: $abstract-display;
+        grid-column: 1/2;
+        grid-row: 12/21;
+    }
+
+    &second {
+        font-family: $abstract-display;
+        grid-column: 2/3;
+        grid-row: 15/21;
+    }
+
+    &third {
+        font-family: $thin-display;
+        grid-column: 3/4;
+        grid-row: 12/16;
+    }
+
+    &fourth {
+        font-family: $thin-display;
+        grid-column: 4/5;
+        grid-row: 14/20;
+    }
+
+    &fifth {
+        font-family: $thick-display;
+        font-size: 28vw;
+        grid-column: 5/6;
+        grid-row: 1/7;
+        margin-left: -6vw;
+        transform: rotate(-30deg);
+    }
+
+    &sixth {
+        font-family: $thin-display;
+        grid-column: 6/7;
+        grid-row: 14/20;
+    }
+
+    &seventh {
+        font-family: $thin-display;
+        grid-column: 7/8;
+        grid-row: 10/16;
+    }
+}
+
+@media (max-width:850px) {
+
+    /*redefined margins for body*/
+    .line__ {
+        &one {
+            padding-top: 1vw;
+        }
+
+        &four {
+            margin-left: 49vw;
+        }
+
+        &five {
+            margin-top: -3vw;
+            margin-left: 39vw;
+        }
+
+        &twelve {
+            margin-bottom: -3vw;
+        }
+
+        &twentytwo {
+            margin-left: 29vw;
+            margin-bottom: 4vw;
+        }
+
+        &twentyfive {
+            margin-left: 6vw;
+        }
+
+        &thirty {
+            margin-bottom: -3vw;
+        }
+
+        &thirtyone {
+            margin-left: 6vw;
+        }
+
+        &thirtytwo {
+            margin-left: 2vw;
+        }
+
+        &thirtytwosecond {
+            margin-left: 0vw;
+        }
+
+        &fortythree {
+            margin-top: -7.5vw;
+            margin-left: 50vw;
+            margin-bottom: -4vw;
+        }
+
+        &fortyfour {
+            margin-left: 47vw;
+        }
+
+        &fortyfive {
+            margin-left: 43vw;
+        }
+
+        &fortysix {
+            margin-left: 38vw;
+        }
+
+        &fortyseven {
+            margin-left: 33vw;
+        }
+
+        &fortyeight {
+            margin-left: 26vw;
+        }
+
+        &fortynine {
+            margin-left: 22vw;
+        }
+
+        &fifty {
+            margin-left: 15vw;
+        }
+
+        &fiftyone {
+            margin-left: 8vw;
+        }
+
+        &fiftytwo {
+            margin-left: 15vw;
+        }
+
+        &fiftythree {
+            display: block;
+            font-size: 1.2vw;
+            margin-left: 60vw;
+            margin-top: -7vw;
+        }
     }
 
     /*bottom half grid establishes and styles 1 column for better readablity*/
@@ -461,29 +435,22 @@ ul {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
-        font-size: $font-sizemediaqone;
         line-height: 4vw;
         margin-left: 6vw;
-    }
 
-    .firstcoloumn {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
+        h2 {
+            font-size: 5vw;
+            font-weight: bold;
+        }
 
-    h2 {
-        font-size: 5vw;
-        font-weight: bold;
-    }
+        div,
+        h3,
+        p,
+        li {
+            font-size: 3vw;
+        }
 
-    h3 {
-        font-size: $font-sizemediaqone;
     }
-
-    li {
-        font-size: $font-sizemediaqone;
-    }
-
 
     /*change template for two columngrid and fix center alignment issue that column units would change*/
 
@@ -493,22 +460,13 @@ ul {
         grid-template-rows: 50% 50%;
         margin-left: -1vw;
     }
-
-    p {
-        font-size: $font-sizemediaqone;
-    }
-
-    .secondcoloumn {
-        grid-column: 1/2;
-        grid-row: 2/2;
-    }
 }
 
-@media (max-width:450px) and (min-width:0px) {
+@media (max-width:450px) {
 
 
     /*create breathing room between title and content*/
-    .body-lineone {
+    .line__one {
         margin-top: 20vw;
     }
 
@@ -521,26 +479,28 @@ ul {
         margin-left: -2vw;
     }
 
-    .titlesecondletter {
-        margin-top: 5vw;
-    }
+    .title-letter__ {
+        &second {
+            margin-top: 5vw;
+        }
 
-    .titlethirdletter {
-        margin-left: -3vw;
-    }
+        &third {
+            margin-left: -3vw;
+        }
 
-    .titlefifthletter {
-        grid-column: 5/6;
-        grid-row: 2/7;
-        font-size: 34vw;
-        margin-left: -10vw;
-    }
+        &fifth {
+            grid-column: 5/6;
+            grid-row: 2/7;
+            font-size: 34vw;
+            margin-left: -10vw;
+        }
 
-    .titlesixthletter {
-        margin-left: -2vw;
-    }
+        &sixth {
+            margin-left: -2vw;
+        }
 
-    .titleseventhletter {
-        margin-left: -4vw;
+        &seventh {
+            margin-left: -4vw;
+        }
     }
 }
