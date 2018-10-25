@@ -304,7 +304,7 @@ li {
 }
 
 /* title letters- different fonts and locations */
-.titlefirstletter {
+title-letter__first {
   font-family: "Megrim";
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -314,7 +314,7 @@ li {
   grid-row: 12/21;
 }
 
-.titlesecondletter {
+title-letter__second {
   font-family: "Megrim";
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -324,7 +324,7 @@ li {
   grid-row: 15/21;
 }
 
-.titlethirdletter {
+title-letter__third {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -334,7 +334,7 @@ li {
   grid-row: 12/16;
 }
 
-.titlefourthletter {
+title-letter__fourth {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -344,7 +344,7 @@ li {
   grid-row: 14/20;
 }
 
-.titlefifthletter {
+title-letter__fifth {
   font-family: "Raleway", sans-serif;
   font-size: 28vw;
   -ms-grid-column: 5;
@@ -358,7 +358,7 @@ li {
           transform: rotate(-30deg);
 }
 
-.titlesixthletter {
+title-letter__sixth {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-column: 6;
   -ms-grid-column-span: 1;
@@ -368,7 +368,7 @@ li {
   grid-row: 14/20;
 }
 
-.titleseventhletter {
+title-letter__seventh {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-column: 7;
   -ms-grid-column-span: 1;
@@ -523,13 +523,13 @@ ul {
   .outerwrapper {
     margin-left: -2vw;
   }
-  .titlesecondletter {
+  .title-letter__second {
     margin-top: 5vw;
   }
-  .titlethirdletter {
+  .title-letter__third {
     margin-left: -3vw;
   }
-  .titlefifthletter {
+  .title-letter__fifth {
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
     grid-column: 5/6;
@@ -539,10 +539,10 @@ ul {
     font-size: 34vw;
     margin-left: -10vw;
   }
-  .titlesixthletter {
+  .title-letter__sixth {
     margin-left: -2vw;
   }
-  .titleseventhletter {
+  .title-letter__seventh {
     margin-left: -4vw;
   }
 }

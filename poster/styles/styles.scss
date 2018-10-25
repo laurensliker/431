@@ -294,49 +294,52 @@ li {
 }
 
 /* title letters- different fonts and locations */
-.titlefirstletter {
-    font-family: $abstract-display;
-    grid-column: 1/2;
-    grid-row: 12/21;
-}
+title-letter__ {
 
-.titlesecondletter {
-    font-family: $abstract-display;
-    grid-column: 2/3;
-    grid-row: 15/21;
-}
+    &first {
+        font-family: $abstract-display;
+        grid-column: 1/2;
+        grid-row: 12/21;
+    }
 
-.titlethirdletter {
-    font-family: $thin-display;
-    grid-column: 3/4;
-    grid-row: 12/16;
-}
+    &second {
+        font-family: $abstract-display;
+        grid-column: 2/3;
+        grid-row: 15/21;
+    }
 
-.titlefourthletter {
-    font-family: $thin-display;
-    grid-column: 4/5;
-    grid-row: 14/20;
-}
+    &third {
+        font-family: $thin-display;
+        grid-column: 3/4;
+        grid-row: 12/16;
+    }
 
-.titlefifthletter {
-    font-family: $thick-display;
-    font-size: 28vw;
-    grid-column: 5/6;
-    grid-row: 1/7;
-    margin-left: -6vw;
-    transform: rotate(-30deg);
-}
+    &fourth {
+        font-family: $thin-display;
+        grid-column: 4/5;
+        grid-row: 14/20;
+    }
 
-.titlesixthletter {
-    font-family: $thin-display;
-    grid-column: 6/7;
-    grid-row: 14/20;
-}
+    &fifth {
+        font-family: $thick-display;
+        font-size: 28vw;
+        grid-column: 5/6;
+        grid-row: 1/7;
+        margin-left: -6vw;
+        transform: rotate(-30deg);
+    }
 
-.titleseventhletter {
-    font-family: $thin-display;
-    grid-column: 7/8;
-    grid-row: 10/16;
+    &sixth {
+        font-family: $thin-display;
+        grid-column: 6/7;
+        grid-row: 14/20;
+    }
+
+    &seventh {
+        font-family: $thin-display;
+        grid-column: 7/8;
+        grid-row: 10/16;
+    }
 }
 
 /*title location within outer wrapper*/
@@ -509,26 +512,28 @@ ul {
         margin-left: -2vw;
     }
 
-    .titlesecondletter {
-        margin-top: 5vw;
-    }
+    .title-letter__ {
+        &second {
+            margin-top: 5vw;
+        }
 
-    .titlethirdletter {
-        margin-left: -3vw;
-    }
+        &third {
+            margin-left: -3vw;
+        }
 
-    .titlefifthletter {
-        grid-column: 5/6;
-        grid-row: 2/7;
-        font-size: 34vw;
-        margin-left: -10vw;
-    }
+        &fifth {
+            grid-column: 5/6;
+            grid-row: 2/7;
+            font-size: 34vw;
+            margin-left: -10vw;
+        }
 
-    .titlesixthletter {
-        margin-left: -2vw;
-    }
+        &sixth {
+            margin-left: -2vw;
+        }
 
-    .titleseventhletter {
-        margin-left: -4vw;
+        &seventh {
+            margin-left: -4vw;
+        }
     }
 }
