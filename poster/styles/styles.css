@@ -76,24 +76,6 @@ h1 {
   list-style-type: none;
 }
 
-.column__first {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.column__second {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 4;
-  grid-column: 4/8;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 20;
-  grid-row: 1/21;
-}
-
 /*left and right margins for body (set in div tags)*/
 .line__ {
   /*display block to move up like in poster*/
@@ -483,21 +465,6 @@ h1 {
   .bottomhalf p,
   .bottomhalf li {
     font-size: 3vw;
-  }
-  .column__first {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-  .column__second {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 2;
-    grid-row: 2/2;
   }
   /*change template for two columngrid and fix center alignment issue that column units would change*/
   .outerwrapper {

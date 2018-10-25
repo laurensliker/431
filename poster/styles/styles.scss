@@ -69,20 +69,6 @@ h1 {
 
 }
 
-.column__ {
-    &first {
-        grid-column: 1/4;
-        grid-row: 1/2;
-
-    }
-
-    &second {
-        grid-column: 4/8;
-        grid-row: 1/21;
-
-    }
-}
-
 /*left and right margins for body (set in div tags)*/
 .line__ {
     &one {
@@ -471,20 +457,6 @@ h1 {
         }
 
     }
-
-    .column__ {
-        &first {
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-
-        &second {
-            grid-column: 1/2;
-            grid-row: 2/2;
-
-        }
-    }
-
 
     /*change template for two columngrid and fix center alignment issue that column units would change*/
 
