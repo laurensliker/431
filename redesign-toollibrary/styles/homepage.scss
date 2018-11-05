@@ -4,7 +4,7 @@ sans-serif;
 
 /*google fonts, weights*/
 $bold-weight: 400;
-$regular-weight: 500;
+
 
 
 body {
@@ -20,4 +20,12 @@ header {
 mission-statement {
     font-size: 4vw;
     font-weight: $regular-weight;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: none;
 }
