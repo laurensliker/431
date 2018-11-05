@@ -3,9 +3,8 @@ $sans-serif: 'Roboto',
 sans-serif;
 
 /*google fonts, weights*/
-$bold-weight: 400;
-
-
+$bold-weight: 500;
+$regular-weight: 300;
 
 body {
     background: #f5f3f0;
@@ -14,6 +13,7 @@ body {
 
 h1 {
     font-size: 1vw;
+    font-weight: $bold-weight;
 }
 
 header {
@@ -21,10 +21,12 @@ header {
     font-size: 4vw;
 }
 
-mission-statement {
-    font-size: 4vw;
+.mission-statement {
+    font-size: 3vw;
     font-weight: $regular-weight;
 }
+
+
 
 ul {
     list-style-type: none;

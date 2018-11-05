@@ -5,13 +5,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
 header {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 4vw;
 }
 
-mission-statement {
-  font-size: 4vw;
-  font-weight: 500;
+.mission-statement {
+  font-size: 3vw;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=homepage.css.map */
