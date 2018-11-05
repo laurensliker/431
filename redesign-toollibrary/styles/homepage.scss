@@ -12,8 +12,9 @@ body {
 }
 
 h1 {
-    font-size: 1vw;
-    font-weight: $bold-weight;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    letter-spacing: .4vw;
 }
 
 header {
@@ -26,7 +27,11 @@ header {
     font-weight: $regular-weight;
 }
 
-
+nav {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    letter-spacing: .4vw;
+}
 
 ul {
     list-style-type: none;
