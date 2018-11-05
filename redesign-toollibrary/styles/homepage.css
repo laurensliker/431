@@ -2,5 +2,10 @@
 /*google fonts, weights*/
 body {
   background: #f5f3f0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  font-weight: 400;
 }
 /*# sourceMappingURL=homepage.css.map */

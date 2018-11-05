@@ -9,6 +9,9 @@ $regular-weight: 500;
 
 body {
     background: #f5f3f0;
+    font-family: $sans-serif;
 }
 
-header {}
+header {
+    font-weight: $bold-weight;
+}
