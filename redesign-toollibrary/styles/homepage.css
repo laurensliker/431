@@ -12,8 +12,13 @@ h1 {
 }
 
 header {
+  grid-column: span;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
   font-weight: 500;
   font-size: 4vw;
+  padding-left: 1vw;
 }
 
 .mission-statement {
@@ -22,9 +27,22 @@ header {
 }
 
 nav {
+  grid-column: span;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
   font-size: 1.5vw;
   text-transform: uppercase;
   letter-spacing: .4vw;
+}
+
+.site-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10fr;
+      grid-template-columns: 10fr;
+  -ms-grid-rows: 21vw;
+      grid-template-rows: 21vw;
 }
 
 ul {

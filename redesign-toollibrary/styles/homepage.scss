@@ -18,8 +18,11 @@ h1 {
 }
 
 header {
+    grid-column: span;
+    grid-row: 3/4;
     font-weight: $bold-weight;
     font-size: 4vw;
+    padding-left: 1vw;
 }
 
 .mission-statement {
@@ -28,9 +31,17 @@ header {
 }
 
 nav {
+    grid-column: span;
+    grid-row: 1/2;
     font-size: 1.5vw;
     text-transform: uppercase;
     letter-spacing: .4vw;
+}
+
+.site-wrapper {
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 21vw;
 }
 
 ul {
