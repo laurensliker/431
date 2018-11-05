@@ -12,6 +12,10 @@ body {
     font-family: $sans-serif;
 }
 
+h1 {
+    font-size: 1vw;
+}
+
 header {
     font-weight: $bold-weight;
     font-size: 4vw;
@@ -23,9 +27,5 @@ mission-statement {
 }
 
 ul {
-    list-style-type: none;
-}
-
-ol {
     list-style-type: none;
 }
