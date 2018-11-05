@@ -1,4 +1,4 @@
-/*google fonts, only one sans serif used*/
+/*google fonts, only one sans serif used accesss at top of page for in progress code*/
 $sans-serif: 'Roboto',
 sans-serif;
 
@@ -14,4 +14,10 @@ body {
 
 header {
     font-weight: $bold-weight;
+    font-size: 4vw;
+}
+
+mission-statement {
+    font-size: 4vw;
+    font-weight: $regular-weight;
 }
