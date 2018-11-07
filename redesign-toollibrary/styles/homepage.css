@@ -36,6 +36,14 @@ nav {
   letter-spacing: .4vw;
 }
 
+.nav-interior-contents {
+  font-size: 1vw;
+}
+
+.nav-logo {
+  width: 50%;
+}
+
 .site-wrapper {
   display: -ms-grid;
   display: grid;
