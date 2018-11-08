@@ -31,6 +31,9 @@ header {
 }
 
 nav {
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 1vw;
     grid-column: span;
     grid-row: 1/2;
     font-size: 1.5vw;
@@ -38,10 +41,11 @@ nav {
     letter-spacing: .4vw;
 }
 
-.nav-section-heads {}
+//temporarily on display none until learning mobile nav w js//
 
-.nav-interior-contents {
+.nav-child {
     font-size: 1vw;
+    display: none;
 }
 
 //display none until figuring out sizing issues//
@@ -50,6 +54,10 @@ nav {
     display: none;
     width: 50%;
 }
+
+.nav-parent {}
+
+.nav-wrapper {}
 
 .site-wrapper {
     display: grid;

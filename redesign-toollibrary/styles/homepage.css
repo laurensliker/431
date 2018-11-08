@@ -27,6 +27,12 @@ header {
 }
 
 nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10fr;
+      grid-template-columns: 10fr;
+  -ms-grid-rows: 1vw;
+      grid-template-rows: 1vw;
   grid-column: span;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -36,8 +42,9 @@ nav {
   letter-spacing: .4vw;
 }
 
-.nav-interior-contents {
+.nav-child {
   font-size: 1vw;
+  display: none;
 }
 
 .nav-logo {
