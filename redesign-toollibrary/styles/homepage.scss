@@ -56,11 +56,6 @@ button {
     grid-row: 8/9;
 }
 
-
-#child {
-    display: none;
-}
-
 .content-slider {
     grid-column: 4/11;
     grid-row: 11/14;
@@ -126,6 +121,16 @@ nav {
     letter-spacing: $capsspacing;
 }
 
+#nav-child {
+    display: none;
+}
+
+.nav-logo {
+    width: 50%;
+}
+
+#nav-parent {}
+
 .nav-sections {
     float: left;
     display: inline;
@@ -133,9 +138,7 @@ nav {
     padding-top: 2vw;
 }
 
-.nav-logo {
-    width: 50%;
-}
+
 
 ol {
     list-style-type: none;

@@ -63,10 +63,6 @@ button {
   grid-row: 8/9;
 }
 
-#child {
-  display: none;
-}
-
 .content-slider {
   -ms-grid-column: 4;
   -ms-grid-column-span: 7;
@@ -157,15 +153,19 @@ nav {
   letter-spacing: 0.2vw;
 }
 
+#nav-child {
+  display: none;
+}
+
+.nav-logo {
+  width: 50%;
+}
+
 .nav-sections {
   float: left;
   display: inline;
   padding-left: 5vw;
   padding-top: 2vw;
-}
-
-.nav-logo {
-  width: 50%;
 }
 
 ol {
