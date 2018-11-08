@@ -49,10 +49,15 @@ nav {
     position: sticky;
     grid-column: 1/4;
     grid-row: 1/2;
-    font-size: .3em;
+    display: grid;
+    grid-template-columns: repeat (10, 1fr);
+    grid-template-rows: 1vw;
+    font-size: .4em;
     text-transform: uppercase;
     letter-spacing: .4vw;
 }
+
+
 
 
 .nav-logo {
