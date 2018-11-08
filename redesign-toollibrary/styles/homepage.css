@@ -1,0 +1,59 @@
+/*google fonts, only one sans serif used accesss at top of page for in progress code*/
+/*google fonts, weights*/
+body {
+  background: #f5f3f0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  letter-spacing: .4vw;
+}
+
+header {
+  grid-column: span;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  font-weight: 500;
+  font-size: 4vw;
+  padding-left: 1vw;
+}
+
+.mission-statement {
+  font-size: 3vw;
+  font-weight: 300;
+}
+
+nav {
+  grid-column: span;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  letter-spacing: .4vw;
+}
+
+.nav-interior-contents {
+  font-size: 1vw;
+}
+
+.nav-logo {
+  width: 50%;
+}
+
+.site-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10fr;
+      grid-template-columns: 10fr;
+  -ms-grid-rows: 21vw;
+      grid-template-rows: 21vw;
+}
+
+ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=homepage.css.map */
