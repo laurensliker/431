@@ -153,6 +153,7 @@ header {
 nav {
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -166,6 +167,10 @@ nav {
 
 #nav-child {
   display: none;
+}
+
+#nav-parent:hover #nav-child {
+  display: inline;
 }
 
 .nav-logo {
