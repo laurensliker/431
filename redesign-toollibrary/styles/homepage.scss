@@ -9,7 +9,7 @@ $regular-weight: 400;
 
 /*caps text*/
 $capsspacing: .2vw;
-$capssize: 1vw;
+$capssize: 12px;
 
 /*far left page margin*/
 $left-margin: 4vw;
@@ -25,7 +25,7 @@ $left-margin: 4vw;
 .about-copy {
     grid-column: 4/10;
     grid-row: 5/8;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
 body {

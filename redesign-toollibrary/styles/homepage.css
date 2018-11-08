@@ -19,7 +19,7 @@
   -ms-grid-row: 5;
   -ms-grid-row-span: 3;
   grid-row: 5/8;
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 
 body {
@@ -32,7 +32,7 @@ button {
   color: #f5f3f0;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
-  font-size: 1vw;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -110,7 +110,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1vw;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
 }
@@ -159,7 +159,7 @@ nav {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-size: 1vw;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
 }
