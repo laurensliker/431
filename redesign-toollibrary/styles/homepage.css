@@ -82,13 +82,16 @@ button {
   display: grid;
   -ms-grid-columns: (1fr)[10];
       grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (1fr)[16];
-      grid-template-rows: repeat(16, 1fr);
+  -ms-grid-rows: (1fr)[15];
+      grid-template-rows: repeat(15, 1fr);
 }
 
 footer {
   background: #1b2d34;
   color: #f5f3f0;
+  border-top: #fc5957;
+  border-top-width: 30vw;
+  border-top-style: solid;
 }
 
 h1 {
@@ -171,7 +174,6 @@ nav {
 
 .nav-sections {
   float: left;
-  display: inline;
   padding-left: 5vw;
   padding-top: 4vw;
 }
