@@ -11,15 +11,25 @@ body {
     font-family: $sans-serif;
 }
 
+#child {
+    display: none;
+}
+
 h1 {
+    font-size: 3vw;
+    letter-spacing: .1vw;
+}
+
+h2 {
     font-size: 1.5vw;
     text-transform: uppercase;
     letter-spacing: .4vw;
 }
 
 header {
-    grid-column: span;
-    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     font-weight: $bold-weight;
     font-size: 4vw;
     padding-left: 1vw;
@@ -31,6 +41,7 @@ header {
 }
 
 nav {
+    position: sticky;
     grid-column: span;
     grid-row: 1/2;
     font-size: 1.5vw;
@@ -38,11 +49,6 @@ nav {
     letter-spacing: .4vw;
 }
 
-.nav-section-heads {}
-
-.nav-interior-contents {
-    font-size: 1vw;
-}
 
 .nav-logo {
     width: 50%;
