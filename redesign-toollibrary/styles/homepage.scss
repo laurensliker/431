@@ -25,6 +25,11 @@ header {
     padding-left: 1vw;
 }
 
+.hero-text {
+    grid-column: span;
+    grid-row: 3/5;
+}
+
 .mission-statement {
     font-size: 3vw;
     font-weight: $regular-weight;
@@ -33,7 +38,7 @@ header {
 //section grid, text style//
 
 nav {
-    grid-column: span;
+    grid-column: 1/11;
     grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat (10, 1fr);

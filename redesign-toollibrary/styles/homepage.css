@@ -21,13 +21,22 @@ header {
   padding-left: 1vw;
 }
 
+.hero-text {
+  grid-column: span;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+}
+
 .mission-statement {
   font-size: 3vw;
   font-weight: 300;
 }
 
 nav {
-  grid-column: span;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/11;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
