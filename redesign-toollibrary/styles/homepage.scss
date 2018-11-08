@@ -6,9 +6,15 @@ sans-serif;
 $bold-weight: 600;
 $regular-weight: 400;
 
+/*caps text*/
+$capsspacing: .4vw;
+
+
+
 .aboutus {
     grid-column: 2/4;
     grid-row: 5/6;
+    font-size: 1.5vw;
 }
 
 .about-copy {
@@ -21,9 +27,17 @@ body {
     font-family: $sans-serif;
 }
 
+button {
+    background: #fc5957;
+    color: #f5f3f0;
+    text-transform: uppercase;
+    letter-spacing: $capsspacing;
+}
+
 .call-to-action1 {
     grid-column: 4/5;
     grid-row: 8/9;
+    text-transform: uppercase;
 }
 
 .call-to-action2 {
@@ -32,7 +46,7 @@ body {
 }
 
 .call-to-action3 {
-    grid-column: 8/9;
+    grid-column: 8/10;
     grid-row: 8/9;
 }
 
@@ -51,7 +65,7 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(21, 1fr);
-    padding-top: 10%;
+
 }
 
 h1 {
@@ -65,7 +79,7 @@ h1 {
 h2 {
     font-size: 1vw;
     text-transform: uppercase;
-    letter-spacing: .4vw;
+    letter-spacing: $capsspacing;
 }
 
 header {
@@ -76,9 +90,10 @@ header {
 }
 
 .heroimage {
-    width: 80%;
+    width: 86%;
     grid-column: 4/11;
     grid-row: 1/5;
+    padding-bottom: 5vw;
 }
 
 .mission-statement {
@@ -98,7 +113,7 @@ nav {
     grid-row: 1/2;
     font-size: 1vw;
     text-transform: uppercase;
-    letter-spacing: .2vw;
+    letter-spacing: $capsspacing;
 }
 
 .nav-sections {

@@ -1,5 +1,6 @@
 /*google fonts, only one sans serif used accesss at top of page for in progress code*/
 /*google fonts, weights*/
+/*caps text*/
 .aboutus {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -7,6 +8,7 @@
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
+  font-size: 1.5vw;
 }
 
 .about-copy {
@@ -23,6 +25,13 @@ body {
   font-family: "Archivo", sans-serif;
 }
 
+button {
+  background: #fc5957;
+  color: #f5f3f0;
+  text-transform: uppercase;
+  letter-spacing: 0.4vw;
+}
+
 .call-to-action1 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -30,6 +39,7 @@ body {
   -ms-grid-row: 8;
   -ms-grid-row-span: 1;
   grid-row: 8/9;
+  text-transform: uppercase;
 }
 
 .call-to-action2 {
@@ -43,8 +53,8 @@ body {
 
 .call-to-action3 {
   -ms-grid-column: 8;
-  -ms-grid-column-span: 1;
-  grid-column: 8/9;
+  -ms-grid-column-span: 2;
+  grid-column: 8/10;
   -ms-grid-row: 8;
   -ms-grid-row-span: 1;
   grid-row: 8/9;
@@ -70,7 +80,6 @@ body {
       grid-template-columns: repeat(10, 1fr);
   -ms-grid-rows: (1fr)[21];
       grid-template-rows: repeat(21, 1fr);
-  padding-top: 10%;
 }
 
 h1 {
@@ -88,7 +97,7 @@ h1 {
 h2 {
   font-size: 1vw;
   text-transform: uppercase;
-  letter-spacing: .4vw;
+  letter-spacing: 0.4vw;
 }
 
 header {
@@ -102,13 +111,14 @@ header {
 }
 
 .heroimage {
-  width: 80%;
+  width: 86%;
   -ms-grid-column: 4;
   -ms-grid-column-span: 7;
   grid-column: 4/11;
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   grid-row: 1/5;
+  padding-bottom: 5vw;
 }
 
 .mission-statement {
@@ -137,7 +147,7 @@ nav {
   grid-row: 1/2;
   font-size: 1vw;
   text-transform: uppercase;
-  letter-spacing: .2vw;
+  letter-spacing: 0.4vw;
 }
 
 .nav-sections {
