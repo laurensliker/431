@@ -102,9 +102,11 @@ h1 {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 4vw;
-  margin-top: 11vw;
+  margin-top: 8vw;
   padding-left: 4vw;
   font-weight: 700;
+  font-size: 3vw;
+  margin-bottom: 0;
 }
 
 h2 {
