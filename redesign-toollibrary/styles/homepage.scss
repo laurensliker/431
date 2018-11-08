@@ -6,19 +6,52 @@ sans-serif;
 $bold-weight: 600;
 $regular-weight: 400;
 
+.aboutus {
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+
+.about-copy {
+    grid-column: 4/10;
+    grid-row: 5/8;
+}
+
 body {
     background: #f5f3f0;
     font-family: $sans-serif;
 }
 
+.call-to-action1 {
+    grid-column: 4/5;
+    grid-row: 8/9;
+}
+
+.call-to-action2 {
+    grid-column: 6/7;
+    grid-row: 8/9;
+}
+
+.call-to-action3 {
+    grid-column: 8/9;
+    grid-row: 8/9;
+}
+
+
 #child {
     display: none;
 }
 
+.content-slider {
+    grid-column: 4/11;
+    grid-row: 11/14;
+}
+
+
 .content-wrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 21vw;
+    grid-template-rows: repeat(21, 1fr);
+    padding-top: 10%;
 }
 
 h1 {
@@ -45,6 +78,7 @@ header {
 .heroimage {
     width: 80%;
     grid-column: 4/11;
+    grid-row: 1/5;
 }
 
 .mission-statement {
@@ -78,6 +112,15 @@ nav {
     width: 50%;
 }
 
+ol {
+    list-style-type: none;
+}
+
 ul {
     list-style-type: none;
+}
+
+.upcomingevents-copy {
+    grid-column: 4/11;
+    grid-row: 9/10;
 }
