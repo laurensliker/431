@@ -15,6 +15,12 @@ body {
     display: none;
 }
 
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 21vw;
+}
+
 h1 {
     grid-column: 1/4;
     grid-row: 2/3;
@@ -37,7 +43,8 @@ header {
 }
 
 .heroimage {
-    width: 50%;
+    width: 80%;
+    grid-column: 4/11;
 }
 
 .mission-statement {
@@ -67,16 +74,8 @@ nav {
     padding-top: 2vw;
 }
 
-li {}
-
 .nav-logo {
     width: 50%;
-}
-
-.site-wrapper {
-    display: grid;
-    grid-template-columns: 10fr;
-    grid-template-rows: 21vw;
 }
 
 ul {

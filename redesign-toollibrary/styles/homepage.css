@@ -9,6 +9,15 @@ body {
   display: none;
 }
 
+.content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: 21vw;
+      grid-template-rows: 21vw;
+}
+
 h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -38,7 +47,10 @@ header {
 }
 
 .heroimage {
-  width: 50%;
+  width: 80%;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 7;
+  grid-column: 4/11;
 }
 
 .mission-statement {
@@ -79,15 +91,6 @@ nav {
 
 .nav-logo {
   width: 50%;
-}
-
-.site-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 10fr;
-      grid-template-columns: 10fr;
-  -ms-grid-rows: 21vw;
-      grid-template-rows: 21vw;
 }
 
 ul {
