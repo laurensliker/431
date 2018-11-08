@@ -14,12 +14,12 @@ $capsspacing: .4vw;
 .aboutus {
     grid-column: 2/4;
     grid-row: 5/6;
-    font-size: 1.5vw;
 }
 
 .about-copy {
     grid-column: 4/10;
     grid-row: 5/8;
+    font-size: 1.5vw;
 }
 
 body {
@@ -86,7 +86,9 @@ header {
     display: grid;
     grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat(4, 25%);
-    padding-left: 3vw;
+    margin-top: -1vw;
+    margin-left: -1vw;
+
 }
 
 .heroimage {
@@ -130,6 +132,14 @@ nav {
 ol {
     list-style-type: none;
 }
+
+.pinkbox1 {
+    grid-column: 1/4;
+    grid-row: 1/5;
+    z-index: -1;
+    display: inline;
+}
+
 
 ul {
     list-style-type: none;
