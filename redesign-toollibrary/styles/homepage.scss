@@ -131,6 +131,7 @@ nav {
     font-size: $capssize;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
+    margin: 1vw;
 }
 
 #nav-child {
@@ -138,7 +139,7 @@ nav {
 }
 
 #nav-parent:hover #nav-child {
-    display: inline;
+    display: block;
 }
 
 .nav-logo {
@@ -148,7 +149,7 @@ nav {
 .nav-sections {
     float: left;
     padding-left: 5vw;
-    padding-top: 4vw;
+    padding: 3vw;
 }
 
 ol {
