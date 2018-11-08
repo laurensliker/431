@@ -12,14 +12,18 @@ body {
 }
 
 h1 {
+    font-size: 2vw;
+}
+
+h2 {
     font-size: 1.5vw;
     text-transform: uppercase;
     letter-spacing: .4vw;
 }
 
 header {
-    grid-column: span;
-    grid-row: 3/4;
+    grid-column: 1/11;
+    grid-row: 1/4;
     font-weight: $bold-weight;
     font-size: 4vw;
     padding-left: 1vw;
