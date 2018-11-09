@@ -29,8 +29,8 @@
         <!-- how to insert svg logos and resize -->
 
         <!-- revisit div as element choice, li doesnt display? -->
-        <div class="section1" id="nav-parent">logo</div>
-        <div class="section2" id="nav-parent">about
+        <div class="navitem1" id="nav-parent">logo</div>
+        <div class="navitem2" id="nav-parent">about
             <ul id="nav-child">
                 <li>
                     <a>Hours and Contact Information</a>
@@ -47,7 +47,7 @@
             </ul>
         </div>
 
-        <div class="section3" id="nav-parent">get involved
+        <div class="navitem3" id="nav-parent">get involved
             <ul id="nav-child">
                 <li>
                     <a>Classes</a>
@@ -61,13 +61,13 @@
             </ul>
 
         </div>
-        <div class="section4">
+        <div class="navitem4">
             <a>Fix It Fair</a>
         </div>
-        <div class="section5">
+        <div class="navitem5">
             <a>News</a>
         </div>
-        <div class="section6">
+        <div class="navitem6">
             <a>Donate</a>
         </div>
 
@@ -76,6 +76,13 @@
     <img alt="Image of hands passing plywood through a bandsaw" class="heroimage" src="images/scroll+saw.jpg">
 
     <h2 class="aboutus">About Us</h2>
+
+    <svg height="80" width="300">
+        <g fill="none">
+            <path stroke="black" d="M5 40 l215 0" />
+        </g>
+    </svg>
+
     <div class="about-copy">
         <p> SNTL is a nonprofit tool-lending library and community hub in the heart of Baltimore City. We offer
             over
@@ -86,15 +93,13 @@
             to work with their hands. We share what we know and learn from each other!</p>
     </div>
 
-    <button class="call-to-action1">
-        <a>Learn</a>
-    </button>
-    <button class="call-to-action2">
-        <a>Join</a>
-    </button>
-    <button class="call-to-action3">
-        <a>Renew Tools</a>
-    </button>
+    <section class="call-to-action">
+        <a class="call-to-action1">Learn</a>
+
+        <a class="call-to-action2">Join</a>
+
+        <a class="call-to-action3">Renew Tools</a>
+    </section>
 
     <h2 class="upcomingevents">Upcoming Events</h2>
     <div class="content-slider">
