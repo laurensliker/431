@@ -23,7 +23,7 @@ $left-margin: 4vw;
 }
 
 .about-copy {
-    grid-column: 3/11;
+    grid-column: 4/9;
     grid-row: 9/11;
     font-size: 20px;
 }
@@ -75,9 +75,6 @@ footer {
     grid-row: 19/22;
     background: #1b2d34;
     color: #f5f3f0;
-    border-top: #fc5957;
-    border-top-width: 30vw;
-    border-top-style: solid;
 }
 
 h1 {
@@ -111,8 +108,9 @@ header {
 
 .heroimage {
     width: 100%;
-    grid-column: 4/10;
-    grid-row: 5/9;
+    grid-column: 4/9;
+    grid-row: 4/9;
+    padding-top: 4vw;
 }
 
 .mission-statement {
@@ -122,7 +120,7 @@ header {
     padding-bottom: 3vw;
     padding-right: 33%;
     font-size: 20px;
-    line-height: 4vw;
+    line-height: 3vw;
     font-weight: $regular-weight;
 }
 
@@ -139,8 +137,11 @@ nav {
     position: sticky;
     top: 0;
     margin: -1vw;
-    padding: 4vw;
+    padding: 3vw;
+
 }
+
+
 
 nav:hover {
     color: #1b2d34;
@@ -149,7 +150,10 @@ nav:hover {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #1b2d34;
+    transition: 1s;
 }
+
+
 
 #nav-child {
     grid-column: 1/11;
