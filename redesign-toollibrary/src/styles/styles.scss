@@ -4,8 +4,8 @@ sans-serif;
 
 /*google fonts, weights*/
 $bold-weight: 700;
-$medium-weight: 600;
-$regular-weight: 400;
+$medium-weight: 500;
+$regular-weight: 300;
 
 /*caps text*/
 $capsspacing: .2vw;
@@ -35,7 +35,9 @@ $pink:#fc5957;
 .about-copy {
     grid-column: 4/9;
     grid-row: 9/11;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: $regular-weight;
+    line-height: 3vw;
 }
 
 body {
@@ -87,8 +89,9 @@ h1 {
     padding-left: $left-margin;
     font-weight: $bold-weight;
     margin-bottom: 0;
+    margin-top: 4vw;
     align-content: bottom;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 h2 {
@@ -127,6 +130,7 @@ header {
     font-size: 20px;
     line-height: 3vw;
     font-weight: $regular-weight;
+    margin-top: 0;
 }
 
 nav {
@@ -136,6 +140,7 @@ nav {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
     font-size: $capssize;
+    font-weight: $medium-weight;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
     color: $white;

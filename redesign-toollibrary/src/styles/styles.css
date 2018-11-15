@@ -28,7 +28,9 @@
   -ms-grid-row: 9;
   -ms-grid-row-span: 2;
   grid-row: 9/11;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 3vw;
 }
 
 body {
@@ -60,7 +62,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2vw;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -106,9 +108,10 @@ h1 {
   padding-left: 4vw;
   font-weight: 700;
   margin-bottom: 0;
+  margin-top: 4vw;
   -ms-flex-line-pack: bottom;
       align-content: bottom;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 h2 {
@@ -159,7 +162,8 @@ header {
   padding-right: 33%;
   font-size: 20px;
   line-height: 3vw;
-  font-weight: 400;
+  font-weight: 300;
+  margin-top: 0;
 }
 
 nav {
@@ -172,6 +176,7 @@ nav {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   font-size: 12px;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
   color: #f5f3f0;
@@ -309,7 +314,7 @@ ul {
     padding-bottom: 3vw;
     font-size: 20px;
     line-height: 4vw;
-    font-weight: 400;
+    font-weight: 300;
   }
   .pinkbox1 {
     width: 120%;
