@@ -115,17 +115,15 @@ footer {
 
 h1 {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 10;
-  grid-column: 1/11;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 4vw;
-  margin-top: 20vw;
   padding-left: 4vw;
   font-weight: 700;
   font-size: 30px;
-  margin-bottom: 0;
 }
 
 h2 {
@@ -145,8 +143,8 @@ header {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
   margin-top: -1vw;
   margin-left: -1vw;
   color: #f5f3f0;
@@ -166,8 +164,8 @@ header {
 
 .mission-statement {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1/7;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
@@ -180,25 +178,18 @@ header {
 }
 
 nav {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 10;
-  grid-column: 1/11;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  position: fixed;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
   color: #f5f3f0;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   margin-top: -1vw;
   margin-left: -1vw;
   margin-right: -1vw;

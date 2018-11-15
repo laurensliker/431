@@ -92,14 +92,12 @@ footer {
 }
 
 h1 {
-    grid-column: 1/11;
+    grid-column: 1/6;
     grid-row: 2/3;
     font-size: 4vw;
-    margin-top: 20vw;
     padding-left: $left-margin;
     font-weight: $bold-weight;
     font-size: 30px;
-    margin-bottom: 0;
 }
 
 h2 {
@@ -114,11 +112,12 @@ header {
     grid-row: 1/6;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     margin-top: -1vw;
     margin-left: -1vw;
     color: $white;
     background: $pink;
+
 }
 
 .heroimage {
@@ -129,7 +128,7 @@ header {
 }
 
 .mission-statement {
-    grid-column: 1/7;
+    grid-column: 1/4;
     grid-row: 3/4;
     padding-left: $left-margin;
     padding-bottom: 3vw;
@@ -140,17 +139,17 @@ header {
 }
 
 nav {
-    grid-column: 1/11;
-    grid-row: 1/2;
+    position: fixed;
+
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
     font-size: $capssize;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
     color: $white;
-    position: sticky;
-    top: 0;
+
     margin-top: -1vw;
     margin-left: -1vw;
     margin-right: -1vw;
