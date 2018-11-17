@@ -13,6 +13,7 @@ $capssize: 12px;
 
 /*footer text*/
 $footersize: 12px;
+$footersec_toppadding: .8vw;
 
 
 /*far left page margin*/
@@ -112,7 +113,7 @@ footer {
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: $footersize;
-    padding-right: 10vw;
+    padding-top: $footersec_toppadding;
 }
 
 .footer_sec3 {
@@ -123,6 +124,8 @@ footer {
 .footer_sec4 {
     grid-column: 2/3;
     grid-row: 2/3;
+    font-size: $footersize;
+    padding-top: $footersec_toppadding;
 }
 
 .footer_sec5 {
@@ -134,6 +137,8 @@ footer {
 .footer_sec6 {
     grid-column: 4/5;
     grid-row: 1/2;
+    font-size: $footersize;
+    padding-top: $footersec_toppadding;
 }
 
 .footer_sec7 {
@@ -145,6 +150,8 @@ footer {
 .footer_sec8 {
     grid-column: 4/5;
     grid-row: 2/3;
+    font-size: $footersize;
+    padding-top: $footersec_toppadding;
 }
 
 h1 {
@@ -163,7 +170,7 @@ h2 {
     font-size: $capssize;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
-    margin-top: 0;
+
 }
 
 header {
@@ -272,6 +279,10 @@ nav {
 
 ol {
     list-style-type: none;
+}
+
+p {
+    margin-top: 0;
 }
 
 ul {

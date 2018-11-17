@@ -135,7 +135,7 @@ footer {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   font-size: 12px;
-  padding-right: 10vw;
+  padding-top: 0.8vw;
 }
 
 .footer_sec3 {
@@ -154,6 +154,8 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  font-size: 12px;
+  padding-top: 0.8vw;
 }
 
 .footer_sec5 {
@@ -173,6 +175,8 @@ footer {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  font-size: 12px;
+  padding-top: 0.8vw;
 }
 
 .footer_sec7 {
@@ -192,6 +196,8 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  font-size: 12px;
+  padding-top: 0.8vw;
 }
 
 h1 {
@@ -215,7 +221,6 @@ h2 {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
-  margin-top: 0;
 }
 
 header {
@@ -373,6 +378,10 @@ nav {
 
 ol {
   list-style-type: none;
+}
+
+p {
+  margin-top: 0;
 }
 
 ul {
