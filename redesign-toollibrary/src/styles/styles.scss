@@ -11,6 +11,10 @@ $regular-weight: 300;
 $capsspacing: .2vw;
 $capssize: 12px;
 
+/*footer text*/
+$footersize: 12px;
+
+
 /*far left page margin*/
 $left-margin: 4vw;
 
@@ -90,8 +94,11 @@ footer {
     grid-column: 1/11;
     grid-row: 19/22;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3vw;
+    margin: -8px;
+    padding: 3vw;
     background: $blue;
     color: $white;
 }
@@ -99,11 +106,15 @@ footer {
 .footer_sec1 {
     grid-column: 1/2;
     grid-row: 1/2;
+    font-size: $capssize;
+    letter-spacing: $capsspacing;
 }
 
 .footer_sec2 {
     grid-column: 2/3;
     grid-row: 1/2;
+    font-size: $footersize;
+    padding-right: 3vw;
 }
 
 .footer_sec3 {
@@ -136,12 +147,6 @@ footer {
     grid-row: 2/3;
 }
 
-.footer_sec9 {
-    grid-column: 5/6;
-    grid-row: 1/3;
-}
-
-
 h1 {
     grid-column: 1/6;
     grid-row: 3/4;
@@ -151,7 +156,7 @@ h1 {
     margin-bottom: 0;
     margin-top: 4vw;
     align-content: bottom;
-    font-size: 37px;
+    font-size: 28px;
 }
 
 h2 {
@@ -194,7 +199,7 @@ header {
     padding-left: $left-margin;
     padding-bottom: 3vw;
     padding-right: 33%;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 3vw;
     font-weight: $regular-weight;
 }
