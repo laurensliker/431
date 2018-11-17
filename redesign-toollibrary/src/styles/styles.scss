@@ -161,7 +161,7 @@ h1 {
     grid-row: 3/4;
     padding-left: $left-margin;
     font-weight: $bold-weight;
-    font-size: 35px;
+    font-size: 2.5vw;
     letter-spacing: .1vw;
     margin-top: 4vw;
     margin-bottom: 0;
@@ -205,10 +205,9 @@ header {
     grid-column: 1/4;
     grid-row: 4/6;
     padding-left: $left-margin;
-    padding-bottom: 3vw;
-    padding-top: 1vw;
-    font-size: 20px;
-    line-height: 3vw;
+    padding-right: 30%;
+    font-size: 2vw;
+    line-height: 3.5vw;
     font-weight: $regular-weight;
 }
 
@@ -218,7 +217,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
-    font-size: $capssize;
+    font-size: 1vw;
     font-weight: $medium-weight;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
@@ -294,14 +293,8 @@ ul {
 
 @media (max-width:1030px) and (min-width:650px) {
 
-    h1 {
-        font-size: 25px;
-    }
 
-    .mission-statement {
-        font-size: 18px;
-    }
-
-    @media (max-width:649px) {
+    @media (max-width: 649px) {
         //*js mobile nav*//
     }
+}

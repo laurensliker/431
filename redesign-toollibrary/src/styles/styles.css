@@ -209,7 +209,7 @@ h1 {
   grid-row: 3/4;
   padding-left: 4vw;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 2.5vw;
   letter-spacing: .1vw;
   margin-top: 4vw;
   margin-bottom: 0;
@@ -270,11 +270,9 @@ header {
   -ms-grid-row-span: 2;
   grid-row: 4/6;
   padding-left: 4vw;
-  padding-bottom: 3vw;
-  padding-right: 33%;
-  padding-top: 1vw;
-  font-size: 20px;
-  line-height: 3vw;
+  padding-right: 30%;
+  font-size: 2vw;
+  line-height: 3.5vw;
   font-weight: 300;
 }
 
@@ -287,7 +285,7 @@ nav {
       grid-template-columns: repeat(10, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  font-size: 12px;
+  font-size: 1vw;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
@@ -391,11 +389,5 @@ ul {
   -ms-grid-row-span: 4;
   grid-row: 14/18;
   margin-left: 4vw;
-}
-
-@media (max-width: 950px) and (min-width: 650px) {
-  h1 {
-    font-size: 25px;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
