@@ -206,7 +206,6 @@ header {
     grid-row: 4/6;
     padding-left: $left-margin;
     padding-bottom: 3vw;
-    padding-right: 33%;
     padding-top: 1vw;
     font-size: 20px;
     line-height: 3vw;
@@ -293,8 +292,16 @@ ul {
     margin-left: $left-margin;
 }
 
-@media (max-width:900px) and (min-width:650px) {}
+@media (max-width:1030px) and (min-width:650px) {
 
-@media (max-width:649px) {
-    //*js mobile nav*//
-}
+    h1 {
+        font-size: 25px;
+    }
+
+    .mission-statement {
+        font-size: 18px;
+    }
+
+    @media (max-width:649px) {
+        //*js mobile nav*//
+    }
