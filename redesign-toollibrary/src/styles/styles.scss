@@ -297,24 +297,6 @@ ul {
 
 @media (max-width:900px) and (min-width:650px) {
 
-    .mission-statement {
-        grid-column: 1/4;
-        grid-row: 3/4;
-        padding-left: $left-margin;
-        padding-bottom: 3vw;
-        font-size: 20px;
-        line-height: 4vw;
-        font-weight: $regular-weight;
-    }
-
-    .pinkbox1 {
-        width: 120%;
-        height: 150%;
-        grid-column: 1/4;
-        grid-row: 1/4;
-        margin-bottom: 10vw;
-        z-index: -1;
-    }
 }
 
 @media (max-width:649px) {
