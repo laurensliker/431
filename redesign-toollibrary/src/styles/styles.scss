@@ -130,6 +130,7 @@ footer {
 .footer_sec5 {
     grid-column: 3/4;
     grid-row: 1/2;
+    padding-left: 3vw;
 }
 
 .footer_sec6 {
@@ -140,6 +141,7 @@ footer {
 .footer_sec7 {
     grid-column: 3/4;
     grid-row: 2/3;
+    padding-left: 3vw;
 }
 
 .footer_sec8 {
@@ -163,7 +165,7 @@ h2 {
     font-size: $capssize;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
-
+    margin-top: 0;
 }
 
 header {

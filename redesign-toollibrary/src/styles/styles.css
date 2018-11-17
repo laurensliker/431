@@ -163,6 +163,7 @@ footer {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  padding-left: 3vw;
 }
 
 .footer_sec6 {
@@ -181,6 +182,7 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  padding-left: 3vw;
 }
 
 .footer_sec8 {
@@ -213,6 +215,7 @@ h2 {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
+  margin-top: 0;
 }
 
 header {
