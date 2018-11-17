@@ -9,7 +9,7 @@ $regular-weight: 300;
 
 /*caps text*/
 $capsspacing: .2vw;
-$capssize: 1.2vw;
+$capssize: 12px;
 
 /*footer text*/
 $footersize: 12px;
@@ -94,7 +94,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 3vw;
     margin: -8px;
     padding: 4vw;
     background: $blue;
@@ -106,6 +105,15 @@ footer {
     grid-row: 1/2;
     font-size: $capssize;
     letter-spacing: $capsspacing;
+}
+
+.footer_sec1-stroke {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 10%;
+    margin-left: auto;
+    margin-top: 8%;
+
 }
 
 .footer_sec2 {
@@ -184,14 +192,7 @@ header {
 
 }
 
-.heroimage1 {
-    width: 100%;
-    grid-column: 4/9;
-    grid-row: 4/9;
-    padding-top: 4vw;
-}
-
-.heroimage2 {
+.heroimage {
     width: 100%;
     grid-column: 4/9;
     grid-row: 4/9;

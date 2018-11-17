@@ -74,7 +74,7 @@ body {
   color: #f5f3f0;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
-  font-size: 1.2vw;
+  font-size: 12px;
   font-weight: 500;
   text-align: center;
   -webkit-box-align: center;
@@ -103,7 +103,6 @@ footer {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 3vw;
   margin: -8px;
   padding: 4vw;
   background: #1b2d34;
@@ -117,8 +116,20 @@ footer {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-size: 1.2vw;
+  font-size: 12px;
   letter-spacing: 0.2vw;
+}
+
+.footer_sec1-stroke {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-right: 10%;
+  margin-left: auto;
+  margin-top: 8%;
 }
 
 .footer_sec2 {
@@ -210,7 +221,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2vw;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
 }
@@ -234,18 +245,7 @@ header {
   background: #1b2d34;
 }
 
-.heroimage1 {
-  width: 100%;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 5;
-  grid-column: 4/9;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 5;
-  grid-row: 4/9;
-  padding-top: 4vw;
-}
-
-.heroimage2 {
+.heroimage {
   width: 100%;
   -ms-grid-column: 4;
   -ms-grid-column-span: 5;
