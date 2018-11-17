@@ -29,8 +29,6 @@ $pink:#fc5957;
     display: none;
 }
 
-
-
 .aboutus {
     grid-column: 1/4;
     grid-row: 9/11;
@@ -98,7 +96,7 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 3vw;
     margin: -8px;
-    padding: 3vw;
+    padding: 4vw;
     background: $blue;
     color: $white;
 }
@@ -114,7 +112,7 @@ footer {
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: $footersize;
-    padding-right: 3vw;
+    padding-right: 10vw;
 }
 
 .footer_sec3 {
@@ -276,15 +274,6 @@ ol {
     list-style-type: none;
 }
 
-.pinkbox1 {
-    width: 100%;
-    height: 200%;
-    grid-column: 1/4;
-    grid-row: 1/4;
-    padding-bottom: 10vw;
-    z-index: -1;
-}
-
 ul {
     list-style-type: none;
 }
@@ -295,9 +284,7 @@ ul {
     margin-left: $left-margin;
 }
 
-@media (max-width:900px) and (min-width:650px) {
-
-}
+@media (max-width:900px) and (min-width:650px) {}
 
 @media (max-width:649px) {
     //*js mobile nav*//
