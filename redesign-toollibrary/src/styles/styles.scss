@@ -1,5 +1,5 @@
 /*google fonts, only one sans serif used accesss at top of page for in progress code*/
-$sans-serif: 'Open Sans',
+$sans-serif: 'Noto Sans TC',
 sans-serif;
 
 /*google fonts, weights*/
@@ -54,9 +54,7 @@ $pink:#fc5957;
     margin-top: 0;
 }
 
-address {
-    styles
-}
+address {}
 
 body {
     display: grid;
@@ -161,13 +159,12 @@ footer {
 h1 {
     grid-column: 1/6;
     grid-row: 3/4;
-    font-size: 4vw;
     padding-left: $left-margin;
     font-weight: $bold-weight;
-    margin-bottom: 0;
+    font-size: 35px;
+    letter-spacing: .1vw;
     margin-top: 4vw;
-    align-content: bottom;
-    font-size: 28px;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -210,6 +207,7 @@ header {
     padding-left: $left-margin;
     padding-bottom: 3vw;
     padding-right: 33%;
+    padding-top: 1vw;
     font-size: 20px;
     line-height: 3vw;
     font-weight: $regular-weight;
@@ -284,8 +282,6 @@ nav {
 ol {
     list-style-type: none;
 }
-
-
 
 ul {
     list-style-type: none;
