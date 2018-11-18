@@ -28,11 +28,18 @@
                 </span>
                 Menu
             </button>
-            <!-- how to properly insert an svg logo and resize in css-->
 
-            <ul>
-                <li class="nav_item1">logo</li>
-                <li class="nav_item2" id="nav-head">about
+            <!-- go back and restructure sections as list items, figure out how to display horizontally-->
+
+            <div id="js-site-nav" class="u-list-reset site-nav__list" aria-hidden="false" data-visible="false">
+
+                <!-- how to properly insert an svg logo and resize in css-->
+
+                <section class="nav_item1 site-nav__list-item">
+                    <a href="#" class="u-block site-nav__link">logo</a>
+                </section>
+                <section class="nav_item2 site-nav__list-item" id="nav-head">
+                    <a href="#" class="u-block site-nav__link">about</a>
                     <ul id="nav-section">
                         <li>
                             <a>Hours and Contact Information</a>
@@ -47,9 +54,10 @@
                             <a>FAQ</a>
                         </li>
                     </ul>
-                </li>
+                </section>
 
-                <li class="nav_item3" id="nav-head">get involved
+                <section class="nav_item3  site-nav__list-item" id="nav-head">
+                    <a href="#" class="u-block site-nav__link">get involved</a>
                     <ul id="nav-section">
                         <li>
                             <a>Classes</a>
@@ -62,17 +70,17 @@
                         </li>
                     </ul>
 
-                </li>
-                <li class="nav_item4">
-                    <a>Fix It Fair</a>
-                </li>
-                <li class="nav_item5">
-                    <a>News</a>
-                </li>
-                <li class="nav_item6">
-                    <a>Donate</a>
-                </li>
-            </ul>
+                </section>
+                <section class="nav_item4  site-nav__list-item">
+                    <a href="#" class="u-block site-nav__link">Fix It Fair</a>
+                </section>
+                <section class="nav_item5  site-nav__list-item">
+                    <a href="#" class="u-block site-nav__link">News</a>
+                </section>
+                <section class="nav_item6  site-nav__list-item">
+                    <a href="#" class="u-block site-nav__link">Donate</a>
+                </section>
+            </div>
         </nav>
 
     </header>
