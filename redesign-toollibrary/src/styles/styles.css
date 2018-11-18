@@ -45,7 +45,7 @@ body {
       grid-template-columns: repeat(10, 1fr);
   -ms-grid-rows: (10vw)[21];
       grid-template-rows: repeat(21, 10vw);
-  background: #f5f3f0;
+  background: #F9F4ED;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -63,7 +63,7 @@ body {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-gap: 2vw;
-  color: #f5f3f0;
+  color: #F9F4ED;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 13px;
@@ -98,7 +98,7 @@ footer {
   margin: -8px;
   padding: 4vw;
   background: #1b2d34;
-  color: #f5f3f0;
+  color: #F9F4ED;
 }
 
 .footer_sec1 {
@@ -233,7 +233,7 @@ header {
       grid-template-rows: repeat(10, 0.5fr);
   margin-top: -1vw;
   margin-left: -1vw;
-  color: #f5f3f0;
+  color: #F9F4ED;
   background: #1b2d34;
 }
 
@@ -277,7 +277,7 @@ nav {
   padding-top: 2vw;
   padding-bottom: 2vw;
   color: #1b2d34;
-  background: #f5f3f0;
+  background: #F9F4ED;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #1b2d34;
