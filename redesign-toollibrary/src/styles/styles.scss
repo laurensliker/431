@@ -1,5 +1,5 @@
 // jsVariables
-$display-nav: 520px;
+$display-nav: 700px;
 
 // JS action classes (*****where to place action classes in relation to other css content****)
 [data-visible="false"] {
@@ -31,6 +31,11 @@ $left-margin: 4vw;
 $white: #F9F4ED;
 $blue:#1b2d34;
 $pink:#C1423F;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .aboutus {
     grid-column: 1/4;
@@ -197,6 +202,16 @@ header {
     padding-top: 4vw;
 }
 
+.menu-icon {
+    &__line {
+        background-color: #444;
+        height: 2px;
+        margin: 8px auto;
+        transition: all 0.3s ease-in-out;
+        width: 42px;
+    }
+}
+
 .mission-statement {
     grid-column: 1/4;
     grid-row: 4/6;
@@ -220,7 +235,6 @@ nav {
     font-weight: $regular-weight;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
-    padding-left: 4vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
     color: $blue;
@@ -241,27 +255,27 @@ nav {
 }
 
 .nav_item1 {
-    width: 100%;
+    width: 20%;
 }
 
 .nav_item2 {
-    width: 100%;
+    width: 30%;
 }
 
 .nav_item3 {
-    width: 150%;
+    width: 30%;
 }
 
 .nav_item4 {
-    width: 130%;
+    width: 30%;
 }
 
 .nav_item5 {
-    width: 100%;
+    width: 30%;
 }
 
 .nav_item6 {
-    width: 100%;
+    width: 30%;
 }
 
 ol {
