@@ -3,10 +3,6 @@
 /*caps text*/
 /*footer text*/
 /*far left page margin*/
-[data-visible="false"] {
-  display: none;
-}
-
 .aboutus {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -40,10 +36,6 @@
   font-weight: 300;
   line-height: 3vw;
   margin-top: .5%;
-}
-
-.about_margin {
-  margin-top: 0;
 }
 
 body {

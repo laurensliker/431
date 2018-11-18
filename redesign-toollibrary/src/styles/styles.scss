@@ -24,12 +24,6 @@ $white: #f5f3f0;
 $blue:#1b2d34;
 $pink:#C1423F;
 
-
-// JS action classes
-[data-visible="false"] {
-    display: none;
-}
-
 .aboutus {
     grid-column: 1/4;
     grid-row: 9/11;
@@ -51,10 +45,6 @@ $pink:#C1423F;
     font-weight: $regular-weight;
     line-height: 3vw;
     margin-top: .5%;
-}
-
-.about_margin {
-    margin-top: 0;
 }
 
 body {
