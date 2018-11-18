@@ -329,6 +329,120 @@ ol {
   list-style-type: none;
 }
 
+.site-nav__trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.site-nav__trigger[aria-expanded="true"] .menu-icon__line:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
+}
+
+.site-nav__trigger[aria-expanded="true"] .menu-icon__line:nth-child(2) {
+  opacity: 0;
+}
+
+.site-nav__trigger[aria-expanded="true"] .menu-icon__line:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
+}
+
+@media screen and (min-width: 520px) {
+  .site-nav__trigger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .site-nav__list {
+    background-color: rgba(68, 68, 68, 0.75);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+    width: 100vw;
+  }
+  .site-nav__list[data-visible="true"] {
+    -webkit-animation: expand 0.3s ease-in-out forwards;
+            animation: expand 0.3s ease-in-out forwards;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .site-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.site-nav__list-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+@media screen and (max-width: 519px) {
+  .site-nav__list-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.site-nav__link {
+  opacity: 0.85;
+}
+
+.site-nav__link:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 519px) {
+  .site-nav__link {
+    color: white;
+    font-size: 200%;
+  }
+}
+
+@-webkit-keyframes expand {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: calc(100vh - 30px);
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: calc(100vh - 30px);
+    opacity: 1;
+  }
+}
+
 ul {
   list-style-type: none;
 }

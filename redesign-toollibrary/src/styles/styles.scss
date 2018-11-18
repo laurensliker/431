@@ -1,7 +1,7 @@
 // jsVariables
 $display-nav: 520px;
 
-// JS action classes
+// JS action classes (*****where to place action classes in relation to other css content****)
 [data-visible="false"] {
     display: none;
 }
@@ -266,6 +266,98 @@ nav {
 
 ol {
     list-style-type: none;
+}
+
+.site-nav {
+    $top-height: 30px;
+
+    &__trigger {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &[aria-expanded="true"] {
+            .menu-icon__line {
+                $yValue: 10px;
+                $deg: 45deg;
+
+                &:nth-child(1) {
+                    transform: translateY($yValue) rotate($deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(-$yValue) rotate(-$deg);
+                }
+            }
+        }
+
+        @media screen and (min-width: $display-nav) {
+            display: none;
+        }
+    }
+
+    &__list {
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            background-color: rgba(#444, 0.75);
+            flex-direction: column;
+            height: 0;
+            position: absolute;
+            top: $top-height;
+            right: 0;
+            left: 0;
+            width: 100vw;
+
+            &[data-visible="true"] {
+                animation: expand 0.3s ease-in-out forwards; // see the expand animation below
+                // this changes the height and opacity of the mobile menu
+                display: flex;
+            }
+        }
+
+        @media screen and (min-width: $display-nav) {
+            display: flex;
+        }
+    }
+
+    &__list-item {
+        align-items: center;
+        display: flex;
+        flex: 1 0 auto;
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        opacity: 0.85;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            color: white;
+            font-size: 200%;
+        }
+    }
+
+    @keyframes expand {
+        from {
+            height: 0;
+            opacity: 0;
+        }
+
+        to {
+            height: calc(100vh - #{$top-height});
+            opacity: 1;
+        }
+    }
 }
 
 ul {
