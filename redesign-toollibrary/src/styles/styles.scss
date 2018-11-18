@@ -76,7 +76,7 @@ body {
     text-transform: uppercase;
     letter-spacing: $capsspacing;
     font-size: $capssize;
-    font-weight: $medium-weight;
+    font-weight: $bold-weight;
     text-align: center;
     align-items: center;
 }
@@ -302,10 +302,13 @@ ul {
     margin-top: 3%;
 }
 
-@media (max-width:1030px) and (min-width:650px) {
+@media (max-width:500px) and (min-width:450px) {
 
-
-    @media (max-width: 649px) {
-        //*js mobile nav*//
+    h1 {
+        font-size: 1px;
     }
+}
+
+@media (max-width: 649px) {
+    //*js mobile nav*//
 }
