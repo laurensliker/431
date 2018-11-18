@@ -74,7 +74,7 @@ body {
   color: #f5f3f0;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   text-align: center;
   -webkit-box-align: center;
@@ -87,7 +87,7 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   padding: 20px;
-  background: #fc5957;
+  background: #C1423F;
 }
 
 footer {
@@ -116,7 +116,7 @@ footer {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.2vw;
 }
 
@@ -221,7 +221,7 @@ h1 {
 }
 
 h2 {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
 }
