@@ -280,24 +280,6 @@ header {
   font-weight: 300;
 }
 
-nav {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  font-size: 13px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #1b2d34;
-  background: #F9F4ED;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #1b2d34;
-  overflow: hidden;
-}
-
 .nav_item1 {
   width: 300%;
 }
@@ -385,7 +367,24 @@ ol {
 
 @media screen and (min-width: 700px) {
   .site-nav__list {
-    display: block;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (130px)[6];
+        grid-template-columns: repeat(6, 130px);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    position: fixed;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1b2d34;
+    background: #F9F4ED;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #1b2d34;
+    overflow: hidden;
   }
 }
 
