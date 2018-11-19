@@ -258,7 +258,6 @@ header {
     grid-row: 1/2;
 }
 
-
 #nav-section {
     display: none;
     color: $blue;
@@ -440,11 +439,11 @@ ul {
     margin-top: 3%;
 }
 
-@media (max-width:900px) {
+@media (max-width:930px) {
 
     body {
         grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(21, 11vw);
+        grid-template-rows: repeat(21, 11.5vw);
     }
 
     h1 {
@@ -462,4 +461,20 @@ ul {
         font-size: 2.4vw;
         line-height: 4vw;
     }
+
+    .aboutus {
+        grid-row: 8/11;
+    }
+
+    .aboutus_stroke {
+        grid-row: 8/12;
+        margin-top: 10%;
+    }
+
+    .aboutus_copy {
+        grid-row: 8/11;
+        margin-top: .5%;
+        line-height: 4vw;
+    }
+
 }

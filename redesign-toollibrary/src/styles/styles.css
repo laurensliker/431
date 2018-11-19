@@ -562,12 +562,12 @@ ul {
   margin-top: 3%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   body {
     -ms-grid-columns: (1fr)[9];
         grid-template-columns: repeat(9, 1fr);
-    -ms-grid-rows: (11vw)[21];
-        grid-template-rows: repeat(21, 11vw);
+    -ms-grid-rows: (11.5vw)[21];
+        grid-template-rows: repeat(21, 11.5vw);
   }
   h1 {
     font-size: 3.2vw;
@@ -584,6 +584,24 @@ ul {
   .mission-statement {
     padding-right: 25%;
     font-size: 2.4vw;
+    line-height: 4vw;
+  }
+  .aboutus {
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 3;
+    grid-row: 8/11;
+  }
+  .aboutus_stroke {
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 4;
+    grid-row: 8/12;
+    margin-top: 10%;
+  }
+  .aboutus_copy {
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 3;
+    grid-row: 8/11;
+    margin-top: .5%;
     line-height: 4vw;
   }
 }
