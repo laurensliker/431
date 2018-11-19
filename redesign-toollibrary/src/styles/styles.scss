@@ -6,7 +6,7 @@ $display-nav: 750px;
     display: none;
 }
 
-/*google fonts, only one sans serif used accesss at top of page for in progress code*/
+/*google fonts*/
 $sans-serif: 'Noto Sans TC',
 sans-serif;
 
@@ -22,7 +22,6 @@ $capssize: 13px;
 /*footer text*/
 $footersize: 12px;
 $footersec_toppadding: .8vw;
-
 
 /*far left page margin*/
 $left-margin: 4vw;
@@ -47,14 +46,6 @@ a:hover {
     margin-left: $left-margin;
 }
 
-.aboutus_stroke {
-    grid-column: 2/4;
-    grid-row: 9/12;
-    margin-right: 20%;
-    margin-left: auto;
-    margin-top: 10%;
-}
-
 .aboutus_copy {
     grid-column: 4/9;
     grid-row: 9/11;
@@ -62,6 +53,14 @@ a:hover {
     font-weight: $regular-weight;
     line-height: 3vw;
     margin-top: .5%;
+}
+
+.aboutus_stroke {
+    grid-column: 2/4;
+    grid-row: 9/12;
+    margin-right: 20%;
+    margin-left: auto;
+    margin-top: 10%;
 }
 
 body {
@@ -88,12 +87,12 @@ body {
     align-items: center;
 }
 
+/*shouls I create an individual class for each link to specifically define grid-column?*/
 .cta_link {
     grid-row: 1/2;
     padding: 20px;
     background: $pink;
 }
-
 
 footer {
     grid-column: 1/11;
@@ -217,6 +216,10 @@ header {
     }
 }
 
+.menu-icon__line {
+    color: #F9F4ED;
+}
+
 .mission-statement {
     grid-column: 1/4;
     grid-row: 4/6;
@@ -275,7 +278,7 @@ header {
     display: block;
     animation: drop ease-in .2s;
 
-    //working on figuring out how to make this a smoother transition//
+    //working on making this a smoother transition//
 
     @keyframes drop {
 
@@ -296,9 +299,7 @@ ol {
     list-style-type: none;
 }
 
-.menu-icon__line {
-    color: #F9F4ED;
-}
+
 
 .site-nav {
     $top-height: -3vw;
@@ -375,9 +376,6 @@ ol {
     }
 
     &__list-item {
-
-
-
         @media screen and (max-width: ($display-nav - 1px)) {
             justify-content: left;
             margin-left: 0;

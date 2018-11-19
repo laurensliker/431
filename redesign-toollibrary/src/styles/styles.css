@@ -2,7 +2,7 @@
   display: none;
 }
 
-/*google fonts, only one sans serif used accesss at top of page for in progress code*/
+/*google fonts*/
 /*google fonts, weights*/
 /*caps text*/
 /*footer text*/
@@ -26,18 +26,6 @@ a:hover {
   margin-left: 4vw;
 }
 
-.aboutus_stroke {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
-  -ms-grid-row: 9;
-  -ms-grid-row-span: 3;
-  grid-row: 9/12;
-  margin-right: 20%;
-  margin-left: auto;
-  margin-top: 10%;
-}
-
 .aboutus_copy {
   -ms-grid-column: 4;
   -ms-grid-column-span: 5;
@@ -49,6 +37,18 @@ a:hover {
   font-weight: 300;
   line-height: 3vw;
   margin-top: .5%;
+}
+
+.aboutus_stroke {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  grid-row: 9/12;
+  margin-right: 20%;
+  margin-left: auto;
+  margin-top: 10%;
 }
 
 body {
@@ -87,6 +87,7 @@ body {
           align-items: center;
 }
 
+/*shouls I create an individual class for each link to specifically define grid-column?*/
 .cta_link {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -270,6 +271,10 @@ header {
   width: 42px;
 }
 
+.menu-icon__line {
+  color: #F9F4ED;
+}
+
 .mission-statement {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -381,10 +386,6 @@ header {
 
 ol {
   list-style-type: none;
-}
-
-.menu-icon__line {
-  color: #F9F4ED;
 }
 
 .site-nav__trigger {
