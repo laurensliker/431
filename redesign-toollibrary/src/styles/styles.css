@@ -64,7 +64,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.call-to-action {
+.cta {
   -ms-grid-column: 4;
   -ms-grid-column-span: 5;
   grid-column: 4/9;
@@ -87,9 +87,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*shouls I create an individual class for each link to specifically define grid-column?*/
 }
 
-/*shouls I create an individual class for each link to specifically define grid-column?*/
 .cta_link {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -111,13 +111,14 @@ footer {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3vw;
   margin: -8px;
   padding: 4vw;
   background: #1b2d34;
   color: #F9F4ED;
 }
 
-.footer_sec1 {
+footer_sec1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -128,20 +129,7 @@ footer {
   letter-spacing: 2px;
 }
 
-/*this method of inserting an svg to make a decorative line isnt working very well*/
-.footer_sec1-stroke {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  margin-right: 10%;
-  margin-left: auto;
-  margin-top: 8%;
-}
-
-.footer_sec2 {
+footer_sec2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -149,10 +137,10 @@ footer {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   font-size: 12px;
-  padding-top: 0.8vw;
+  padding-top: 3vw;
 }
 
-.footer_sec3 {
+footer_sec3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -161,7 +149,7 @@ footer {
   grid-row: 2/3;
 }
 
-.footer_sec4 {
+footer_sec4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -169,10 +157,10 @@ footer {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 12px;
-  padding-top: 0.8vw;
+  padding-top: 3vw;
 }
 
-.footer_sec5 {
+footer_sec5 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -182,7 +170,7 @@ footer {
   padding-left: 3vw;
 }
 
-.footer_sec6 {
+footer_sec6 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
@@ -190,20 +178,19 @@ footer {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   font-size: 12px;
-  padding-top: 0.8vw;
+  padding-top: 3vw;
 }
 
-.footer_sec7 {
+footer_sec7 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  padding-left: 3vw;
 }
 
-.footer_sec8 {
+footer_sec8 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
@@ -211,7 +198,7 @@ footer {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   font-size: 12px;
-  padding-top: 0.8vw;
+  padding-top: 3vw;
 }
 
 h1 {
@@ -272,10 +259,6 @@ header {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 42px;
-}
-
-.menu-icon__line {
-  color: #F9F4ED;
 }
 
 .mission-statement {
@@ -548,9 +531,9 @@ ul {
   -ms-grid-row-span: 4;
   grid-row: 14/18;
   margin-left: 4vw;
+  /*This will be where the image carousel we are making in class will be*/
 }
 
-/*This will be where the image carousel we are making in class will be*/
 .upcomingevents_contents {
   -ms-grid-column: 4;
   -ms-grid-column-span: 7;
@@ -645,7 +628,7 @@ ul {
   .aboutus_stroke {
     display: none;
   }
-  .call-to-action {
+  .cta {
     -ms-grid-column: 2;
     -ms-grid-column-span: 7;
     grid-column: 2/9;
@@ -671,7 +654,7 @@ ul {
     background: #1b2d34;
     color: #F9F4ED;
   }
-  .footer_sec5 {
+  footer_sec5 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -680,7 +663,7 @@ ul {
     grid-row: 3/4;
     padding-left: 0;
   }
-  .footer_sec6 {
+  footer_sec6 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -688,7 +671,7 @@ ul {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
-  .footer_sec7 {
+  footer_sec7 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -697,7 +680,7 @@ ul {
     grid-row: 4/5;
     padding-left: 0;
   }
-  .footer_sec8 {
+  footer_sec8 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;

@@ -21,7 +21,7 @@ $capssize: 13px;
 
 /*footer text*/
 $footersize: 12px;
-$footersec_toppadding: .8vw;
+$footersec-toppadding: 3vw;
 
 /*far left page margin*/
 $left-margin: 4vw;
@@ -45,25 +45,25 @@ a:hover {
     grid-row: 9/11;
     margin-left: $left-margin;
 
-}
+    &_copy {
+        grid-column: 4/9;
+        grid-row: 9/11;
+        font-size: 18px;
+        font-weight: $regular-weight;
+        line-height: 3vw;
+        margin-top: 0;
+    }
 
-.aboutus_copy {
-    grid-column: 4/9;
-    grid-row: 9/11;
-    font-size: 18px;
-    font-weight: $regular-weight;
-    line-height: 3vw;
-    margin-top: 0;
-}
+    &_stroke {
+        grid-column: 2/4;
+        grid-row: 9/10;
+        border-top-style: solid;
+        border-top-width: 1px;
+        margin-top: 1.75vw;
+        margin-left: 6vw;
+        margin-right: 4vw;
+    }
 
-.aboutus_stroke {
-    grid-column: 2/4;
-    grid-row: 9/10;
-    border-top-style: solid;
-    border-top-width: 1px;
-    margin-top: 1.75vw;
-    margin-left: 6vw;
-    margin-right: 4vw;
 }
 
 body {
@@ -74,7 +74,7 @@ body {
     font-family: $sans-serif;
 }
 
-.call-to-action {
+.cta {
     grid-column: 4/9;
     grid-row: 12/13;
     display: grid;
@@ -88,14 +88,15 @@ body {
     font-weight: $bold-weight;
     text-align: center;
     align-items: center;
+
+    /*shouls I create an individual class for each link to specifically define grid-column?*/
+    &_link {
+        grid-row: 1/2;
+        padding: 20px;
+        background: $pink;
+    }
 }
 
-/*shouls I create an individual class for each link to specifically define grid-column?*/
-.cta_link {
-    grid-row: 1/2;
-    padding: 20px;
-    background: $pink;
-}
 
 footer {
     grid-column: 1/11;
@@ -103,73 +104,63 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3vw;
     margin: -8px;
     padding: 4vw;
     background: $blue;
     color: $white;
-}
 
-.footer_sec1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: $capssize;
-    letter-spacing: $capsspacing;
-}
 
-/*this method of inserting an svg to make a decorative line isnt working very well*/
+    &_sec1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: $capssize;
+        letter-spacing: $capsspacing;
+    }
 
-.footer_sec1-stroke {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-right: 10%;
-    margin-left: auto;
-    margin-top: 8%;
+    &_sec2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: $footersize;
+        padding-top: $footersec_toppadding;
+    }
 
-}
+    &_sec3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
 
-.footer_sec2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    font-size: $footersize;
-    padding-top: $footersec_toppadding;
-}
+    &_sec4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: $footersize;
+        padding-top: $footersec_toppadding;
+    }
 
-.footer_sec3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
+    &_sec5 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding-left: 3vw;
+    }
 
-.footer_sec4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-size: $footersize;
-    padding-top: $footersec_toppadding;
-}
+    &_sec6 {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        font-size: $footersize;
+        padding-top: $footersec_toppadding;
+    }
 
-.footer_sec5 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    padding-left: 3vw;
-}
+    &_sec7 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
 
-.footer_sec6 {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    font-size: $footersize;
-    padding-top: $footersec_toppadding;
-}
-
-.footer_sec7 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    padding-left: 3vw;
-}
-
-.footer_sec8 {
-    grid-column: 4/5;
-    grid-row: 2/3;
-    font-size: $footersize;
-    padding-top: $footersec_toppadding;
+    &_sec8 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        font-size: $footersize;
+        padding-top: $footersec-toppadding;
+    }
 }
 
 h1 {
@@ -221,10 +212,6 @@ header {
     }
 }
 
-.menu-icon__line {
-    color: #F9F4ED;
-}
-
 .mission-statement {
     grid-column: 1/4;
     grid-row: 4/6;
@@ -236,44 +223,46 @@ header {
     color: $white;
 }
 
-.nav_item1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
+.nav {
+    &_item1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
 
-}
+    }
 
-.nav_item2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
+    &_item2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 
-.nav_item3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin-left: -2vw;
-}
+    &_item3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-left: -2vw;
+    }
 
-.nav_item4 {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    margin-left: 3vw;
+    &_item4 {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        margin-left: 3vw;
 
-}
+    }
 
-.nav_item5 {
-    grid-column: 5/6;
-    grid-row: 1/2;
-    margin-left: 3vw;
-}
+    &_item5 {
+        grid-column: 5/6;
+        grid-row: 1/2;
+        margin-left: 3vw;
+    }
 
-.nav_item6 {
-    grid-column: 6/7;
-    grid-row: 1/2;
-}
+    &_item6 {
+        grid-column: 6/7;
+        grid-row: 1/2;
+    }
 
-.nav_item-logo {
-    width: 70%;
-    fill: #1b2d34;
+    &_item-logo {
+        width: 70%;
+        fill: #1b2d34;
+    }
 }
 
 #nav-section {
@@ -438,41 +427,41 @@ ul {
     grid-column: 1/4;
     grid-row: 14/18;
     margin-left: $left-margin;
+
+
+    /*This will be where the image carousel we are making in class will be*/
+
+    &_contents {
+        grid-column: 4/11;
+        grid-row: 15/18;
+    }
+
+    &_stroke {
+        grid-column: 3/9;
+        grid-row: 14/15;
+        border-top-style: solid;
+        border-top-width: 1px;
+        margin-top: 4%;
+        margin-left: 5vw;
+    }
 }
-
-/*This will be where the image carousel we are making in class will be*/
-
-.upcomingevents_contents {
-    grid-column: 4/11;
-    grid-row: 15/18;
-}
-
-.upcomingevents_stroke {
-    grid-column: 3/9;
-    grid-row: 14/15;
-    border-top-style: solid;
-    border-top-width: 1px;
-    margin-top: 4%;
-    margin-left: 5vw;
-}
-
 
 
 @media (max-width: 930px) {
 
     .aboutus {
         grid-row: 8/11;
-    }
 
-    .aboutus_copy {
-        grid-row: 8/11;
-        margin-top: .5%;
-        line-height: 4vw;
-    }
+        &_copy {
+            grid-row: 8/11;
+            margin-top: .5%;
+            line-height: 4vw;
+        }
 
-    .aboutus_stroke {
-        grid-row: 8/12;
-        margin-top: 10%;
+        &_stroke {
+            grid-row: 8/12;
+            margin-top: 10%;
+        }
     }
 
     body {
@@ -498,6 +487,7 @@ ul {
 }
 
 @media (max-width: 750px) {
+
     body {
         grid-template-rows: repeat(27, 14vw);
     }
@@ -508,19 +498,19 @@ ul {
         margin-left: 0;
         border-bottom-style: solid;
         border-bottom-width: 1px;
+
+        &_copy {
+            grid-column: 2/9;
+            grid-row: 10/12;
+            line-height: 6vw;
+        }
+
+        &_stroke {
+            display: none;
+        }
     }
 
-    .aboutus_copy {
-        grid-column: 2/9;
-        grid-row: 10/12;
-        line-height: 6vw;
-    }
-
-    .aboutus_stroke {
-        display: none;
-    }
-
-    .call-to-action {
+    .cta {
         grid-column: 2/9;
         grid-row: 15/16;
     }
@@ -535,28 +525,28 @@ ul {
         padding: 4vw;
         background: $blue;
         color: $white;
-    }
 
-    .footer_sec5 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        padding-left: 0;
-    }
+        &_sec5 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            padding-left: 0;
+        }
 
-    .footer_sec6 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
+        &_sec6 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
 
-    .footer_sec7 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-        padding-left: 0;
-    }
+        &_sec7 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            padding-left: 0;
+        }
 
-    .footer_sec8 {
-        grid-column: 2/3;
-        grid-row: 4/5;
+        &_sec8 {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
     }
 
     .heroimage {
@@ -570,14 +560,14 @@ ul {
         margin-left: 0;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-    }
 
-    .upcomingevents_contents {
-        grid-column: 2/9;
-        grid-row: 18/21;
-    }
+        &_contents {
+            grid-column: 2/9;
+            grid-row: 18/21;
+        }
 
-    .upcomingevents_stroke {
-        display: none;
+        &_stroke {
+            display: none;
+        }
     }
 }
