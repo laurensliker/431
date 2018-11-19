@@ -236,13 +236,10 @@ header {
     color: $white;
 }
 
-nav {
-    align-items: baseline;
-}
-
 .nav_item1 {
     grid-column: 1/2;
     grid-row: 1/2;
+
 }
 
 .nav_item2 {
@@ -374,7 +371,7 @@ ol {
             overflow: hidden;
             padding-left: 4vw;
             padding-top: 2vw;
-            padding-bottom: 2vw;
+            padding-bottom: 1vw;
             margin-top: 0;
             font-size: $capssize;
             font-weight: $medium-weight;
@@ -396,6 +393,7 @@ ol {
     &__link {
         opacity: 0.85;
 
+        //*how to vertically align contens to center of container *//
         @media screen and (min-width: $display-nav) {
             text-transform: uppercase;
             letter-spacing: $capsspacing;
@@ -458,7 +456,9 @@ ul {
     margin-left: 5vw;
 }
 
-@media (max-width:930px) {
+
+
+@media (max-width: 930px) {
 
     .aboutus {
         grid-row: 8/11;
@@ -495,7 +495,89 @@ ul {
         font-size: 2.4vw;
         line-height: 4vw;
     }
+}
 
+@media (max-width: 750px) {
+    body {
+        grid-template-rows: repeat(27, 14vw);
+    }
 
+    .aboutus {
+        grid-column: 2/9;
+        grid-row: 9/10;
+        margin-left: 0;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
 
+    .aboutus_copy {
+        grid-column: 2/9;
+        grid-row: 10/12;
+        line-height: 6vw;
+    }
+
+    .aboutus_stroke {
+        display: none;
+    }
+
+    .call-to-action {
+        grid-column: 2/9;
+        grid-row: 15/16;
+    }
+
+    footer {
+        grid-column: 1/10;
+        grid-row: 23/28;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: -8px;
+        padding: 4vw;
+        background: $blue;
+        color: $white;
+    }
+
+    .footer_sec5 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-left: 0;
+    }
+
+    .footer_sec6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .footer_sec7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding-left: 0;
+    }
+
+    .footer_sec8 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .heroimage {
+        grid-column: 2/9;
+        grid-row: 4/6;
+    }
+
+    .upcomingevents {
+        grid-column: 2/9;
+        grid-row: 17/18;
+        margin-left: 0;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    .upcomingevents_contents {
+        grid-column: 2/9;
+        grid-row: 18/21;
+    }
+
+    .upcomingevents_stroke {
+        display: none;
+    }
 }
