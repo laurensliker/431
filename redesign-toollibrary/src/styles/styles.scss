@@ -173,6 +173,7 @@ h1 {
     letter-spacing: .1vw;
     margin-top: 4vw;
     margin-bottom: 0;
+    color: $white;
 }
 
 h2 {
@@ -190,7 +191,6 @@ header {
     grid-template-rows: repeat(10, .5fr);
     margin-top: -1vw;
     margin-left: -1vw;
-    color: $white;
     background: $blue;
 
 }
@@ -221,6 +221,7 @@ header {
     font-size: 2vw;
     line-height: 3.5vw;
     font-weight: $regular-weight;
+    color: $white;
 }
 
 .nav_item1 {
@@ -260,6 +261,10 @@ header {
 
 #nav-section {
     display: none;
+    color: $blue;
+    padding-left: 0;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 #nav-head:hover #nav-section {
@@ -268,6 +273,10 @@ header {
 
 ol {
     list-style-type: none;
+}
+
+.menu-icon__line {
+    color: #F9F4ED;
 }
 
 .site-nav {
@@ -281,6 +290,7 @@ ol {
 
         &[aria-expanded="true"] {
             .menu-icon__line {
+                color: #1b2d34;
                 $yValue: 10px;
                 $deg: 45deg;
 
@@ -316,8 +326,7 @@ ol {
             width: 100vw;
 
             &[data-visible="true"] {
-                animation: expand 0.3s ease-in-out forwards; // see the expand animation below
-                // this changes the height and opacity of the mobile menu
+                animation: expand 0.3s ease-in-out forwards;
                 display: flex;
             }
         }
@@ -364,11 +373,12 @@ ol {
 
         @media screen and (max-width: ($display-nav - 1px)) {
             color: #1b2d34;
-            font-size: 200%;
+            font-size: 150%;
         }
     }
 
     @keyframes expand {
+
         from {
             height: 0;
             opacity: 0;

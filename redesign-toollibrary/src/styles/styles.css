@@ -219,6 +219,7 @@ h1 {
   letter-spacing: .1vw;
   margin-top: 4vw;
   margin-bottom: 0;
+  color: #F9F4ED;
 }
 
 h2 {
@@ -242,7 +243,6 @@ header {
       grid-template-rows: repeat(10, 0.5fr);
   margin-top: -1vw;
   margin-left: -1vw;
-  color: #F9F4ED;
   background: #1b2d34;
 }
 
@@ -278,6 +278,7 @@ header {
   font-size: 2vw;
   line-height: 3.5vw;
   font-weight: 300;
+  color: #F9F4ED;
 }
 
 .nav_item1 {
@@ -339,6 +340,10 @@ header {
 
 #nav-section {
   display: none;
+  color: #1b2d34;
+  padding-left: 0;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 #nav-head:hover #nav-section {
@@ -349,11 +354,19 @@ ol {
   list-style-type: none;
 }
 
+.menu-icon__line {
+  color: #F9F4ED;
+}
+
 .site-nav__trigger {
   position: absolute;
   z-index: 1;
   top: 3vw;
   right: 4vw;
+}
+
+.site-nav__trigger[aria-expanded="true"] .menu-icon__line {
+  color: #1b2d34;
 }
 
 .site-nav__trigger[aria-expanded="true"] .menu-icon__line:nth-child(1) {
@@ -453,7 +466,7 @@ ol {
 @media screen and (max-width: 749px) {
   .site-nav__link {
     color: #1b2d34;
-    font-size: 200%;
+    font-size: 150%;
   }
 }
 
