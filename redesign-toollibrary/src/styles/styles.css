@@ -351,8 +351,9 @@ ol {
 
 .site-nav__trigger {
   position: absolute;
-  top: 0;
-  right: 0;
+  z-index: 1;
+  top: 3vw;
+  right: 4vw;
 }
 
 .site-nav__trigger[aria-expanded="true"] .menu-icon__line:nth-child(1) {
@@ -377,14 +378,14 @@ ol {
 
 @media screen and (max-width: 749px) {
   .site-nav__list {
-    background-color: rgba(68, 68, 68, 0.75);
+    background-color: #F9F4ED;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 0;
     position: absolute;
-    top: 30px;
+    top: -3vw;
     right: 0;
     left: 0;
     width: 100vw;
@@ -433,9 +434,10 @@ ol {
 
 @media screen and (max-width: 749px) {
   .site-nav__list-item {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 0;
   }
 }
 
@@ -444,12 +446,13 @@ ol {
 }
 
 .site-nav__link:hover {
-  opacity: 1;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @media screen and (max-width: 749px) {
   .site-nav__link {
-    color: white;
+    color: #1b2d34;
     font-size: 200%;
   }
 }
@@ -460,7 +463,7 @@ ol {
     opacity: 0;
   }
   to {
-    height: calc(100vh - 30px);
+    height: calc(100vh - -3vw);
     opacity: 1;
   }
 }
@@ -471,9 +474,20 @@ ol {
     opacity: 0;
   }
   to {
-    height: calc(100vh - 30px);
+    height: calc(100vh - -3vw);
     opacity: 1;
   }
+}
+
+.u-button-reset {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  text-align: inherit;
 }
 
 ul {
@@ -509,16 +523,5 @@ ul {
   margin-right: 40%;
   margin-left: auto;
   margin-top: 3%;
-}
-
-.u-button-reset {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  padding: 0;
-  text-align: inherit;
 }
 /*# sourceMappingURL=styles.css.map */

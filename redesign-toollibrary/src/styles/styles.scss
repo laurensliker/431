@@ -271,12 +271,13 @@ ol {
 }
 
 .site-nav {
-    $top-height: 30px;
+    $top-height: -3vw;
 
     &__trigger {
         position: absolute;
-        top: 0;
-        right: 0;
+        z-index: 1;
+        top: 3vw;
+        right: 4vw;
 
         &[aria-expanded="true"] {
             .menu-icon__line {
@@ -305,7 +306,7 @@ ol {
     &__list {
 
         @media screen and (max-width: ($display-nav - 1px)) {
-            background-color: rgba(#444, 0.75);
+            background-color: $white;
             flex-direction: column;
             height: 0;
             position: absolute;
@@ -349,7 +350,8 @@ ol {
 
 
         @media screen and (max-width: ($display-nav - 1px)) {
-            justify-content: center;
+            justify-content: left;
+            margin-left: 0;
         }
     }
 
@@ -357,11 +359,11 @@ ol {
         opacity: 0.85;
 
         &:hover {
-            opacity: 1;
+            text-decoration-line: underline;
         }
 
         @media screen and (max-width: ($display-nav - 1px)) {
-            color: white;
+            color: #1b2d34;
             font-size: 200%;
         }
     }
@@ -377,6 +379,17 @@ ol {
             opacity: 1;
         }
     }
+}
+
+.u-button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
 }
 
 ul {
@@ -400,17 +413,4 @@ ul {
     margin-right: 40%;
     margin-left: auto;
     margin-top: 3%;
-}
-
-// Utility classes
-
-.u-button-reset {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    padding: 0;
-    text-align: inherit;
 }
