@@ -202,6 +202,7 @@ header {
     padding-top: 4vw;
 }
 
+
 .menu-icon {
     &__line {
         background-color: #444;
@@ -229,53 +230,50 @@ header {
 nav {
     position: fixed;
     display: flex;
-    height: 20px;
     width: 100%;
     font-size: $capssize;
     font-weight: $regular-weight;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
     color: $blue;
     background: $white;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: $blue;
+    overflow: hidden;
 }
 
+.nav_item1 {
+    width: 200%;
+}
+
+.nav_item2 {
+    width: 100%;
+}
+
+.nav_item3 {
+    width: 100%;
+}
+
+.nav_item4 {
+    width: 100%;
+}
+
+.nav_item5 {
+    width: 100%;
+}
+
+.nav_item6 {
+    width: 100%;
+}
+
+
 #nav-section {
-    grid-column: 1/11;
-    grid-row: 2/3;
     display: none;
 }
 
 #nav-head:hover #nav-section {
     display: block;
-}
-
-.nav_item1 {
-    width: 20%;
-}
-
-.nav_item2 {
-    width: 30%;
-}
-
-.nav_item3 {
-    width: 30%;
-}
-
-.nav_item4 {
-    width: 30%;
-}
-
-.nav_item5 {
-    width: 30%;
-}
-
-.nav_item6 {
-    width: 30%;
 }
 
 ol {
@@ -340,8 +338,7 @@ ol {
 
     &__list-item {
         align-items: center;
-        display: flex;
-        flex: 1 0 auto;
+
 
         @media screen and (max-width: ($display-nav - 1px)) {
             justify-content: center;
@@ -397,8 +394,15 @@ ul {
     margin-top: 3%;
 }
 
-@media (max-width:500px) and (min-width:450px) {}
+// Utility classes
 
-@media (max-width: 649px) {
-    //*js mobile nav*//
+.u-button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
 }
