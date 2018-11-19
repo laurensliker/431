@@ -748,9 +748,24 @@ ul {
 }
 
 @media (max-width: 550px) {
+  .aboutus {
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 1;
+    grid-row: 12/13;
+  }
+  .aboutus_copy {
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 6;
+    grid-row: 13/19;
+  }
   body {
-    -ms-grid-rows: (14vw)[35];
-        grid-template-rows: repeat(35, 14vw);
+    -ms-grid-rows: (14vw)[38];
+        grid-template-rows: repeat(38, 14vw);
+  }
+  .cta {
+    -ms-grid-row: 20;
+    -ms-grid-row-span: 1;
+    grid-row: 20/21;
   }
   h1 {
     font-size: 5vw;
@@ -774,6 +789,89 @@ ul {
     padding-right: 0;
     font-size: 4vw;
     line-height: 7vw;
+  }
+  .upcomingevents {
+    -ms-grid-row: 22;
+    -ms-grid-row-span: 1;
+    grid-row: 22/23;
+  }
+  .upcomingevents_contents {
+    -ms-grid-row: 23;
+    -ms-grid-row-span: 3;
+    grid-row: 23/26;
+  }
+  footer {
+    -ms-grid-row: 30;
+    -ms-grid-row-span: 9;
+    grid-row: 30/39;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+  }
+  footer_sec1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  footer_sec2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  footer_sec3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  footer_sec4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  footer_sec5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+  }
+  footer_sec6 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+  }
+  footer_sec7 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
+  }
+  footer_sec8 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    grid-row: 8/9;
   }
 }
 /*# sourceMappingURL=styles.css.map */

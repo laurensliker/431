@@ -589,8 +589,21 @@ ul {
 }
 
 @media (max-width: 550px) {
+
+    .aboutus {
+        grid-row: 12/13;
+
+        &_copy {
+            grid-row: 13/19;
+        }
+    }
+
     body {
-        grid-template-rows: repeat(35, 14vw);
+        grid-template-rows: repeat(38, 14vw);
+    }
+
+    .cta {
+        grid-row: 20/21;
     }
 
     h1 {
@@ -612,5 +625,59 @@ ul {
         padding-right: 0;
         font-size: 4vw;
         line-height: 7vw;
+    }
+
+    .upcomingevents {
+        grid-row: 22/23;
+
+        &_contents {
+            grid-row: 23/26;
+        }
+    }
+
+    footer {
+        grid-row: 30/39;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+
+        &_sec1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        &_sec2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        &_sec3 {
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+
+        &_sec4 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+        &_sec5 {
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+
+        &_sec6 {
+            grid-column: 1/2;
+            grid-row: 6/7;
+        }
+
+        &_sec7 {
+            grid-column: 1/2;
+            grid-row: 7/8;
+        }
+
+        &_sec8 {
+            grid-column: 1/2;
+            grid-row: 8/9;
+        }
     }
 }
