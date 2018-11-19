@@ -342,12 +342,36 @@ header {
   display: none;
   color: #1b2d34;
   padding-left: 0;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 #nav-head:hover #nav-section {
   display: block;
+  -webkit-animation: drop ease-in .2s;
+          animation: drop ease-in .2s;
+}
+
+@-webkit-keyframes drop {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: calc(100vh - 0);
+    opacity: 1;
+  }
+}
+
+@keyframes drop {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: calc(100vh - 0);
+    opacity: 1;
+  }
 }
 
 ol {
