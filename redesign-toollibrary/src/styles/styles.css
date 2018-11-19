@@ -344,6 +344,7 @@ header {
   padding-left: 0;
   padding-top: 1vw;
   padding-bottom: 1vw;
+  font-weight: 300;
 }
 
 #nav-head:hover #nav-section {
@@ -423,7 +424,7 @@ ol {
     height: 0;
     position: absolute;
     top: -3vw;
-    right: 0;
+    margin-right: 0;
     left: 0;
     width: 100vw;
     padding-top: 10vw;
@@ -453,9 +454,7 @@ ol {
     padding-bottom: 2vw;
     margin-top: 0;
     font-size: 13px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-weight: 400;
     color: #1b2d34;
     background: #F9F4ED;
     border-bottom-style: solid;
@@ -486,6 +485,13 @@ ol {
 .site-nav__link:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@media screen and (min-width: 750px) {
+  .site-nav__link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }
 
 @media screen and (max-width: 749px) {

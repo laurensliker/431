@@ -12,7 +12,7 @@ sans-serif;
 
 /*google fonts, weights*/
 $bold-weight: 700;
-$medium-weight: 500;
+$medium-weight: 400;
 $regular-weight: 300;
 
 /*caps text*/
@@ -264,13 +264,14 @@ header {
     padding-left: 0;
     padding-top: 1vw;
     padding-bottom: 1vw;
+    font-weight: $regular-weight;
 }
 
 #nav-head:hover #nav-section {
     display: block;
     animation: drop ease-in .2s;
 
-    //how to make this a smoother transition//
+    //working on figuring out how to make this a smoother transition//
 
     @keyframes drop {
 
@@ -337,7 +338,7 @@ ol {
             height: 0;
             position: absolute;
             top: $top-height;
-            right: 0;
+            margin-right: 0;
             left: 0;
             width: 100vw;
             padding-top: 10vw;
@@ -360,9 +361,8 @@ ol {
             padding-bottom: 2vw;
             margin-top: 0;
             font-size: $capssize;
-            font-weight: $regular-weight;
-            text-transform: uppercase;
-            letter-spacing: $capsspacing;
+            font-weight: $medium-weight;
+
             color: $blue;
             background: $white;
             border-bottom-style: solid;
@@ -386,6 +386,11 @@ ol {
 
         &:hover {
             text-decoration-line: underline;
+        }
+
+        @media screen and (min-width: $display-nav) {
+            text-transform: uppercase;
+            letter-spacing: $capsspacing;
         }
 
         @media screen and (max-width: ($display-nav - 1px)) {
