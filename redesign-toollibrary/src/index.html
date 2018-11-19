@@ -91,13 +91,9 @@
 
     </h2>
 
-    <!-- Is there a better/ proper way to create a decorative line without creating a border in css? Is there a better way to make svgs responsive? -->
+    <!-- Is there a better/ proper way to scale a decorative line? I used svg first and it was even less responsive. I used aria hidden to hise from screen reading but is there a backup if this isnt supported by browser?  -->
 
-    <svg class="aboutus_stroke" height="60" width="60%">
-        <g fill="none">
-            <path stroke="black" d="M5 1 l215 1" />
-        </g>
-    </svg>
+    <div class="aboutus_stroke" aria-hidden="true"></div>
 
     <section class="aboutus_copy">
         <p class="aboutus_copy"> SNTL is a nonprofit tool-lending library and community hub in the heart of Baltimore
@@ -120,11 +116,7 @@
 
     <h2 class="upcomingevents">Upcoming Events</h2>
 
-    <svg class="upcomingevents_stroke" height="60" width="100%">
-        <g fill="none">
-            <path stroke="black" d="M5 1 1500 1" />
-        </g>
-    </svg>
+    <div class="upcomingevents_stroke" aria-hidden="true"></div>
 
     <section class="upcomingevents_contents">
         <ol>
