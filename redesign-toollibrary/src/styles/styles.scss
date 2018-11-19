@@ -37,6 +37,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .aboutus {
     grid-column: 1/4;
     grid-row: 9/11;
@@ -383,10 +387,6 @@ ol {
 
     &__link {
         opacity: 0.85;
-
-        &:hover {
-            text-decoration-line: underline;
-        }
 
         @media screen and (min-width: $display-nav) {
             text-transform: uppercase;

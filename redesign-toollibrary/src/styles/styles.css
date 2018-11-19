@@ -12,6 +12,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .aboutus {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -480,11 +484,6 @@ ol {
 
 .site-nav__link {
   opacity: 0.85;
-}
-
-.site-nav__link:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 @media screen and (min-width: 750px) {
