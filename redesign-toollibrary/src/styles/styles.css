@@ -258,7 +258,7 @@ header {
 }
 
 .menu-icon__line {
-  background-color: #444;
+  background-color: #F9F4ED;
   height: 2px;
   margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -390,7 +390,7 @@ ol {
 }
 
 .site-nav__trigger[aria-expanded="true"] .menu-icon__line {
-  color: #1b2d34;
+  background-color: #1b2d34;
 }
 
 .site-nav__trigger[aria-expanded="true"] .menu-icon__line:nth-child(1) {
@@ -426,6 +426,7 @@ ol {
     right: 0;
     left: 0;
     width: 100vw;
+    padding-top: 10vw;
   }
   .site-nav__list[data-visible="true"] {
     -webkit-animation: expand 0.3s ease-in-out forwards;

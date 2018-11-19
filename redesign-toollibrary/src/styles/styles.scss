@@ -205,7 +205,7 @@ header {
 
 .menu-icon {
     &__line {
-        background-color: #444;
+        background-color: $white;
         height: 2px;
         margin: 8px auto;
         transition: all 0.3s ease-in-out;
@@ -270,6 +270,8 @@ header {
     display: block;
     animation: drop ease-in .2s;
 
+    //how to make this a smoother transition//
+
     @keyframes drop {
 
         from {
@@ -304,7 +306,7 @@ ol {
 
         &[aria-expanded="true"] {
             .menu-icon__line {
-                color: #1b2d34;
+                background-color: #1b2d34;
                 $yValue: 10px;
                 $deg: 45deg;
 
@@ -338,6 +340,7 @@ ol {
             right: 0;
             left: 0;
             width: 100vw;
+            padding-top: 10vw;
 
             &[data-visible="true"] {
                 animation: expand 0.3s ease-in-out forwards;
