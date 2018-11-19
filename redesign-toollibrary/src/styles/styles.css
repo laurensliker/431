@@ -293,6 +293,12 @@ header {
   color: #F9F4ED;
 }
 
+nav {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .nav_item1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -348,6 +354,11 @@ header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+}
+
+.nav_item-logo {
+  width: 70%;
+  fill: #1b2d34;
 }
 
 #nav-section {
@@ -545,7 +556,7 @@ ul {
   margin-left: 4vw;
 }
 
-/*This will be where the image carosel we are making in class will be*/
+/*This will be where the image carousel we are making in class will be*/
 .upcomingevents_contents {
   -ms-grid-column: 4;
   -ms-grid-column-span: 7;
@@ -556,15 +567,16 @@ ul {
 }
 
 .upcomingevents_stroke {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 5;
-  grid-column: 4/9;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 6;
+  grid-column: 3/9;
   -ms-grid-row: 14;
   -ms-grid-row-span: 1;
   grid-row: 14/15;
   border-top-style: solid;
   border-top-width: 1px;
   margin-top: 4%;
+  margin-left: 5vw;
 }
 
 @media (max-width: 930px) {

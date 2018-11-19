@@ -236,6 +236,10 @@ header {
     color: $white;
 }
 
+nav {
+    align-items: baseline;
+}
+
 .nav_item1 {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -268,6 +272,11 @@ header {
 .nav_item6 {
     grid-column: 6/7;
     grid-row: 1/2;
+}
+
+.nav_item-logo {
+    width: 70%;
+    fill: #1b2d34;
 }
 
 #nav-section {
@@ -433,7 +442,7 @@ ul {
     margin-left: $left-margin;
 }
 
-/*This will be where the image carosel we are making in class will be*/
+/*This will be where the image carousel we are making in class will be*/
 
 .upcomingevents_contents {
     grid-column: 4/11;
@@ -441,11 +450,12 @@ ul {
 }
 
 .upcomingevents_stroke {
-    grid-column: 4/9;
+    grid-column: 3/9;
     grid-row: 14/15;
     border-top-style: solid;
     border-top-width: 1px;
     margin-top: 4%;
+    margin-left: 5vw;
 }
 
 @media (max-width:930px) {
