@@ -299,27 +299,27 @@ nav {
 }
 
 .nav_item1 {
-  width: 200%;
+  width: 300%;
 }
 
 .nav_item2 {
-  width: 100%;
+  width: 300%;
 }
 
 .nav_item3 {
-  width: 100%;
+  width: 300%;
 }
 
 .nav_item4 {
-  width: 100%;
+  width: 300%;
 }
 
 .nav_item5 {
-  width: 100%;
+  width: 300%;
 }
 
 .nav_item6 {
-  width: 100%;
+  width: 300%;
 }
 
 #nav-section {
@@ -385,9 +385,7 @@ ol {
 
 @media screen and (min-width: 700px) {
   .site-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 
