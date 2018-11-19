@@ -524,4 +524,30 @@ ul {
   margin-left: auto;
   margin-top: 3%;
 }
+
+@media (max-width: 900px) {
+  body {
+    -ms-grid-columns: (1fr)[9];
+        grid-template-columns: repeat(9, 1fr);
+    -ms-grid-rows: (11vw)[21];
+        grid-template-rows: repeat(21, 11vw);
+  }
+  h1 {
+    font-size: 3.2vw;
+  }
+  header {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 10;
+    grid-column: 1/11;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    grid-row: 1/6;
+    margin-right: -1vw;
+  }
+  .mission-statement {
+    padding-right: 25%;
+    font-size: 2.4vw;
+    line-height: 4vw;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
