@@ -33,7 +33,7 @@ a:hover {
   -ms-grid-row: 9;
   -ms-grid-row-span: 2;
   grid-row: 9/11;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 3vw;
   margin-top: 0;
@@ -60,7 +60,7 @@ body {
       grid-template-columns: repeat(10, 1fr);
   -ms-grid-rows: (10vw)[21];
       grid-template-rows: repeat(21, 10vw);
-  background: #F9F4ED;
+  background: #FCFCFC;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -78,10 +78,10 @@ body {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-gap: 2vw;
-  color: #F9F4ED;
+  color: #FCFCFC;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   text-align: center;
   -webkit-box-align: center;
@@ -139,7 +139,7 @@ footer {
   margin: -8px;
   padding: 4vw;
   background: #1b2d34;
-  color: #F9F4ED;
+  color: #FCFCFC;
 }
 
 footer_sec1 {
@@ -149,7 +149,7 @@ footer_sec1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 2px;
 }
 
@@ -160,7 +160,7 @@ footer_sec2 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-size: 12px;
+  font-size: 10px;
   padding-top: 3vw;
 }
 
@@ -180,7 +180,7 @@ footer_sec4 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  font-size: 12px;
+  font-size: 10px;
   padding-top: 3vw;
 }
 
@@ -201,7 +201,7 @@ footer_sec6 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-size: 12px;
+  font-size: 10px;
   padding-top: 3vw;
 }
 
@@ -221,7 +221,7 @@ footer_sec8 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  font-size: 12px;
+  font-size: 10px;
   padding-top: 3vw;
 }
 
@@ -238,11 +238,11 @@ h1 {
   letter-spacing: .1vw;
   margin-top: 4vw;
   margin-bottom: 0;
-  color: #F9F4ED;
+  color: #FCFCFC;
 }
 
 h2 {
-  font-size: 13px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -277,7 +277,7 @@ header {
 }
 
 .menu-icon__line {
-  background-color: #F9F4ED;
+  background-color: #FCFCFC;
   height: 2px;
   margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -297,7 +297,7 @@ header {
   font-size: 2vw;
   line-height: 3.5vw;
   font-weight: 300;
-  color: #F9F4ED;
+  color: #FCFCFC;
 }
 
 .nav_item1 {
@@ -436,7 +436,7 @@ ol {
 
 @media screen and (max-width: 749px) {
   .site-nav__list {
-    background-color: #F9F4ED;
+    background-color: #FCFCFC;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -473,10 +473,10 @@ ol {
     padding-top: 2vw;
     padding-bottom: 1vw;
     margin-top: 0;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 400;
     color: #1b2d34;
-    background: #F9F4ED;
+    background: #FCFCFC;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #1b2d34;
@@ -676,7 +676,7 @@ ul {
     margin: -8px;
     padding: 4vw;
     background: #1b2d34;
-    color: #F9F4ED;
+    color: #FCFCFC;
   }
   footer_sec5 {
     -ms-grid-column: 1;

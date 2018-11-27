@@ -17,17 +17,17 @@ $regular-weight: 300;
 
 /*caps text*/
 $capsspacing: 2px;
-$capssize: 13px;
+$capssize: 11px;
 
 /*footer text*/
-$footersize: 12px;
+$footersize: 10px;
 $footersec-toppadding: 3vw;
 
 /*far left page margin on desktop layout*/
 $left-margin: 4vw;
 
 //colors//
-$white: #F9F4ED;
+$white: #FCFCFC;
 $blue:#1b2d34;
 $pink:#C1423F;
 
@@ -48,7 +48,7 @@ a:hover {
     &_copy {
         grid-column: 4/9;
         grid-row: 9/11;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: $regular-weight;
         line-height: 3vw;
         margin-top: 0;
