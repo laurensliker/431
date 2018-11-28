@@ -61,7 +61,7 @@ body {
   -ms-grid-rows: (10vw)[21];
       grid-template-rows: repeat(21, 10vw);
   background: #FCFCFC;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .cta {
@@ -294,7 +294,7 @@ header {
   grid-row: 4/6;
   padding-left: 4vw;
   padding-right: 30%;
-  font-size: 2vw;
+  font-size: 1.7vw;
   line-height: 3.5vw;
   font-weight: 300;
   color: #FCFCFC;
@@ -576,9 +576,9 @@ ul {
     margin-right: -1vw;
   }
   .mission-statement {
-    padding-right: 25%;
-    font-size: 2.4vw;
-    line-height: 4vw;
+    padding-right: 20%;
+    font-size: 2.2vw;
+    line-height: 5vw;
   }
 }
 
@@ -681,6 +681,11 @@ ul {
     -ms-grid-row-span: 2;
     grid-row: 4/6;
   }
+  .mission-statement {
+    padding-right: 2vw;
+    font-size: 2.8vw;
+    line-height: 5vw;
+  }
   .upcomingevents {
     -ms-grid-column: 2;
     -ms-grid-column-span: 7;
@@ -715,6 +720,7 @@ ul {
     -ms-grid-row: 13;
     -ms-grid-row-span: 6;
     grid-row: 13/19;
+    line-height: 7vw;
   }
   body {
     -ms-grid-rows: (14vw)[38];
@@ -744,7 +750,6 @@ ul {
     margin-left: 2vw;
   }
   .mission-statement {
-    padding-right: 0;
     font-size: 4vw;
     line-height: 7vw;
   }
