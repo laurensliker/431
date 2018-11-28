@@ -333,13 +333,13 @@ ol {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             position: fixed;
             width: 93%;
             overflow: hidden;
             padding-left: 4vw;
             padding-right: 4vw;
-            padding-top: 2vw;
+            padding-top: 1vw;
             padding-bottom: 1vw;
             margin-top: 0;
             font-size: $capssize;
