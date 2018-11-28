@@ -444,6 +444,12 @@ ol {
   }
 }
 
+@media screen and (min-width: 750px) {
+  .site-nav__list-item {
+    margin-top: 18px;
+  }
+}
+
 .site-nav__link {
   opacity: 0.85;
 }

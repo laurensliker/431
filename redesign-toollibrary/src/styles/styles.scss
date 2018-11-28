@@ -357,6 +357,10 @@ ol {
             justify-content: left;
             margin-left: 0;
         }
+
+        @media screen and (min-width: $display-nav) {
+            margin-top: 18px;
+        }
     }
 
     &__link {
