@@ -47,8 +47,8 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[10];
       grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (10vw)[21];
-      grid-template-rows: repeat(21, 10vw);
+  -ms-grid-rows: (10vw)[23];
+      grid-template-rows: repeat(23, 10vw);
   background: #FCFCFC;
   font-family: "Raleway", sans-serif;
 }
@@ -113,9 +113,9 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 10;
   grid-column: 1/11;
-  -ms-grid-row: 19;
+  -ms-grid-row: 21;
   -ms-grid-row-span: 3;
-  grid-row: 19/22;
+  grid-row: 21/24;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -494,12 +494,15 @@ ul {
 
 .upcomingevents {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 14;
-  -ms-grid-row-span: 4;
-  grid-row: 14/18;
+  -ms-grid-column-span: 9;
+  grid-column: 1/10;
+  -ms-grid-row: 15;
+  -ms-grid-row-span: 1;
+  grid-row: 15/16;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
   margin-left: 4vw;
+  margin-bottom: 5vw;
   /*This will be where the image carousel we are making in class will be*/
 }
 
@@ -507,22 +510,9 @@ ul {
   -ms-grid-column: 4;
   -ms-grid-column-span: 7;
   grid-column: 4/11;
-  -ms-grid-row: 15;
+  -ms-grid-row: 16;
   -ms-grid-row-span: 3;
-  grid-row: 15/18;
-}
-
-.upcomingevents_stroke {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 6;
-  grid-column: 3/9;
-  -ms-grid-row: 14;
-  -ms-grid-row-span: 1;
-  grid-row: 14/15;
-  border-top-style: solid;
-  border-top-width: 1px;
-  margin-top: 4%;
-  margin-left: 5vw;
+  grid-row: 16/19;
 }
 
 @media (max-width: 930px) {
