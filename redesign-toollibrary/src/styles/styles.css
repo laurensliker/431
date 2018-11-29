@@ -67,7 +67,7 @@ body {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-gap: 2vw;
-  color: #FCFCFC;
+  color: #C1423F;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -84,7 +84,10 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   padding: 20px;
-  background: #C1423F;
+  background: #FCFCFC;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #C1423F;
 }
 
 .cta_link2 {
@@ -95,7 +98,10 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   padding: 20px;
-  background: #C1423F;
+  background: #FCFCFC;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #C1423F;
 }
 
 .cta_link3 {
@@ -106,7 +112,10 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   padding: 20px;
-  background: #C1423F;
+  background: #FCFCFC;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #C1423F;
 }
 
 footer {
