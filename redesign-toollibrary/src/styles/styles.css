@@ -125,7 +125,7 @@ footer {
   grid-gap: 3vw;
   margin: -8px;
   padding: 4vw;
-  background: #1b2d34;
+  background: #1b2339;
   color: #FCFCFC;
 }
 
@@ -249,7 +249,7 @@ header {
       grid-template-rows: repeat(10, 0.5fr);
   margin-top: -1.1vw;
   margin-left: -1.1vw;
-  background: #1b2d34;
+  background: #1b2339;
 }
 
 .heroimage {
@@ -295,7 +295,7 @@ header {
 
 #nav-section {
   display: none;
-  color: #1b2d34;
+  color: #1b2339;
   padding-left: 0;
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -414,11 +414,11 @@ ol {
     margin-top: 0;
     font-size: 11px;
     font-weight: 400;
-    color: #1b2d34;
+    color: #1b2339;
     background: #FCFCFC;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: #1b2d34;
+    border-bottom-color: #1b2339;
   }
 }
 
@@ -594,7 +594,7 @@ ul {
         grid-template-rows: repeat(4, 1fr);
     margin: -8px;
     padding: 4vw;
-    background: #1b2d34;
+    background: #1b2339;
     color: #FCFCFC;
   }
   footer_sec5 {
