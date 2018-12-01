@@ -1,3 +1,163 @@
+/*  Removes default styles from a button element */
+.u-button-reset {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  text-align: inherit;
+}
+
+.u-fit {
+  max-width: 100%;
+}
+
+.u-list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
+.u-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slideshow {
+  padding-bottom: 1%;
+  position: relative;
+  width: 75%;
+}
+
+.slideshow__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.slideshow__list-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  max-width: 84%;
+}
+
+.slideshow__list-item[data-active="false"] {
+  display: none;
+}
+
+.slideshow__list-item figure {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  margin: 0;
+  width: 100%;
+}
+
+.slideshow__image {
+  height: auto;
+  max-height: 80%;
+  -webkit-transition: -webkit-filter 0.2s ease-in-out;
+  transition: -webkit-filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+  width: auto;
+}
+
+.slideshow__image[data-src] {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  height: 50%;
+  width: 50%;
+}
+
+.slideshow__caption {
+  bottom: 3%;
+  position: absolute;
+}
+
+.slideshow__button {
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.slideshow__button svg {
+  fill: rgba(0, 0, 0, 0.6);
+  height: 36px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 36px;
+}
+
+.slideshow__button:hover svg {
+  fill: black;
+}
+
+.slideshow__button:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+.slideshow__button:focus svg {
+  fill: black;
+}
+
+.slideshow__button[data-action="previous"], .slideshow__button[data-action="next"] {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 1%;
+  padding-right: 1%;
+  top: 0;
+  width: 8%;
+}
+
+.slideshow__button[data-action="previous"] {
+  left: 0;
+}
+
+.slideshow__button[data-action="next"] {
+  right: 0;
+}
+
+.slideshow__button[data-action="play"], .slideshow__button[data-action="pause"] {
+  right: 10%;
+  bottom: 3%;
+}
+
+.slideshow__button[data-action="play"] svg, .slideshow__button[data-action="pause"] svg {
+  height: 20px;
+  width: 20px;
+}
+
+.slideshow__button[data-action="play"] .icon--pause {
+  display: none;
+}
+
+.slideshow__button[data-action="pause"] .icon--play {
+  display: none;
+}
+
 [data-visible="false"] {
   display: none;
 }
@@ -83,11 +243,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  padding: 20px;
-  background: #FCFCFC;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #C1423F;
 }
 
 .cta_link2 {
@@ -97,11 +252,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  padding: 20px;
-  background: #FCFCFC;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #C1423F;
 }
 
 .cta_link3 {
@@ -111,6 +261,9 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+}
+
+.cta_link-border {
   padding: 20px;
   background: #FCFCFC;
   border-style: solid;
@@ -267,8 +420,8 @@ header {
   -ms-grid-column-span: 5;
   grid-column: 4/9;
   -ms-grid-row: 4;
-  -ms-grid-row-span: 5;
-  grid-row: 4/9;
+  -ms-grid-row-span: 3;
+  grid-row: 4/7;
   padding-top: 4vw;
 }
 
@@ -294,12 +447,6 @@ header {
   line-height: 3.5vw;
   font-weight: 300;
   color: #FCFCFC;
-}
-
-.nav_item-logo {
-  width: 120px;
-  fill: #1b2d34;
-  margin-right: 5vw;
 }
 
 #nav-section {
@@ -484,6 +631,12 @@ ol {
     height: calc(100vh - -3vw);
     opacity: 1;
   }
+}
+
+.site-nav_logo {
+  width: 120px;
+  fill: #1b2339;
+  margin-right: 5vw;
 }
 
 .u-button-reset {

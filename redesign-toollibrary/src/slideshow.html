@@ -1,0 +1,21 @@
+---
+layout: layouts/blank.njk
+title: slideshow
+---
+<h1>slideshow</h1>
+{% include "_slider-icons.html" %}
+
+{% import "_slideshow-slide.njk" as slide %}
+
+<section id="js-slideshow" class="slideshow u-mx-auto">
+    <div class="slideshow-container u-mx-auto">
+        <ul class="u-fit slideshow__list-item u-list-reset">
+            {{ slide.item("toollibrary_sign", "caption 1 here", "alt 1 here") }}
+            {{ slide.item("scroll+saw", "caption 2 here", "alt 2 here") }}
+            {{ slide.item("RepairCafeUccle", "caption 3 here", "alt 3 here") }}
+            {{ slide.item("repair-cafe", "caption 4 here", "alt 4 here") }}
+        </ul>
+    </div>
+</section>
+
+{% include "_slideshow-controls.html" %}
