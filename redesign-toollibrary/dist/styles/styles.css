@@ -285,7 +285,7 @@ footer {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  margin: -.5vw;
+  margin: -1vw;
 }
 
 footer .footer_contact {
@@ -303,6 +303,7 @@ footer .footer_contact {
       grid-template-rows: repeat(4, 0.5fr);
   background: #1b2339;
   color: #FCFCFC;
+  padding: 4vw;
 }
 
 footer .footer_socials {

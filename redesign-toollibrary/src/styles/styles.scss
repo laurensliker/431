@@ -113,7 +113,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin: -.5vw;
+    margin: -1vw;
 
 
     .footer_contact {
@@ -124,16 +124,24 @@ footer {
         grid-template-rows: repeat(4, .5fr);
         background: $blue;
         color: $white;
-
-        &_contact-sec1 {}
+        padding: 4vw;
     }
 
     .footer_socials {
         grid-column: 1/5;
         grid-row: 1/2;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+align-content:center;
         background: $pink;
+
+        &-icon1 {
+justify-content:center;
+            width: 100%;
+            fill: $blue;
+            margin-right: 5vw;
+    
+        }
     }
 }
 
@@ -294,7 +302,7 @@ ol {
         }
 
         @media screen and (max-width: ($display-nav - 1px)) {
-            color: #1b2d34;
+            color: $blue;
             font-size: 150%;
         }
     }
