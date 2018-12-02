@@ -3,11 +3,6 @@
 // display nav mobile change//
 $display-nav: 750px;
 
-// JS action classes (*****where to place action classes in relation to other css content****)//
-[data-visible="false"] {
-    display: none;
-}
-
 /*google fonts*/
 $sans-serif:'Raleway',
 sans-serif;
