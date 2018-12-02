@@ -409,8 +409,8 @@ h2 {
 
 header {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 9;
-  grid-column: 1/10;
+  -ms-grid-column-span: 10;
+  grid-column: 1/11;
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
   grid-row: 1/7;
@@ -420,8 +420,7 @@ header {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (0.5fr)[10];
       grid-template-rows: repeat(10, 0.5fr);
-  margin-top: -1.1vw;
-  margin-left: -1.1vw;
+  margin: -1.1vw;
   background: #1b2339;
 }
 
@@ -658,17 +657,13 @@ ul {
     -ms-grid-rows: (11.5vw)[21];
         grid-template-rows: repeat(21, 11.5vw);
   }
+  .site-nav_link {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   h1 {
     font-size: 3.2vw;
-  }
-  header {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 10;
-    grid-column: 1/11;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 5;
-    grid-row: 1/6;
-    margin-right: -1vw;
   }
   .mission-statement {
     padding-right: 20%;
