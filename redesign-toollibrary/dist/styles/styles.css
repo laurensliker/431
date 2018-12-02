@@ -158,10 +158,6 @@
   display: none;
 }
 
-[data-visible="false"] {
-  display: none;
-}
-
 /*google fonts*/
 /*google fonts, weights*/
 /*caps text*/
@@ -187,6 +183,7 @@ a:hover {
   border-bottom-width: 1px;
   margin-left: 4vw;
   margin-bottom: 5vw;
+  color: #1b2339;
 }
 
 .aboutus_copy {
