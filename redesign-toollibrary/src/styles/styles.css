@@ -190,6 +190,15 @@
   grid-row: 1/5;
 }
 
+.classes_description {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/11;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 9;
+  grid-row: 8/17;
+}
+
 .classes_heading {
   -ms-grid-column: 1;
   -ms-grid-column-span: 10;
