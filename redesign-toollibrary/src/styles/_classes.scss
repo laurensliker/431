@@ -3,8 +3,16 @@
     font-size: 28px;
 }
 
-.classes_banner {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(27, 10vw);
+.classes {
+    &_wrapper {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(27, 10vw);
+    }
+
+    &_banner {
+        grid-column: 1/11;
+        grid-row: 1/5;
+    }
+
 }

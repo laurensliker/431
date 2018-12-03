@@ -172,13 +172,22 @@
   font-size: 28px;
 }
 
-.classes_banner {
+.classes_wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[10];
       grid-template-columns: repeat(10, 1fr);
   -ms-grid-rows: (10vw)[27];
       grid-template-rows: repeat(27, 10vw);
+}
+
+.classes_banner {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/11;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
 }
 
 a {
