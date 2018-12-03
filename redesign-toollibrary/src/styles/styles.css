@@ -1,3 +1,12 @@
+[data-visible="false"] {
+  display: none;
+}
+
+/*google fonts*/
+/*google fonts, weights*/
+/*caps text*/
+/*footer text*/
+/*far left page margin on desktop layout*/
 /*  Removes default styles from a button element */
 .u-button-reset {
   background: transparent;
@@ -158,15 +167,11 @@
   display: none;
 }
 
-[data-visible="false"] {
-  display: none;
+.groups {
+  color: #1b2339;
+  font-size: 28px;
 }
 
-/*google fonts*/
-/*google fonts, weights*/
-/*caps text*/
-/*footer text*/
-/*far left page margin on desktop layout*/
 a {
   text-decoration: none;
   color: inherit;

@@ -1,7 +1,3 @@
-@import "slideshow";
-
-@import "classes";
-
 [data-visible="false"] {
     display: none;
 }
@@ -33,6 +29,13 @@ $edge-margin: 4vw;
 $white: #FCFCFC;
 $blue:#1b2339;
 $pink:#C1423F;
+
+
+//importing after variables so other scss files can use variables//
+@import "slideshow";
+
+@import "classes";
+
 
 a {
     text-decoration: none;
