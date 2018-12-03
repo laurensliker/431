@@ -149,7 +149,7 @@ h1 {
     letter-spacing: .1vw;
     margin-top: 4vw;
     margin-bottom: 0;
-    color: $white;
+
 }
 
 h2 {
@@ -166,6 +166,7 @@ header {
     grid-template-rows: repeat(10, .5fr);
     margin: -1.1vw;
     background: $blue;
+    color: $white;
 }
 
 .heroimage {
@@ -194,7 +195,6 @@ header {
     font-size: 1.7vw;
     line-height: 3.5vw;
     font-weight: $regular-weight;
-    color: $white;
 }
 
 ol {

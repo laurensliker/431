@@ -336,7 +336,6 @@ h1 {
   letter-spacing: .1vw;
   margin-top: 4vw;
   margin-bottom: 0;
-  color: #FCFCFC;
 }
 
 h2 {
@@ -360,6 +359,7 @@ header {
       grid-template-rows: repeat(10, 0.5fr);
   margin: -1.1vw;
   background: #1b2339;
+  color: #FCFCFC;
 }
 
 .heroimage {
@@ -394,7 +394,6 @@ header {
   font-size: 1.7vw;
   line-height: 3.5vw;
   font-weight: 300;
-  color: #FCFCFC;
 }
 
 ol {
