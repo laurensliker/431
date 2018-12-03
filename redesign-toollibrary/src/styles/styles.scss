@@ -1,5 +1,7 @@
 @import "slideshow";
 
+@import "classes";
+
 [data-visible="false"] {
     display: none;
 }
@@ -114,34 +116,27 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: -1vw;
+}
 
+.footer_contact {
+    grid-column: 1/5;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, .5fr);
+    background: $blue;
+    color: $white;
+    padding: 4vw;
+}
 
-    .footer_contact {
-        grid-column: 1/5;
-        grid-row: 2/4;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(4, .5fr);
-        background: $blue;
-        color: $white;
-        padding: 4vw;
-    }
+.footer_socials {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: flex;
+    background: $pink;
 
-    .footer_socials {
-        grid-column: 1/5;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: space-between;
-align-content:center;
-        background: $pink;
-
-        &-icon1 {
-justify-content:center;
-            width: 100%;
-            fill: $blue;
-            margin-right: 5vw;
-    
-        }
+    &_icon1 {
+        width: 40px;
     }
 }
 
@@ -268,7 +263,7 @@ ol {
             overflow: hidden;
             margin-top: 0;
             margin-left: -1vw;
-            padding-left: 3vw;
+            padding-left: 4vw;
             padding-right: 4vw;
             padding-top: 1vw;
             padding-bottom: 1vw;
