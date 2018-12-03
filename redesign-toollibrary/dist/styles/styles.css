@@ -172,6 +172,15 @@
   font-size: 28px;
 }
 
+.classes_banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (10vw)[27];
+      grid-template-rows: repeat(27, 10vw);
+}
+
 a {
   text-decoration: none;
   color: inherit;

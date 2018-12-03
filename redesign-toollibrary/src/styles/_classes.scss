@@ -2,3 +2,9 @@
     color: $blue;
     font-size: 28px;
 }
+
+.classes_banner {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(27, 10vw);
+}
