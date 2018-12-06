@@ -155,11 +155,13 @@ h1 {
     padding-left: $edge-margin;
 }
 
-h2 {
+
+.caps-text {
     font-size: $capssize;
     text-transform: uppercase;
     letter-spacing: $capsspacing;
 }
+
 
 header {
     grid-column: 1/11;

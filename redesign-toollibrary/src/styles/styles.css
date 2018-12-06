@@ -176,6 +176,9 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #1b2339;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
 }
 
 .booking_form {
@@ -424,7 +427,7 @@ h1 {
   padding-left: 6vw;
 }
 
-h2 {
+.caps-text {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
