@@ -62,15 +62,6 @@ a:hover {
     }
 }
 
-body {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(23, 10vw);
-    margin: 6px;
-    background: $white;
-    font-family: $sans-serif;
-}
-
 .cta {
     grid-column: 4/9;
     grid-row: 13/14;
@@ -111,8 +102,9 @@ body {
 }
 
 footer {
-    grid-column: 1/11;
-    grid-row: 21/24;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -155,6 +147,13 @@ h1 {
     padding-left: $edge-margin;
 }
 
+.home_wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(23, 10vw);
+
+    margin: 6px;
+}
 
 .caps-text {
     font-size: $capssize;
@@ -331,7 +330,12 @@ p {
     }
 }
 
-
+#site-wrapper {
+    background: $white;
+    font-family: $sans-serif;
+    min-height: 100%;
+    position: relative;
+}
 
 .u-button-reset {
     background: transparent;
