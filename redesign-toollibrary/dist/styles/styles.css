@@ -226,7 +226,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
-  min-height: 350vw;
+  min-height: 400vw;
 }
 
 .classes_heading-banner {
@@ -284,11 +284,21 @@
 }
 
 fieldset {
-  margin-bottom: 4vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input {
+  margin-bottom: 2vw;
 }
 
 ol {
   padding-left: 2vw;
+}
+
+select {
+  margin-bottom: 2vw;
 }
 
 a {
@@ -396,7 +406,6 @@ footer {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  margin: -1vw;
 }
 
 .footer_contact {
