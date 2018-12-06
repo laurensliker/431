@@ -1,6 +1,37 @@
+//all non-home nav pages have the same alternate grid: banner/ heading/ then content formet//
+
 .groups {
     color: $blue;
     font-size: 28px;
+}
+
+.alt {
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 400vw;
+    }
+
+    &_heading {
+
+        &-banner {
+            width: 100%;
+            height: auto;
+        }
+
+        &-title {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 10%;
+        }
+
+        &-description {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 10%;
+        }
+    }
 }
 
 .booking {
@@ -46,36 +77,6 @@
     }
 }
 
-.classes {
-    &_wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        min-height: 400vw;
-        ;
-    }
-
-    &_heading {
-
-        &-banner {
-            width: 100%;
-            height: auto;
-        }
-
-        &-title {
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-top: 10%;
-        }
-
-        &-description {
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 10%;
-        }
-    }
-}
-
 .class-description {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -116,6 +117,20 @@ fieldset {
 input {
     margin-bottom: 2vw;
 }
+
+.membership-options {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: $blue;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 2vw;
+    text-align-last: center;
+}
+
 
 ol {
     padding-left: 2vw;

@@ -172,6 +172,35 @@
   font-size: 28px;
 }
 
+.alt_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  min-height: 400vw;
+}
+
+.alt_heading-banner {
+  width: 100%;
+  height: auto;
+}
+
+.alt_heading-title {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+.alt_heading-description {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
 .booking_form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,35 +244,6 @@
 
 .booking_submit:hover {
   text-decoration: underline;
-}
-
-.classes_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100vw;
-  min-height: 400vw;
-}
-
-.classes_heading-banner {
-  width: 100%;
-  height: auto;
-}
-
-.classes_heading-title {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
-}
-
-.classes_heading-description {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
 }
 
 .class-description {
@@ -291,6 +291,21 @@ fieldset {
 
 input {
   margin-bottom: 2vw;
+}
+
+.membership-options {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10vw;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #1b2339;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  grid-gap: 2vw;
+  text-align-last: center;
 }
 
 ol {
