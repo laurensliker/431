@@ -9,6 +9,12 @@
         border-bottom-style: solid;
         border-bottom-color: $blue;
     }
+
+    &_form {
+        display: grid;
+        grid-template-columns: repeat(10, 1vw);
+        grid-template-rows: repeat(9, 1vw);
+    }
 }
 
 .classes {
@@ -36,17 +42,26 @@
             padding-right: 10%;
             padding-bottom: 10%;
         }
+    }
+}
 
+.class-description {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: $blue;
+    color: $white;
 
+    &_column-1 {
+        grid-column: 1/2;
+        margin: $edge-margin;
     }
 
-    &_description {
-        grid-column: span;
-        grid-row: 8/17;
-        display: grid;
-        grid-template-columns: repeat(10, 1vw);
-        grid-template-rows: repeat(9, 1vw);
-        background-color: $blue;
-        color: $white;
+    &_column-2 {
+        grid-column: 2/3;
+        margin: $edge-margin;
+    }
+
+    &_img-1 {
+        width: 80%;
     }
 }

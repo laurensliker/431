@@ -178,6 +178,15 @@
   border-bottom-color: #1b2339;
 }
 
+.booking_form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1vw)[10];
+      grid-template-columns: repeat(10, 1vw);
+  -ms-grid-rows: (1vw)[9];
+      grid-template-rows: repeat(9, 1vw);
+}
+
 .classes_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,19 +215,31 @@
   padding-bottom: 10%;
 }
 
-.classes_description {
-  grid-column: span;
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 9;
-  grid-row: 8/17;
+.class-description {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1vw)[10];
-      grid-template-columns: repeat(10, 1vw);
-  -ms-grid-rows: (1vw)[9];
-      grid-template-rows: repeat(9, 1vw);
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
   background-color: #1b2339;
   color: #FCFCFC;
+}
+
+.class-description_column-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  margin: 6vw;
+}
+
+.class-description_column-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin: 6vw;
+}
+
+.class-description_img-1 {
+  width: 80%;
 }
 
 a {
@@ -239,7 +260,7 @@ a:hover {
   grid-row: 9/10;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  margin-left: 4vw;
+  margin-left: 6vw;
   margin-bottom: 5vw;
   color: #1b2339;
 }
@@ -390,7 +411,7 @@ h1 {
   grid-row: 3/4;
   margin-top: 30px;
   margin-bottom: 0;
-  padding-left: 4vw;
+  padding-left: 6vw;
 }
 
 h2 {
@@ -444,7 +465,7 @@ header {
   -ms-grid-row: 4;
   -ms-grid-row-span: 2;
   grid-row: 4/6;
-  padding-left: 4vw;
+  padding-left: 6vw;
   width: 800px;
   font-size: 22px;
 }
@@ -632,7 +653,7 @@ ul {
   grid-row: 15/16;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  margin-left: 4vw;
+  margin-left: 6vw;
   margin-bottom: 5vw;
   /*This will be where the image carousel we are making in class will be*/
 }
