@@ -186,11 +186,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 100vw;
 }
 
 .classes_banner {
-  width: SPAN;
+  width: 100%;
+  height: auto;
 }
 
 .classes_description {
