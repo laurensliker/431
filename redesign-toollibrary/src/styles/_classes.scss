@@ -3,26 +3,33 @@
     font-size: 28px;
 }
 
+.booking {
+    &_heading {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $blue;
+    }
+}
+
 .classes {
     &_wrapper {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(27, 10vw);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     &_banner {
-        grid-column: 1/11;
-        grid-row: 1/5;
+        width: SPAN;
+
     }
 
     &_description {
-        grid-column: 1/11;
-        grid-row: 8/17
+        grid-column: span;
+        grid-row: 8/17;
+        display: grid;
+        grid-template-columns: repeat(10, 1vw);
+        grid-template-rows: repeat(9, 1vw);
+        background-color: $blue;
+        color: $white;
     }
-
-    &_heading {
-        grid-column: 1/11;
-        grid-row: 5/8;
-    }
-
 }

@@ -172,40 +172,40 @@
   font-size: 28px;
 }
 
+.booking_heading {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #1b2339;
+}
+
 .classes_wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (10vw)[27];
-      grid-template-rows: repeat(27, 10vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .classes_banner {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 10;
-  grid-column: 1/11;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1/5;
+  width: SPAN;
 }
 
 .classes_description {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 10;
-  grid-column: 1/11;
+  grid-column: span;
   -ms-grid-row: 8;
   -ms-grid-row-span: 9;
   grid-row: 8/17;
-}
-
-.classes_heading {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 10;
-  grid-column: 1/11;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 3;
-  grid-row: 5/8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1vw)[10];
+      grid-template-columns: repeat(10, 1vw);
+  -ms-grid-rows: (1vw)[9];
+      grid-template-rows: repeat(9, 1vw);
+  background-color: #1b2339;
+  color: #FCFCFC;
 }
 
 a {
