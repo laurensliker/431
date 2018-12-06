@@ -436,11 +436,20 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #C1423F;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
-.footer_socials_icon1 {
-  width: 40px;
+.footer_socials-icon1 {
+  width: 6vw;
+  padding: 30px;
 }
 
 h1 {
@@ -491,6 +500,7 @@ header {
   -ms-grid-rows: (0.5fr)[10];
       grid-template-rows: repeat(10, 0.5fr);
   margin: 0vw;
+  max-width: 100%;
   background: #1b2339;
   color: #FCFCFC;
 }
@@ -523,9 +533,8 @@ header {
   -ms-grid-row-span: 2;
   grid-row: 4/6;
   padding-left: 6vw;
-  padding-right: 30%;
-  width: 800px;
-  font-size: 1.8vw;
+  padding-right: 35%;
+  font-size: 18px;
   line-height: 3vw;
 }
 
@@ -729,22 +738,22 @@ ul {
   grid-row: 16/19;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .home_wrapper {
     -ms-grid-columns: (1fr)[9];
         grid-template-columns: repeat(9, 1fr);
     -ms-grid-rows: (11.5vw)[21];
         grid-template-rows: repeat(21, 11.5vw);
   }
+  .mission-statement {
+    padding-right: 10%;
+    font-size: 20px;
+    line-height: 3.5vw;
+  }
   .site-nav_link {
     position: fixed;
     top: 0;
     left: 0;
-  }
-  .mission-statement {
-    font-size: 2.3vw;
-    line-height: 3vw;
-    padding-right: 60%;
   }
 }
 
@@ -794,9 +803,6 @@ ul {
     -ms-grid-row-span: 5;
     grid-row: 23/28;
   }
-  header {
-    margin: -1.5vw;
-  }
   .heroimage {
     -ms-grid-column: 2;
     -ms-grid-column-span: 7;
@@ -804,11 +810,6 @@ ul {
     -ms-grid-row: 4;
     -ms-grid-row-span: 2;
     grid-row: 4/6;
-  }
-  .mission-statement {
-    font-size: 2vw;
-    line-height: 3vw;
-    padding-right: 40%;
   }
   .upcomingevents {
     -ms-grid-column: 2;
@@ -834,7 +835,7 @@ ul {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .aboutus {
     -ms-grid-row: 12;
     -ms-grid-row-span: 1;
@@ -855,8 +856,7 @@ ul {
     grid-row: 20/21;
   }
   h1 {
-    font-size: 5vw;
-    margin-left: 2vw;
+    font-size: 25px;
   }
   header {
     -ms-grid-row: 1;
@@ -870,13 +870,12 @@ ul {
     -ms-grid-row: 6;
     -ms-grid-row-span: 5;
     grid-row: 6/11;
+    width: 88%;
     margin-left: 6vw;
   }
   .mission-statement {
-    font-size: 4vw;
-    line-height: 6.5vw;
-    width: 85%;
-    margin-left: 2vw;
+    font-size: 22px;
+    line-height: 7vw;
   }
   .upcomingevents {
     -ms-grid-row: 22;
@@ -892,6 +891,17 @@ ul {
     -ms-grid-row: 30;
     -ms-grid-row-span: 9;
     grid-row: 30/39;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroimage {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
+  }
+  .mission-statement {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

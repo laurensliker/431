@@ -130,10 +130,15 @@ footer {
     grid-column: 1/5;
     grid-row: 1/2;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: $pink;
+    padding-left: 30%;
+    padding-right: 30%;
 
-    &_icon1 {
-        width: 40px;
+    &-icon1 {
+        width: 6vw;
+        padding: 30px;
     }
 }
 
@@ -172,6 +177,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, .5fr);
     margin: 0vw;
+    max-width: 100%;
     background: $blue;
     color: $white;
 }
@@ -198,9 +204,8 @@ header {
     grid-column: 1/4;
     grid-row: 4/6;
     padding-left: $edge-margin;
-    padding-right: 30%;
-    width: 800px;
-    font-size: 1.8vw;
+    padding-right: 35%;
+    font-size: 18px;
     line-height: 3vw;
 }
 
@@ -371,11 +376,17 @@ ul {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
 
     .home_wrapper {
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(21, 11.5vw);
+    }
+
+    .mission-statement {
+        padding-right: 10%;
+        font-size: 20px;
+        line-height: 3.5vw;
     }
 
     .site-nav_link {
@@ -384,11 +395,7 @@ ul {
         left: 0;
     }
 
-    .mission-statement {
-        font-size: 2.3vw;
-        line-height: 3vw;
-        padding-right: 60%;
-    }
+
 }
 
 @media (max-width: 750px) {
@@ -427,21 +434,14 @@ ul {
         grid-row: 23/28;
     }
 
-    header {
-        margin: -1.5vw;
-    }
+
 
     .heroimage {
         grid-column: 2/9;
         grid-row: 4/6;
-
     }
 
-    .mission-statement {
-        font-size: 2vw;
-        line-height: 3vw;
-        padding-right: 40%;
-    }
+
 
     .upcomingevents {
         grid-column: 2/9;
@@ -461,7 +461,7 @@ ul {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 
     .aboutus {
         grid-row: 12/13;
@@ -480,8 +480,7 @@ ul {
     }
 
     h1 {
-        font-size: 5vw;
-        margin-left: 2vw;
+        font-size: 25px;
     }
 
     header {
@@ -491,14 +490,13 @@ ul {
     .heroimage {
         grid-column: 1/10;
         grid-row: 6/11;
+        width: 88%;
         margin-left: $edge-margin;
     }
 
     .mission-statement {
-        font-size: 4vw;
-        line-height: 6.5vw;
-        width: 85%;
-        margin-left: 2vw;
+        font-size: 22px;
+        line-height: 7vw;
     }
 
     .upcomingevents {
@@ -511,5 +509,15 @@ ul {
 
     footer {
         grid-row: 30/39;
+    }
+}
+
+@media (max-width: 600px) {
+    .heroimage {
+        grid-row: 7/8;
+    }
+
+    .mission-statement {
+        font-size: 18px;
     }
 }
