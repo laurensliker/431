@@ -69,6 +69,7 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(23, 10vw);
+    margin: 6px;
     background: $white;
     font-family: $sans-serif;
 }
@@ -144,15 +145,17 @@ footer {
 }
 
 h1 {
-    grid-column: 1/6;
-    grid-row: 3/4;
-    padding-left: $edge-margin;
     font-weight: $bold-weight;
     font-size: 2.5vw;
     letter-spacing: .1vw;
+}
+
+.home-title {
+    grid-column: 1/6;
+    grid-row: 3/4;
     margin-top: 4vw;
     margin-bottom: 0;
-
+    padding-left: $edge-margin;
 }
 
 h2 {
