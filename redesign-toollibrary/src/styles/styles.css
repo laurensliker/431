@@ -244,6 +244,14 @@
   width: 100%;
 }
 
+.class-description_name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #FCFCFC;
+}
+
 a {
   text-decoration: none;
   color: inherit;

@@ -67,5 +67,13 @@
         width: 100%;
     }
 
+    &_name {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $white;
+    }
+
 
 }
