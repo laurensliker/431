@@ -58,9 +58,6 @@ a:hover {
     &_copy {
         grid-column: 4/9;
         grid-row: 10/11;
-        font-size: 15px;
-        font-weight: $regular-weight;
-        line-height: 3vw;
         margin-top: 0;
     }
 }
@@ -198,9 +195,6 @@ header {
     grid-row: 4/6;
     padding-left: $edge-margin;
     padding-right: 30%;
-    font-size: 1.7vw;
-    line-height: 3.5vw;
-    font-weight: $regular-weight;
 }
 
 ol {
@@ -326,6 +320,12 @@ ol {
         fill: $blue;
         margin-right: 5vw;
     }
+}
+
+p {
+    font-size: 1.7vw;
+    line-height: 3vw;
+    font-weight: $regular-weight;
 }
 
 .u-button-reset {

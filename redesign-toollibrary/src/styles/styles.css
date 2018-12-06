@@ -247,9 +247,6 @@ a:hover {
   -ms-grid-row: 10;
   -ms-grid-row-span: 1;
   grid-row: 10/11;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 3vw;
   margin-top: 0;
 }
 
@@ -445,9 +442,6 @@ header {
   grid-row: 4/6;
   padding-left: 4vw;
   padding-right: 30%;
-  font-size: 1.7vw;
-  line-height: 3.5vw;
-  font-weight: 300;
 }
 
 ol {
@@ -601,6 +595,12 @@ ol {
   width: 120px;
   fill: #1b2339;
   margin-right: 5vw;
+}
+
+p {
+  font-size: 1.7vw;
+  line-height: 3vw;
+  font-weight: 300;
 }
 
 .u-button-reset {
