@@ -222,6 +222,8 @@
       grid-template-columns: repeat(2, 50%);
   background-color: #1b2339;
   color: #FCFCFC;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 .class-description_column-1 {
@@ -238,8 +240,8 @@
   margin: 6vw;
 }
 
-.class-description_img-1 {
-  width: 80%;
+.class-description_img {
+  width: 100%;
 }
 
 a {

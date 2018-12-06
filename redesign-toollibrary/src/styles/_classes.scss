@@ -50,6 +50,8 @@
     grid-template-columns: repeat(2, 50%);
     background-color: $blue;
     color: $white;
+    padding-top: 8%;
+    padding-bottom: 8%;
 
     &_column-1 {
         grid-column: 1/2;
@@ -61,7 +63,9 @@
         margin: $edge-margin;
     }
 
-    &_img-1 {
-        width: 80%;
+    &_img {
+        width: 100%;
     }
+
+
 }
