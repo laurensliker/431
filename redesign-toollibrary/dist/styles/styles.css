@@ -176,18 +176,22 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #1b2339;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
 }
 
 .booking_form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1vw)[10];
-      grid-template-columns: repeat(10, 1vw);
-  -ms-grid-rows: (1vw)[9];
-      grid-template-rows: repeat(9, 1vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
 }
 
 .classes_wrapper {
@@ -199,7 +203,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
-  min-height: 100%;
+  min-height: 500vw;
 }
 
 .classes_heading-banner {
