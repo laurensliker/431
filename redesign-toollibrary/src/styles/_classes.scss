@@ -4,6 +4,19 @@
 }
 
 .booking {
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: $blue;
+        padding-bottom: 8vw;
+    }
+
     &_heading {
         border-bottom-width: 1px;
         border-bottom-style: solid;
@@ -13,12 +26,23 @@
         margin-top: 10%;
     }
 
-    &_form {
-        display: flex;
-        flex-direction: column;
+    &_instructions {
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 10%;
+        line-height: 3vw;
+    }
+
+    &_submit {
+        color: $white;
+        background-color: $pink;
+        width: 100px;
+        height: 40px;
+        border: 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -27,7 +51,7 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        min-height: 500vw;
+        min-height: 350vw;
         ;
     }
 
@@ -81,6 +105,12 @@
         border-bottom-style: solid;
         border-bottom-color: $white;
     }
+}
 
+fieldset {
+    margin-bottom: 4vw;
+}
 
+ol {
+    padding-left: 2vw;
 }

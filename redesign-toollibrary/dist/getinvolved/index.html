@@ -110,91 +110,99 @@
 
         <!--add action later-->
         <form action="" class="booking_form">
-            <div>
-                <h3>Name</h3>
-                <label for="first_name">First name:</label>
-                <input type="text" name="first_name" id="first_name">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <h3>Name</h3>
+                    <label for="first_name">First name:</label>
+                    <input type="text" name="first_name" id="first_name">
 
-                <label for="last_name">Last name:</label>
-                <input type="text" name="last_name" id="last_name">
-            </div>
+                    <label for="last_name">Last name:</label>
+                    <input type="text" name="last_name" id="last_name">
+                </div>
 
-            <div>
-                <label for="email_address">Email Address:</label>
-                <input type="email" name="email_address" id="email_address">
-            </div>
+                <div>
+                    <label for="email_address">Email Address:</label>
+                    <input type="email" name="email_address" id="email_address">
+                </div>
 
-            <div>
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" name="phone_number" id="phone_number">
-            </div>
+                <div>
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" name="phone_number" id="phone_number">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Event Details</legend>
+                <div>
+                    <label for="event_name">Event or Company/Organization Name</label>
+                    <input type="text" name="event_name" id="event_name">
+                </div>
 
-            <div>
-                <label for="event_name">Event or Company/Organization Name</label>
-                <input type="text" name="event_name" id="event_name">
-            </div>
+                <div>
+                    <label for="number_of_participants">Number of Participants</label>
+                    <input type="number" name="number_of_participants" id="number_of_participants">
+                </div>
 
-            <div>
-                <label for="number_of_participants">Number of Participants</label>
-                <input type="number" name="number_of_participants" id="number_of_participants">
-            </div>
+                <div>
+                    <label for="workshop">Select a Workshop</label>
+                    <select name="workshop">
+                        <option value="spoons_and_spatulas">Spoons and Spatulas</option>
+                        <option value="serving_boards">Serving Boards</option>
+                    </select>
+                </div>
 
-            <div>
-                <label for="workshop">Select a Workshop</label>
-                <select name="workshop">
-                    <option value="spoons_and_spatulas">Spoons and Spatulas</option>
-                    <option value="serving_boards">Serving Boards</option>
-                </select>
-            </div>
+                <div>
+                    <label for="fare_refreshments">Light Fare and Refreshments?</label>
+                    <select name="fare_refreshments">
+                        <option value="spoons_and_spatulas">yes</option>
+                        <option value="serving_boards">Serving Boards</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date and Time Choices</legend>
+                <!-- make times correspond to actual available times with js -->
+                <div>
+                    <h3>First Choice Date and Time</h3>
 
-            <div>
-                <label for="fare_refreshments">Light Fare and Refreshments?</label>
-                <select name="fare_refreshments">
-                    <option value="spoons_and_spatulas">yes</option>
-                    <option value="serving_boards">Serving Boards</option>
-                </select>
-            </div>
-            <!-- make times correspond to actual available times with js -->
-            <div>
-                <h3>First Choice Date and Time</h3>
+                    <!-- a way to make the current date the most recent value-->
+                    <label for="first_choice_date">Date</label>
+                    <input type="date" name="first_choice_date" id="first_choice_date" value="2019-01-08" min="2019-01-01"
+                        max="2019-12-31">
 
-                <!-- a way to make the current date the most recent value-->
-                <label for="first_choice_date">Date</label>
-                <input type="date" name="first_choice_date" id="first_choice_date" value="2019-01-08" min="2019-01-01"
-                    max="2019-12-31">
+                    <label for="first_choice_time">Time</label>
+                    <input type="time" id="first_choice_time" name="first_choice_time" min="9:00" max="18:00" value="11:30"
+                        required>
+                </div>
 
-                <label for="first_choice_time">Time</label>
-                <input type="time" id="first_choice_time" name="first_choice_time" min="9:00" max="18:00" value="11:30"
-                    required>
-            </div>
+                <div>
+                    <h3>Second Choice Date and Time</h3>
 
-            <div>
-                <h3>Second Choice Date and Time</h3>
+                    <!-- a way to make the current date the most recent value-->
+                    <label for="second_choice_date">Date</label>
+                    <input type="date" name="second_choice_date" id="second_choice_date" value="2019-01-08" min="2019-01-01"
+                        max="2019-12-31">
 
-                <!-- a way to make the current date the most recent value-->
-                <label for="second_choice_date">Date</label>
-                <input type="date" name="second_choice_date" id="second_choice_date" value="2019-01-08" min="2019-01-01"
-                    max="2019-12-31">
+                    <label for="second_choice_time">Time</label>
+                    <input type="time" id="second_choice_time" name="second_choice_time" min="9:00" max="18:00" value="11:30"
+                        required>
+                </div>
 
-                <label for="second_choice_time">Time</label>
-                <input type="time" id="second_choice_time" name="second_choice_time" min="9:00" max="18:00" value="11:30"
-                    required>
-            </div>
+                <div>
+                    <h3>Third Choice Date and Time</h3>
 
-            <div>
-                <h3>Third Choice Date and Time</h3>
+                    <!-- a way to make the current date the most recent value-->
+                    <label for="third_choice_date">Date</label>
+                    <input type="date" name="third_choice_date" id="third_choice_date" value="2019-01-08" min="2019-01-01"
+                        max="2019-12-31">
 
-                <!-- a way to make the current date the most recent value-->
-                <label for="third_choice_date">Date</label>
-                <input type="date" name="third_choice_date" id="third_choice_date" value="2019-01-08" min="2019-01-01"
-                    max="2019-12-31">
+                    <label for="third_choice_time">Time</label>
+                    <input type="time" id="third_choice_time" name="third_choice_time" min="9:00" max="18:00" value="11:30"
+                        required>
+                </div>
+            </fieldset>
 
-                <label for="third_choice_time">Time</label>
-                <input type="time" id="third_choice_time" name="third_choice_time" min="9:00" max="18:00" value="11:30"
-                    required>
-            </div>
-
-            <input type="submit" value="Submit">
+            <input class="booking_submit caps-text" type="submit" value="Submit">
 
         </form>
         <section class="booking_instructions">
