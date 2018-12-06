@@ -191,15 +191,19 @@
 
 .classes_heading-banner {
   width: 100%;
+  height: auto;
 }
 
 .classes_heading-title {
-  padding-left: 30%;
-  color: aqua;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
 }
 
-.classes_heading-descriptions {
-  padding-left: 30%;
+.classes_heading-description {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
 }
 
 .classes_description {
@@ -373,7 +377,7 @@ footer {
 
 h1 {
   font-weight: 700;
-  font-size: 2.5vw;
+  font-size: 25px;
   letter-spacing: .1vw;
 }
 
@@ -384,7 +388,7 @@ h1 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  margin-top: 4vw;
+  margin-top: 30px;
   margin-bottom: 0;
   padding-left: 4vw;
 }
@@ -441,11 +445,18 @@ header {
   -ms-grid-row-span: 2;
   grid-row: 4/6;
   padding-left: 4vw;
-  padding-right: 30%;
+  width: 800px;
+  font-size: 22px;
 }
 
 ol {
   list-style-type: none;
+}
+
+p {
+  font-size: inherit;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 .site-nav__trigger {
@@ -597,12 +608,6 @@ ol {
   margin-right: 5vw;
 }
 
-p {
-  font-size: 1.7vw;
-  line-height: 3vw;
-  font-weight: 300;
-}
-
 .u-button-reset {
   background: transparent;
   border: 0;
@@ -641,7 +646,7 @@ ul {
   grid-row: 16/19;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 940px) {
   body {
     -ms-grid-columns: (1fr)[9];
         grid-template-columns: repeat(9, 1fr);
@@ -653,13 +658,9 @@ ul {
     top: 0;
     left: 0;
   }
-  h1 {
-    font-size: 3.2vw;
-  }
   .mission-statement {
-    padding-right: 20%;
-    font-size: 2.2vw;
-    line-height: 5vw;
+    font-size: 18px;
+    width: 600px;
   }
 }
 
@@ -721,9 +722,8 @@ ul {
     grid-row: 4/6;
   }
   .mission-statement {
-    padding-right: 2vw;
-    font-size: 2.8vw;
-    line-height: 5vw;
+    font-size: 18px;
+    width: 600px;
   }
   .upcomingevents {
     -ms-grid-column: 2;
@@ -749,7 +749,7 @@ ul {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .aboutus {
     -ms-grid-row: 12;
     -ms-grid-row-span: 1;
@@ -759,8 +759,6 @@ ul {
     -ms-grid-row: 13;
     -ms-grid-row-span: 6;
     grid-row: 13/19;
-    line-height: 7vw;
-    padding-top: 1vw;
   }
   body {
     -ms-grid-rows: (14vw)[38];
@@ -791,7 +789,7 @@ ul {
   }
   .mission-statement {
     font-size: 4vw;
-    line-height: 7vw;
+    width: 90%;
   }
   .upcomingevents {
     -ms-grid-row: 22;

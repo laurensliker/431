@@ -143,14 +143,14 @@ footer {
 
 h1 {
     font-weight: $bold-weight;
-    font-size: 2.5vw;
+    font-size: 25px;
     letter-spacing: .1vw;
 }
 
 .home-title {
     grid-column: 1/6;
     grid-row: 3/4;
-    margin-top: 4vw;
+    margin-top: 30px;
     margin-bottom: 0;
     padding-left: $edge-margin;
 }
@@ -194,11 +194,18 @@ header {
     grid-column: 1/4;
     grid-row: 4/6;
     padding-left: $edge-margin;
-    padding-right: 30%;
+    width: 800px;
+    font-size: 22px;
 }
 
 ol {
     list-style-type: none;
+}
+
+p {
+    font-size: inherit;
+    line-height: 28px;
+    font-weight: $regular-weight;
 }
 
 .site-nav {
@@ -322,11 +329,7 @@ ol {
     }
 }
 
-p {
-    font-size: 1.7vw;
-    line-height: 3vw;
-    font-weight: $regular-weight;
-}
+
 
 .u-button-reset {
     background: transparent;
@@ -361,7 +364,7 @@ ul {
 }
 
 
-@media (max-width: 930px) {
+@media (max-width: 940px) {
 
     body {
         grid-template-columns: repeat(9, 1fr);
@@ -374,14 +377,9 @@ ul {
         left: 0;
     }
 
-    h1 {
-        font-size: 3.2vw;
-    }
-
     .mission-statement {
-        padding-right: 20%;
-        font-size: 2.2vw;
-        line-height: 5vw;
+        font-size: 18px;
+        width: 600px;
     }
 }
 
@@ -431,9 +429,8 @@ ul {
     }
 
     .mission-statement {
-        padding-right: 2vw;
-        font-size: 2.8vw;
-        line-height: 5vw;
+        font-size: 18px;
+        width: 600px;
     }
 
     .upcomingevents {
@@ -454,15 +451,13 @@ ul {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
 
     .aboutus {
         grid-row: 12/13;
 
         &_copy {
             grid-row: 13/19;
-            line-height: 7vw;
-            padding-top: 1vw;
         }
     }
 
@@ -491,7 +486,7 @@ ul {
 
     .mission-statement {
         font-size: 4vw;
-        line-height: 7vw;
+        width: 90%;
     }
 
     .upcomingevents {
