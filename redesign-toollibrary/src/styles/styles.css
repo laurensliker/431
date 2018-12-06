@@ -189,9 +189,16 @@
   width: 100vw;
 }
 
-.classes_banner {
+.classes_heading-banner {
   width: 100%;
-  height: auto;
+}
+
+.classes_heading-title {
+  padding-left: 30%;
+}
+
+.classes_heading-descriptions {
+  padding-left: 30%;
 }
 
 .classes_description {

@@ -18,9 +18,20 @@
         width: 100vw;
     }
 
-    &_banner {
-        width: 100%;
-        height: auto;
+    &_heading {
+
+        &-banner {
+            width: 100%;
+        }
+
+        &-title {
+            padding-left: 30%;
+        }
+
+        &-descriptions {
+            padding-left: 30%;
+        }
+
 
     }
 
