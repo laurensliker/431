@@ -165,6 +165,15 @@ h1 {
         margin-bottom: 0;
         padding-left: $edge-margin;
     }
+
+    &_mission {
+        grid-column: 1/4;
+        grid-row: 4/6;
+        padding-left: $edge-margin;
+        padding-right: 35%;
+        font-size: 18px;
+        line-height: 3vw;
+    }
 }
 
 .caps-text {
@@ -204,14 +213,7 @@ header {
     }
 }
 
-.mission-statement {
-    grid-column: 1/4;
-    grid-row: 4/6;
-    padding-left: $edge-margin;
-    padding-right: 35%;
-    font-size: 18px;
-    line-height: 3vw;
-}
+
 
 p {
     font-size: inherit;
@@ -382,11 +384,6 @@ ul {
 
 @media (max-width: 950px) {
 
-    .home_wrapper {
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(21, 11.5vw);
-    }
-
     .mission-statement {
         padding-right: 10%;
         font-size: 20px;
@@ -403,10 +400,6 @@ ul {
 }
 
 @media (max-width: 750px) {
-
-    .home_wrapper {
-        grid-template-rows: repeat(27, 14vw);
-    }
 
     .aboutus {
         grid-column: 2/9;
@@ -473,10 +466,6 @@ ul {
         &_copy {
             grid-row: 13/19;
         }
-    }
-
-    .home_wrapper {
-        grid-template-rows: repeat(38, 14vw);
     }
 
     .cta {

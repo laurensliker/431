@@ -495,6 +495,19 @@ h1 {
   padding-left: 6vw;
 }
 
+.home_mission {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  padding-left: 6vw;
+  padding-right: 35%;
+  font-size: 18px;
+  line-height: 3vw;
+}
+
 .caps-text {
   font-size: 11px;
   text-transform: uppercase;
@@ -538,19 +551,6 @@ header {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 42px;
-}
-
-.mission-statement {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  grid-row: 4/6;
-  padding-left: 6vw;
-  padding-right: 35%;
-  font-size: 18px;
-  line-height: 3vw;
 }
 
 p {
@@ -754,12 +754,6 @@ ul {
 }
 
 @media (max-width: 950px) {
-  .home_wrapper {
-    -ms-grid-columns: (1fr)[9];
-        grid-template-columns: repeat(9, 1fr);
-    -ms-grid-rows: (11.5vw)[21];
-        grid-template-rows: repeat(21, 11.5vw);
-  }
   .mission-statement {
     padding-right: 10%;
     font-size: 20px;
@@ -773,10 +767,6 @@ ul {
 }
 
 @media (max-width: 750px) {
-  .home_wrapper {
-    -ms-grid-rows: (14vw)[27];
-        grid-template-rows: repeat(27, 14vw);
-  }
   .aboutus {
     -ms-grid-column: 2;
     -ms-grid-column-span: 7;
@@ -860,10 +850,6 @@ ul {
     -ms-grid-row: 13;
     -ms-grid-row-span: 6;
     grid-row: 13/19;
-  }
-  .home_wrapper {
-    -ms-grid-rows: (14vw)[38];
-        grid-template-rows: repeat(38, 14vw);
   }
   .cta {
     -ms-grid-row: 20;
