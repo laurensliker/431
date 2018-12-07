@@ -361,12 +361,10 @@ body {
 }
 
 .cta {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 5;
-  grid-column: 4/9;
-  -ms-grid-row: 13;
-  -ms-grid-row-span: 1;
-  grid-row: 13/14;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-top: 3vw;
+  margin-bottom: 12vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -375,12 +373,9 @@ body {
       grid-template-rows: 1fr;
   grid-gap: 2vw;
   color: #C1423F;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 11px;
   font-weight: 700;
   text-align: center;
-  height: 50%;
+  height: 50px;
 }
 
 .cta_link1 {
@@ -739,15 +734,10 @@ ul {
 }
 
 .upcomingevents {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 9;
-  grid-column: 1/10;
-  -ms-grid-row: 15;
-  -ms-grid-row-span: 1;
-  grid-row: 15/16;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   margin-left: 6vw;
+  margin-right: 20%;
   margin-bottom: 5vw;
   /*This will be where the image carousel we are making in class will be*/
 }

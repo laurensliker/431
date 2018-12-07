@@ -66,24 +66,25 @@ a:hover {
     }
 }
 
+//reset margins//
 body {
     margin: 0;
 }
 
+//grid format to easily reposition on media q//
 .cta {
-    grid-column: 4/9;
-    grid-row: 13/14;
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 3vw;
+    margin-bottom: 12vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 2vw;
     color: $pink;
-    text-transform: uppercase;
-    letter-spacing: $capsspacing;
-    font-size: $capssize;
     font-weight: $bold-weight;
     text-align: center;
-    height: 50%;
+    height: 50px;
 
     &_link1 {
         grid-column: 1/2;
@@ -370,11 +371,10 @@ ul {
 }
 
 .upcomingevents {
-    grid-column: 1/10;
-    grid-row: 15/16;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     margin-left: $edge-margin;
+    margin-right: 20%;
     margin-bottom: 5vw;
 
 
