@@ -172,18 +172,6 @@
   font-size: 28px;
 }
 
-.alt_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100vw;
-  min-height: 400vw;
-}
-
 .alt_heading-banner {
   width: 100%;
   height: auto;
@@ -358,6 +346,10 @@ a:hover {
 
 body {
   margin: 0;
+  background: #FCFCFC;
+  font-family: "Raleway", sans-serif;
+  min-height: 100%;
+  position: relative;
 }
 
 .cta {
@@ -376,33 +368,6 @@ body {
   font-weight: 700;
   text-align: center;
   height: 50px;
-}
-
-.cta_link1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.cta_link2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.cta_link3 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
 }
 
 .cta_link-border {
@@ -710,11 +675,16 @@ p {
   margin-right: 5vw;
 }
 
-#site-wrapper {
-  background: #FCFCFC;
-  font-family: "Raleway", sans-serif;
+.site-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
   min-height: 100%;
-  position: relative;
 }
 
 .u-button-reset {
