@@ -305,11 +305,14 @@ select {
 }
 
 .nav-child {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 500ms ease;
+  transition: max-height 500ms ease;
 }
 
 #nav-parent:hover .nav-child {
-  display: block;
+  max-height: 150px;
 }
 
 .site-nav__trigger {
@@ -379,20 +382,13 @@ select {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     width: 93%;
     overflow: hidden;
     margin-top: 0;
-    margin-left: -1vw;
     padding-left: 4vw;
     padding-right: 4vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
-    font-size: 11px;
-    font-weight: 400;
-    color: #1b2339;
     background: #FCFCFC;
     border-bottom-style: solid;
     border-bottom-width: 1px;

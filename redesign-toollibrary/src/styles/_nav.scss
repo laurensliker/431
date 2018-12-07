@@ -2,13 +2,14 @@
     display: none;
 }
 
-
 .nav-child {
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 500ms ease;
 }
 
 #nav-parent:hover .nav-child {
-    display: block;
+    max-height: 150px;
 }
 
 .site-nav {
@@ -68,18 +69,13 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-start;
             width: 93%;
             overflow: hidden;
             margin-top: 0;
-            margin-left: -1vw;
             padding-left: 4vw;
             padding-right: 4vw;
             padding-top: 1vw;
             padding-bottom: 1vw;
-            font-size: $capssize;
-            font-weight: $medium-weight;
-            color: $blue;
             background: $white;
             border-bottom-style: solid;
             border-bottom-width: 1px;
