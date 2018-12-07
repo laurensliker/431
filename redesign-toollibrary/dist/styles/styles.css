@@ -316,6 +316,14 @@ select {
   margin-bottom: 2vw;
 }
 
+.nav-child {
+  display: none;
+}
+
+#nav-parent:hover .nav-child {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -325,21 +333,19 @@ a:hover {
   text-decoration: underline;
 }
 
-.aboutus {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 9;
-  grid-column: 1/10;
-  -ms-grid-row: 9;
-  -ms-grid-row-span: 1;
-  grid-row: 9/10;
+.about {
+  margin-right: 20%;
+}
+
+.about_title {
+  margin-left: 6vw;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  margin-left: 6vw;
   margin-bottom: 5vw;
   color: #1b2339;
 }
 
-.aboutus_copy {
+.about_copy {
   -ms-grid-column: 4;
   -ms-grid-column-span: 5;
   grid-column: 4/9;
@@ -347,6 +353,7 @@ a:hover {
   -ms-grid-row-span: 1;
   grid-row: 10/11;
   margin-top: 0;
+  padding-left: 37%;
 }
 
 body {
@@ -478,8 +485,8 @@ h1 {
   display: grid;
   -ms-grid-columns: (1fr)[10];
       grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (10vw)[23];
-      grid-template-rows: repeat(23, 10vw);
+  -ms-grid-rows: (10vw)[8];
+      grid-template-rows: repeat(8, 10vw);
   margin: 0;
 }
 
@@ -503,9 +510,9 @@ h1 {
   -ms-grid-row-span: 2;
   grid-row: 4/6;
   padding-left: 6vw;
-  padding-right: 35%;
-  font-size: 18px;
-  line-height: 3vw;
+  padding-right: 30%;
+  font-size: 20px;
+  line-height: 4vw;
 }
 
 .caps-text {
@@ -728,6 +735,7 @@ p {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .upcomingevents {

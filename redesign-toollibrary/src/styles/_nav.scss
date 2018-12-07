@@ -1,0 +1,7 @@
+.nav-child {
+    display: none;
+}
+
+#nav-parent:hover .nav-child {
+    display: block;
+}

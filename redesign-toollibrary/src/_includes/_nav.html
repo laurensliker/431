@@ -19,19 +19,24 @@
 			</a>
 
 			{% for nav in collections.nav %}
-		<li class="site-nav__list-item site-nav__link {% if (page.url==nav.url) %}is-active{% endif%}"><a href="{{ nav.url}}">{{
-				nav.data.title
-				}}</a>
+		<li id="nav-parent" class="site-nav__list-item site-nav__link {% if (page.url==nav.url) %}is-active{% endif%}"><a
+			 href="{{ nav.url}}">{{nav.data.title}}</a>
 
 			{% if nav.data.subnav == "yes" %}
+
 			<ul>
 				{% for subnav in collections.subnav %}
 				{% if subnav.data.parent == nav.data.title %}
-				<li>{{ subnav.data.title }}</li>
+
+				<li class="nav-child">{{ subnav.data.title }}</li>
+
 				{% endif %}
 				{% endfor %}
+
 			</ul>
-			{% endif %}</li>
+
+			{% endif %}
+		</li>
 		{% endfor %}
 
 </nav>
