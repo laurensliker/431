@@ -75,7 +75,7 @@ body {
 .cta {
     margin-left: 30%;
     margin-right: 20%;
-    margin-top: 5vw;
+    margin-top: 8vw;
     margin-bottom: 12vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -109,10 +109,12 @@ body {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(4, 1fr);
-        grid-gap: 2vw;
+        grid-gap: 5px;
         background: $blue;
         color: $white;
         padding: $edge-margin;
+        font-size: 12px;
+        line-height: 22px;
 
         &_head-1 {
             grid-column: 1/2;
@@ -134,26 +136,26 @@ body {
             grid-column: 2/3;
             grid-row: 3/4;
         }
-    }
 
-    &-info-1 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
+        &-info-1 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
 
-    &-info-2 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
+        &-info-2 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
 
-    &-info-3 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
+        &-info-3 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
 
-    &-info-4 {
-        grid-column: 2/3;
-        grid-row: 4/5;
+        &-info-4 {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
     }
 
     &_socials {
@@ -233,22 +235,17 @@ header {
     }
 }
 
-
-
 p {
     font-size: inherit;
     line-height: 28px;
     font-weight: $regular-weight;
 }
 
-
-
 .site-wrapper {
     display: flex;
     flex-direction: column;
     width: 100vw;
     min-height: 100%;
-
 }
 
 .u-button-reset {
@@ -274,7 +271,6 @@ ul {
     margin-right: 20%;
     margin-bottom: 5vw;
 
-
     /*This will be where the image carousel we are making in class will be*/
 
     &_contents {
@@ -283,136 +279,121 @@ ul {
     }
 }
 
+@media (max-width: 1020px) {
 
-@media (max-width: 950px) {
-
-    .mission-statement {
-        padding-right: 10%;
-        font-size: 20px;
-        line-height: 3.5vw;
+    .home_mission {
+        font-size: 18px;
+        line-height: 4vw;
     }
-
-    .site-nav_link {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-
 }
 
-@media (max-width: 750px) {
+@media (max-width: 915px) {
 
-    .aboutus {
-        grid-column: 2/9;
-        grid-row: 9/10;
-        margin-left: 0;
-        margin-bottom: 4vw;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
+    .about {
+        margin-right: 10%;
+        margin-top: 15vw;
 
         &_copy {
-            grid-column: 2/9;
-            grid-row: 10/12;
-            line-height: 6vw;
-            padding-top: 2vw;
-        }
-
-        &_stroke {
-            display: none;
+            padding-left: 33%;
         }
     }
 
     .cta {
-        grid-column: 2/9;
-        grid-row: 15/16;
+        margin-right: 10%;
     }
 
-    footer {
-        grid-column: 1/10;
-        grid-row: 23/28;
+    .home {
+        &_mission {
+            font-size: 18px;
+            padding-right: 10%;
+        }
+
+        &_title {
+            font-size: 20px;
+            padding-top: 6vw;
+        }
     }
-
-
 
     .heroimage {
-        grid-column: 2/9;
-        grid-row: 4/6;
+        grid-column: 4/10;
+        grid-row: 5/8;
     }
 
-
-
     .upcomingevents {
-        grid-column: 2/9;
-        grid-row: 17/18;
-        margin-left: 0;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-
-        &_contents {
-            grid-column: 2/9;
-            grid-row: 18/21;
-        }
-
-        &_stroke {
-            display: none;
-        }
+        margin-right: 10%;
     }
 }
 
-@media (max-width: 750px) {
 
-    .aboutus {
-        grid-row: 12/13;
 
-        &_copy {
-            grid-row: 13/19;
-        }
+@media (max-width: $display-nav) {
+
+    .about {
+        margin-right: $edge-margin;
     }
 
     .cta {
-        grid-row: 20/21;
+        margin-right: $edge-margin;
     }
 
-    h1 {
-        font-size: 25px;
+    .footer {
+        &_border {
+            margin-right: 0;
+        }
+
+        &_contact {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(8, 1fr);
+
+            &_head-3 {
+                grid-column: 1/2;
+                grid-row: 5/6;
+            }
+
+            &_head-4 {
+                grid-column: 1/2;
+                grid-row: 7/8;
+            }
+
+            &-info-3 {
+                grid-column: 1/2;
+                grid-row: 6/7;
+            }
+
+            &-info-4 {
+                grid-column: 1/2;
+                grid-row: 8/9;
+            }
+        }
+
     }
 
     header {
-        grid-row: 1/10;
+        grid-row: 1/9;
     }
 
     .heroimage {
         grid-column: 1/10;
-        grid-row: 6/11;
-        width: 88%;
+        grid-row: 5/10;
+        width: 98%;
         margin-left: $edge-margin;
     }
 
-    .mission-statement {
-        font-size: 22px;
-        line-height: 7vw;
-    }
+    .home {
+        &_title {
+            grid-row: 2/3;
+        }
 
-    .upcomingevents {
-        grid-row: 22/23;
-
-        &_contents {
-            grid-row: 23/26;
+        &_mission {
+            grid-row: 3/5;
+            line-height: 5vw;
         }
     }
 
-    footer {
-        grid-row: 30/39;
+    .upcomingevents {
+        margin-right: $edge-margin;
     }
 }
 
-@media (max-width: 600px) {
-    .heroimage {
-        grid-row: 7/8;
-    }
-
-    .mission-statement {
-        font-size: 18px;
-    }
-}
+@media (max-width: 600px) {}

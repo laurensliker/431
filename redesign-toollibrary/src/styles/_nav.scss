@@ -69,11 +69,11 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 93%;
+            width: 88%;
             overflow: hidden;
             margin-top: 0;
-            padding-left: 4vw;
-            padding-right: 4vw;
+            padding-left: $edge-margin;
+            padding-right: $edge-margin;
             padding-top: 1vw;
             padding-bottom: 1vw;
             background: $white;
