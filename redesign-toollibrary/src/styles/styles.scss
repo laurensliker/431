@@ -90,7 +90,7 @@ body {
 }
 
 
-//grid to have content flow downward into 2 columns then stack on media q//
+//flex to stack socials and nested grid to have contact info content flow downward into 2 columns then stack on media q//
 .footer {
     position: absolute;
     bottom: 0;
@@ -98,64 +98,69 @@ body {
     display: flex;
     flex-direction: column;
 
+    &_border {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: $white;
+        margin-right: 20%;
+    }
+
     &_contact {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(6, 1fr);
+        grid-gap: 2vw;
         background: $blue;
         color: $white;
         padding-left: $edge-margin;
         padding-right: $edge-margin;
         padding-top: 8vw;
-        padding-bottom: 8vw;
 
 
-        &_head {
-            &-1 {
-                grid-column: 1/2;
-                grid-row: 1/2;
-            }
 
-            &-2 {
-                grid-column: 1/2;
-                grid-row: 3/4;
-            }
-
-            &-3 {
-                grid-column: 2/3;
-                grid-row: 1/2;
-            }
-
-            &-4 {
-                grid-column: 2/3;
-                grid-row: 3/4;
-            }
+        &_head-1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding-bottom: 10px
         }
 
-        &-info {
-            padding-left: 0;
+        &_head-2 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
 
-            &-1 {
-                grid-column: 1/2;
-                grid-row: 2/3;
-            }
+        &_head-3 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
 
-            &-2 {
-                grid-column: 1/2;
-                grid-row: 4/5;
-            }
-
-            &-3 {
-                grid-column: 2/3;
-                grid-row: 2/3;
-            }
-
-            &-4 {
-                grid-column: 2/3;
-                grid-row: 4/5;
-            }
+        &_head-4 {
+            grid-column: 2/3;
+            grid-row: 3/4;
         }
     }
+
+    &-info-1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    &-info-2 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    &-info-3 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    &-info-4 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+
 
     &_socials {
         display: flex;
@@ -170,259 +175,260 @@ body {
             padding: 30px;
         }
     }
-}
-
-h1 {
-    font-weight: $bold-weight;
-    font-size: 25px;
-    letter-spacing: .1vw;
-}
 
 
-
-.home {
-    &_wrapper {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(8, 10vw);
-
-    }
-
-    &_title {
-        grid-column: 1/6;
-        grid-row: 3/4;
-        margin-top: 30px;
-        margin-bottom: 0;
-        padding-left: $edge-margin;
-    }
-
-    &_mission {
-        grid-column: 1/4;
-        grid-row: 4/6;
-        padding-left: $edge-margin;
-        padding-right: 30%;
-        font-size: 20px;
-        line-height: 4vw;
-    }
-}
-
-.caps-text {
-    font-size: $capssize;
-    text-transform: uppercase;
-    letter-spacing: $capsspacing;
-}
-
-
-header {
-    grid-column: 1/11;
-    grid-row: 1/7;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(10, .5fr);
-    margin: 0vw;
-    max-width: 100%;
-    background: $blue;
-    color: $white;
-}
-
-.heroimage {
-    width: 100%;
-    grid-column: 4/9;
-    grid-row: 4/7;
-    padding-top: 4vw;
-}
-
-
-.menu-icon {
-    &__line {
-        background-color: $white;
-        height: 2px;
-        margin: 8px auto;
-        transition: all 0.3s ease-in-out;
-        width: 42px;
-    }
-}
-
-
-
-p {
-    font-size: inherit;
-    line-height: 28px;
-    font-weight: $regular-weight;
-}
-
-
-
-.site-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    min-height: 100%;
-
-}
-
-.u-button-reset {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    padding: 0;
-    text-align: inherit;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.upcomingevents {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    margin-left: $edge-margin;
-    margin-right: 20%;
-    margin-bottom: 5vw;
-
-
-    /*This will be where the image carousel we are making in class will be*/
-
-    &_contents {
-        grid-column: 4/11;
-        grid-row: 16/19;
-    }
-}
-
-
-@media (max-width: 950px) {
-
-    .mission-statement {
-        padding-right: 10%;
-        font-size: 20px;
-        line-height: 3.5vw;
-    }
-
-    .site-nav_link {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-
-}
-
-@media (max-width: 750px) {
-
-    .aboutus {
-        grid-column: 2/9;
-        grid-row: 9/10;
-        margin-left: 0;
-        margin-bottom: 4vw;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-
-        &_copy {
-            grid-column: 2/9;
-            grid-row: 10/12;
-            line-height: 6vw;
-            padding-top: 2vw;
-        }
-
-        &_stroke {
-            display: none;
-        }
-    }
-
-    .cta {
-        grid-column: 2/9;
-        grid-row: 15/16;
-    }
-
-    footer {
-        grid-column: 1/10;
-        grid-row: 23/28;
-    }
-
-
-
-    .heroimage {
-        grid-column: 2/9;
-        grid-row: 4/6;
-    }
-
-
-
-    .upcomingevents {
-        grid-column: 2/9;
-        grid-row: 17/18;
-        margin-left: 0;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-
-        &_contents {
-            grid-column: 2/9;
-            grid-row: 18/21;
-        }
-
-        &_stroke {
-            display: none;
-        }
-    }
-}
-
-@media (max-width: 750px) {
-
-    .aboutus {
-        grid-row: 12/13;
-
-        &_copy {
-            grid-row: 13/19;
-        }
-    }
-
-    .cta {
-        grid-row: 20/21;
-    }
 
     h1 {
+        font-weight: $bold-weight;
         font-size: 25px;
+        letter-spacing: .1vw;
     }
 
-    header {
-        grid-row: 1/10;
-    }
 
-    .heroimage {
-        grid-column: 1/10;
-        grid-row: 6/11;
-        width: 88%;
-        margin-left: $edge-margin;
-    }
 
-    .mission-statement {
-        font-size: 22px;
-        line-height: 7vw;
-    }
+    .home {
+        &_wrapper {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(8, 10vw);
 
-    .upcomingevents {
-        grid-row: 22/23;
+        }
 
-        &_contents {
-            grid-row: 23/26;
+        &_title {
+            grid-column: 1/6;
+            grid-row: 3/4;
+            margin-top: 30px;
+            margin-bottom: 0;
+            padding-left: $edge-margin;
+        }
+
+        &_mission {
+            grid-column: 1/4;
+            grid-row: 4/6;
+            padding-left: $edge-margin;
+            padding-right: 30%;
+            font-size: 20px;
+            line-height: 4vw;
         }
     }
 
-    footer {
-        grid-row: 30/39;
+    .caps-text {
+        font-size: $capssize;
+        text-transform: uppercase;
+        letter-spacing: $capsspacing;
     }
-}
 
-@media (max-width: 600px) {
+
+    header {
+        grid-column: 1/11;
+        grid-row: 1/7;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, .5fr);
+        margin: 0vw;
+        max-width: 100%;
+        background: $blue;
+        color: $white;
+    }
+
     .heroimage {
-        grid-row: 7/8;
+        width: 100%;
+        grid-column: 4/9;
+        grid-row: 4/7;
+        padding-top: 4vw;
     }
 
-    .mission-statement {
-        font-size: 18px;
+
+    .menu-icon {
+        &__line {
+            background-color: $white;
+            height: 2px;
+            margin: 8px auto;
+            transition: all 0.3s ease-in-out;
+            width: 42px;
+        }
     }
-}
+
+
+
+    p {
+        font-size: inherit;
+        line-height: 28px;
+        font-weight: $regular-weight;
+    }
+
+
+
+    .site-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100%;
+
+    }
+
+    .u-button-reset {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        padding: 0;
+        text-align: inherit;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .upcomingevents {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        margin-left: $edge-margin;
+        margin-right: 20%;
+        margin-bottom: 5vw;
+
+
+        /*This will be where the image carousel we are making in class will be*/
+
+        &_contents {
+            grid-column: 4/11;
+            grid-row: 16/19;
+        }
+    }
+
+
+    @media (max-width: 950px) {
+
+        .mission-statement {
+            padding-right: 10%;
+            font-size: 20px;
+            line-height: 3.5vw;
+        }
+
+        .site-nav_link {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+
+    }
+
+    @media (max-width: 750px) {
+
+        .aboutus {
+            grid-column: 2/9;
+            grid-row: 9/10;
+            margin-left: 0;
+            margin-bottom: 4vw;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+
+            &_copy {
+                grid-column: 2/9;
+                grid-row: 10/12;
+                line-height: 6vw;
+                padding-top: 2vw;
+            }
+
+            &_stroke {
+                display: none;
+            }
+        }
+
+        .cta {
+            grid-column: 2/9;
+            grid-row: 15/16;
+        }
+
+        footer {
+            grid-column: 1/10;
+            grid-row: 23/28;
+        }
+
+
+
+        .heroimage {
+            grid-column: 2/9;
+            grid-row: 4/6;
+        }
+
+
+
+        .upcomingevents {
+            grid-column: 2/9;
+            grid-row: 17/18;
+            margin-left: 0;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+
+            &_contents {
+                grid-column: 2/9;
+                grid-row: 18/21;
+            }
+
+            &_stroke {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 750px) {
+
+        .aboutus {
+            grid-row: 12/13;
+
+            &_copy {
+                grid-row: 13/19;
+            }
+        }
+
+        .cta {
+            grid-row: 20/21;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        header {
+            grid-row: 1/10;
+        }
+
+        .heroimage {
+            grid-column: 1/10;
+            grid-row: 6/11;
+            width: 88%;
+            margin-left: $edge-margin;
+        }
+
+        .mission-statement {
+            font-size: 22px;
+            line-height: 7vw;
+        }
+
+        .upcomingevents {
+            grid-row: 22/23;
+
+            &_contents {
+                grid-row: 23/26;
+            }
+        }
+
+        footer {
+            grid-row: 30/39;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .heroimage {
+            grid-row: 7/8;
+        }
+
+        .mission-statement {
+            font-size: 18px;
+        }
+    }
