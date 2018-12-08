@@ -32,8 +32,6 @@ $pink:#C1423F;
 @import "alt";
 @import "nav";
 
-
-
 a {
     text-decoration: none;
     color: inherit;
@@ -45,24 +43,21 @@ a:hover {
 
 .about {
     margin-right: 20%;
+    color: $blue;
 
     &_title {
         margin-left: $edge-margin;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         margin-bottom: 5vw;
-        color: $blue;
     }
 
     &_copy {
-        grid-column: 4/9;
-        grid-row: 10/11;
-        margin-top: 0;
         padding-left: 37%;
     }
 }
 
-//reset margins//
+//reset margins, apply backup font, positioning for navv and footers to sit within//
 body {
     margin: 0;
     background: $white;
@@ -75,7 +70,7 @@ body {
 .cta {
     margin-left: 30%;
     margin-right: 20%;
-    margin-top: 3vw;
+    margin-top: 5vw;
     margin-bottom: 12vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -88,48 +83,92 @@ body {
 
     &_link-border {
         padding: 20px;
-        background: $white;
         border-style: solid;
         border-width: 2px;
         border-color: $pink;
     }
 }
 
-//revisit bem//
-footer {
+
+//grid to have content flow downward into 2 columns then stack on media q//
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-}
-
-.footer_contact {
-    grid-column: 1/5;
-    grid-row: 2/4;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, .5fr);
-    background: $blue;
-    color: $white;
-    padding: 4vw;
-}
-
-.footer_socials {
-    grid-column: 1/5;
-    grid-row: 1/2;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $pink;
-    padding-left: 30%;
-    padding-right: 30%;
+    flex-direction: column;
 
-    &-icon1 {
-        width: 6vw;
-        padding: 30px;
+    &_contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(6, 1fr);
+        background: $blue;
+        color: $white;
+        padding-left: $edge-margin;
+        padding-right: $edge-margin;
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+
+
+        &_head {
+            &-1 {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            &-2 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+
+            &-3 {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            &-4 {
+                grid-column: 2/3;
+                grid-row: 3/4;
+            }
+        }
+
+        &-info {
+            padding-left: 0;
+
+            &-1 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            &-2 {
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+
+            &-3 {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+
+            &-4 {
+                grid-column: 2/3;
+                grid-row: 4/5;
+            }
+        }
+    }
+
+    &_socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $pink;
+        padding-left: 30%;
+        padding-right: 30%;
+
+        &-icon1 {
+            width: 40px;
+            padding: 30px;
+        }
     }
 }
 
@@ -146,7 +185,7 @@ h1 {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(8, 10vw);
-        margin: 0;
+
     }
 
     &_title {
