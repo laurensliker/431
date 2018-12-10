@@ -28,7 +28,7 @@
 				{% for subnav in collections.subnav %}
 				{% if subnav.data.parent == nav.data.title %}
 
-				<li class="nav-child">{{ subnav.data.title }}</li>
+				<li class="nav-child"><a href="{{ nav.url}}">{{ subnav.data.title }}</a></li>
 
 				{% endif %}
 				{% endfor %}
