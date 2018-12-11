@@ -1,9 +1,18 @@
 <footer>
-
+<!-- svg icons act as direct links, the svg has area hidden attribute and  added a display none visually hides the link name, discriptive wording to tell screen readers exactly what the link does -->
     <section class="footer_socials">
-        <a href="https://twitter.com/SNToolLibrary/">{% include "_footer_socials-icon1.html" %}</a>
-        <a href="https://www.instagram.com/stationnorthtoollibrary/">{% include "_footer_socials-icon2.html" %}</a>
-        <a href="https://www.facebook.com/StationNorthToolLibrary/">{% include "_footer_socials-icon3.html" %}</a>
+        <a href="https://twitter.com/SNToolLibrary/">
+            
+            <p class="u-display-reset">visit twitter page</p>
+            
+            {% include
+            "_footer_socials-icon1.html" %}</a>
+        <a href="https://www.instagram.com/stationnorthtoollibrary/"><p class="u-display-reset">visit instagram page</p>{%
+            include
+            "_footer_socials-icon2.html" %}</a>
+        <a href="https://www.facebook.com/StationNorthToolLibrary/"><p class="u-display-reset">visit facebook page</p>{%
+            include
+            "_footer_socials-icon3.html" %}</a>
     </section>
 
     <section class="footer_contact">

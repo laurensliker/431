@@ -4,7 +4,7 @@ title: Groups & Teams
 parent: get involved
 tags: subnav
 ---
-<div class="alt_wrapper">
+<section class="alt_wrapper">
     <section class="alt_heading">
         <img class="alt_heading-banner" aria-hidden="true" src="/images/RepairCafeUccle--cropped.jpg" alt="Arial shot of two members repairing a hairdryer at a tooltable from group repair program">
 
@@ -67,17 +67,20 @@ tags: subnav
         </section>
 
         <!--add action later-->
-        <form action="" class="booking_form">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <div>
-                    <h3>Name</h3>
-                    <label for="first_name">First name:</label>
-                    <input type="text" name="first_name" id="first_name">
+        <form action="submit" class="booking_form">
+            <fieldset class="booking_form-section">
+                <legend class="caps-text">Contact Information</legend>
+                <section class="booking_form-split">
+                    <div>
+                        <label for="first_name">First name:</label>
+                        <input type="text" name="first_name" id="first_name">
 
-                    <label for="last_name">Last name:</label>
-                    <input type="text" name="last_name" id="last_name">
-                </div>
+                    </div>
+                    <div>
+                        <label for="last_name">Last name:</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                </section>
 
                 <div>
                     <label for="email_address">Email Address:</label>
@@ -85,40 +88,41 @@ tags: subnav
                 </div>
 
                 <div>
-                    <label for="phone_number">Phone Number</label>
+                    <label for="phone_number">Phone Number:</label>
                     <input type="tel" name="phone_number" id="phone_number">
                 </div>
             </fieldset>
-            <fieldset>
-                <legend>Event Details</legend>
+            <fieldset class="booking_form-section">
+                <legend class="caps-text">Event Details</legend>
                 <div>
-                    <label for="event_name">Event or Company/Organization Name</label>
+                    <label for="event_name">Event or Company/Organization Name:</label>
                     <input type="text" name="event_name" id="event_name">
                 </div>
 
                 <div>
-                    <label for="number_of_participants">Number of Participants</label>
+                    <label for="number_of_participants">Number of Participants:</label>
                     <input type="number" name="number_of_participants" id="number_of_participants">
                 </div>
+                <section class="booking_form-split">
+                    <div>
+                        <label for="workshop">Select a Workshop</label>
+                        <select name="workshop">
+                            <option value="spoons_and_spatulas">Spoons and Spatulas</option>
+                            <option value="serving_boards">Serving Boards</option>
+                        </select>
+                    </div>
 
-                <div>
-                    <label for="workshop">Select a Workshop</label>
-                    <select name="workshop">
-                        <option value="spoons_and_spatulas">Spoons and Spatulas</option>
-                        <option value="serving_boards">Serving Boards</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="fare_refreshments">Light Fare and Refreshments?</label>
-                    <select name="fare_refreshments">
-                        <option value="spoons_and_spatulas">yes</option>
-                        <option value="serving_boards">Serving Boards</option>
-                    </select>
-                </div>
+                    <div>
+                        <label for="fare_refreshments">Light Fare and Refreshments?</label>
+                        <select name="fare_refreshments">
+                            <option value="spoons_and_spatulas">yes</option>
+                            <option value="serving_boards">Serving Boards</option>
+                        </select>
+                    </div>
+                </section>
             </fieldset>
-            <fieldset>
-                <legend>Date and Time Choices</legend>
+            <fieldset class="booking_form-section">
+                <legend class="caps-text">Date and Time Choices</legend>
                 <!-- make times correspond to actual available times with js -->
                 <div>
                     <h3>First Choice Date and Time</h3>
@@ -176,4 +180,4 @@ tags: subnav
             </ol>
         </section>
     </section>
-</div>
+    </div>
