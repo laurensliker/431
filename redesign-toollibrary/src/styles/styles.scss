@@ -264,9 +264,15 @@ p {
     display: none;
 }
 
-ul {
+.u-liststyle-reset {
     list-style-type: none;
+}
+
+.u-listpadding-reset {
+    margin-top: 10px;
     padding-left: 0;
+    padding-bottom: 10px;
+    line-height: 20px;
 }
 
 .upcomingevents {

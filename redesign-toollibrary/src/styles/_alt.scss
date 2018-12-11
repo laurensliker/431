@@ -1,10 +1,5 @@
 //all non-home nav pages have the same alternate (alt) grid structure: banner/ heading/ then content and so im styling them in the same section//
 
-.groups {
-    color: $blue;
-    font-size: 28px;
-}
-
 .alt {
 
     &_heading {
@@ -17,13 +12,13 @@
         &-title {
             padding-left: 10%;
             padding-right: 10%;
-            padding-top: 10%;
+            padding-top: 120px;
         }
 
         &-description {
             padding-left: 10%;
             padding-right: 10%;
-            padding-bottom: 10%;
+            padding-bottom: 120px;
         }
     }
 }
@@ -141,11 +136,64 @@
     }
 }
 
+.error {
+    &_wrapper {
+        padding-bottom: 160px;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        background-color: $pink;
+        color: $white;
+    }
+
+    &_text {
+        grid-column: 2/5;
+        padding-top: 300px;
+    }
+
+
+    &_hammer {
+        position: absolute;
+        z-index: 0;
+        grid-column: 1/3;
+        width: 500px;
+        margin-left: -20px;
+        margin-top: 80px;
+        transform: rotate(10deg);
+        animation: rotate-bottom 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2s both;
+
+
+
+        @keyframes rotate-bottom {
+            0% {
+                transform: rotate(0);
+                transform: rotate(0);
+                transform-origin: bottom;
+                transform-origin: bottom;
+            }
+
+            100% {
+                transform: rotate(10deg);
+                transform: rotate(10deg);
+                transform-origin: bottom;
+                transform-origin: bottom;
+            }
+        }
+
+
+
+
+    }
+}
+
 fieldset {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
+//found code to remove chrome's autofill yellow highlight//
 
 input {
     width: 100%;
@@ -159,6 +207,7 @@ input {
     border-bottom: 1px solid #ccc;
     background-color: $white;
     border-radius: 0;
+    box-shadow: inset 0 0 0px 9999px $white;
 }
 
 select,
@@ -179,10 +228,8 @@ button:focus {
     border-color: $pink;
 }
 
-//found code to remove chrome's autofill yellow highlight//
-input:-webkit-autofill {
-    -webkit-box-shadow: inset 0 0 0px 9999px $white;
-}
+
+
 
 label {
     display: block;
@@ -203,12 +250,12 @@ legend {
     margin-right: 10%;
     border-top-style: solid;
     border-top-width: 1px;
-    border-top-color: $pink;
+    border-top-color: $blue;
 
     &_classpass {
         &-heading {
-            padding-top: 10vw;
-            padding-bottom: 10vw;
+            padding-top: 120px;
+            padding-bottom: 150px;
         }
 
         &-options {
@@ -222,6 +269,9 @@ legend {
 ol {
     padding-left: 2vw;
 }
+
+
+
 
 @media (max-width: $display-nav) {
 

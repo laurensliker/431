@@ -1,6 +1,6 @@
 <nav class="site-nav">
 
-	 <!-- icon button by includes a name that is visually hidden-->
+	<!-- icon button by includes a name that is visually hidden-->
 	<button type="button" id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset site-nav__trigger">
 		<h2 class="u-display-reset">Menu</h2>
 		<span aria-hidden="true" class="menu-icon">
@@ -10,7 +10,7 @@
 		</span>
 	</button>
 
-	<ul id="js-site-nav" class="site-nav__list caps-text" aria-hidden="false" data-visible="false">
+	<ul id="js-site-nav" class="site-nav__list caps-text u-liststyle-reset " aria-hidden="false" data-visible="false">
 
 		<li class="site-nav_logo" {{nav.data.title}}>
 			<a href="/" class="site-nav__link">
@@ -26,7 +26,7 @@
 
 			{% if nav.data.subnav == "yes" %}
 
-			<ul>
+			<ul class="u-listpadding-reset ">
 				{% for subnav in collections.subnav %}
 				{% if subnav.data.parent == nav.data.title %}
 
