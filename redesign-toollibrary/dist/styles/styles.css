@@ -201,16 +201,23 @@
   padding-bottom: 8vw;
 }
 
+.booking_form-choice {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 2.5vw;
+  padding-left: 2vw;
+}
+
 .booking_form-section {
-  margin-top: 5%;
+  margin-top: 60px;
 }
 
 .booking_form-split {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (48%)[2];
-      grid-template-columns: repeat(2, 48%);
-  grid-gap: 4%;
+  -ms-grid-columns: (46%)[2];
+      grid-template-columns: repeat(2, 46%);
+  grid-gap: 8%;
 }
 
 .booking_heading {
@@ -219,23 +226,36 @@
   border-bottom-color: #1b2339;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
-  padding-bottom: 5vw;
+  margin-top: 80px;
+  padding-bottom: 100px;
 }
 
 .booking_instructions {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
-  line-height: 3vw;
+  margin-top: 120px;
+  padding-bottom: 120px;
+  line-height: 30px;
+}
+
+.booking_instructions-item {
+  padding-top: 20px;
+  font-weight: 300;
+}
+
+.booking_instructions-link {
+  font-weight: 500;
 }
 
 .booking_submit {
   color: #FCFCFC;
   background-color: #C1423F;
-  width: 100px;
-  height: 40px;
+  font-weight: 700;
+  width: 120px;
+  height: 50px;
+  padding: 20px;
   border: 0;
+  margin-top: 5vw;
 }
 
 .booking_submit:hover {
@@ -249,26 +269,30 @@
       grid-template-columns: repeat(2, 50%);
   background-color: #1b2339;
   color: #FCFCFC;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .class-description_column-1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  margin: 6vw;
+  margin-left: 20%;
+  margin-right: 10%;
 }
 
 .class-description_column-2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  margin: 6vw;
+  margin-left: 10%;
+  margin-right: 20%;
 }
 
 .class-description_img {
   width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .class-description_name {
@@ -285,13 +309,12 @@ fieldset {
   border: 0;
 }
 
-input,
-select {
+input {
   width: 100%;
-  padding-top: 20px;
+  margin-top: 20px;
   padding-bottom: 12px;
   padding-left: 2vw;
-  margin-bottom: 3vw;
+  margin-bottom: 50px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -301,9 +324,11 @@ select {
 }
 
 select {
-  height: 30px;
-  -webkit-box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: #FCFCFC;
 }
 
 input:focus,
@@ -311,7 +336,7 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
-  border-bottom-color: #C1423F;
+  border-color: #C1423F;
 }
 
 input:-webkit-autofill {
@@ -321,10 +346,15 @@ input:-webkit-autofill {
 label {
   display: block;
   padding-left: 2vw;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 legend {
-  margin-bottom: 5vw;
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .membership {
@@ -352,8 +382,23 @@ ol {
   padding-left: 2vw;
 }
 
-select {
-  margin-bottom: 2vw;
+@media (max-width: 750px) {
+  .class-description {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (50%)[2];
+        grid-template-rows: repeat(2, 50%);
+  }
+  .class-description_column-1 {
+    margin-left: 10%;
+  }
+  .class-description_column-2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    margin-top: 60px;
+    margin-right: 10%;
+  }
 }
 
 [data-visible="false"] {

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -164,14 +165,19 @@
 
     <section class="class-description">
 
+
         <div class="class-description_column-1">
+
+            <h2 class="class-description_name caps-text">Spoons and Spatulas</h2>
+            <p>Freestyle woodworking; no measurements, no rules, and no previous
+                experience
+                necessary! Go home with a
+                useful object that YOU made and you will have completed the requirements of our Shop Safety class as
+                well!</p>
 
             <img class="class-description_img" aria-hidden="true" src="/images/spoons_and_spatulas.jpg" alt="Final wooden products of spoons and spatualas workshop.">
 
-            <h2 class="class-description_name caps-text">Spoons and Spatulas</h2>
-            <p>Freestyle woodworking; no measurements, no rules, and no previous experience necessary! Go home with a
-                useful object that YOU made and you will have completed the requirements of our Shop Safety class as
-                well!</p>
+
             <p><strong> Learn to use:</strong> Miter saw / Band saw / Drill press / Sanders / Carving tools</p>
             <p>
                 <strong>Number of Participants:</strong> Min 6, Max 12</p>
@@ -181,15 +187,20 @@
         </div>
 
         <div class="class-description_column-2">
-            <img class="class-description_img" aria-hidden="true" src="/images/serving_boards.jpg" alt="Final wooden products of spoons and spatualas workshop.">
+
             <h2 class="class-description_name caps-text">Serving Boards</h2>
-            <p>Get hands on instruction with shop machinery and leave with a custom crafted serving board that YOU
+            <p>Get hands on instruction with shop machinery and leave with a custom
+                crafted
+                serving board
+                that YOU
                 made!
                 This
                 special class is only offered to private groups and fulfills the Shop Safety prerequisite for all of
                 our
                 other
                 classes</p>
+            <img class="class-description_img" aria-hidden="true" src="/images/serving_boards.jpg" alt="Final wooden products of spoons and spatualas workshop.">
+
             <p><strong> Learn to use:</strong> Miter saw / Band saw / Drill press / Sanders / Scroll saw</p>
 
             <p><strong>Number of Participants:</strong> Min 6, Max 14</p>
@@ -203,15 +214,15 @@
         <section class="booking_heading">
             <h2>Contact Us to Book</h2>
             <p>Fill out the form below and we’ll get your booking started! Please note that we
-                require a 50% deposit to secure your date. Group workshops can be scheduled any time Monday - Thursday
+                require a 50% deposit to secure your date. Group workshops can be scheduled Monday - Thursday
                 between
-                9a-5p or Fridays between 9am-10pm.</p>
+                9am-5pm or Fridays between 9am-10pm.</p>
         </section>
 
         <!--add action later-->
         <form action="submit" class="booking_form">
             <fieldset class="booking_form-section">
-                <legend class="caps-text">Contact Information</legend>
+                <legend>How can we contact you?</legend>
                 <section class="booking_form-split">
                     <div>
                         <label for="first_name">First name:</label>
@@ -235,7 +246,7 @@
                 </div>
             </fieldset>
             <fieldset class="booking_form-section">
-                <legend class="caps-text">Event Details</legend>
+                <legend>Tell us about your event...</legend>
                 <div>
                     <label for="event_name">Event or Company/Organization Name:</label>
                     <input type="text" name="event_name" id="event_name">
@@ -263,47 +274,57 @@
                     </div>
                 </section>
             </fieldset>
+
             <fieldset class="booking_form-section">
-                <legend class="caps-text">Date and Time Choices</legend>
-                <!-- make times correspond to actual available times with js -->
-                <div>
-                    <h3>First Choice Date and Time</h3>
 
-                    <!-- a way to make the current date the most recent value-->
-                    <label for="first_choice_date">Date</label>
-                    <input type="date" name="first_choice_date" id="first_choice_date" value="2019-01-08" min="2019-01-01"
-                        max="2019-12-31">
+                <legend>Choose a date and time for your event...</legend>
 
-                    <label for="first_choice_time">Time</label>
-                    <input type="time" id="first_choice_time" name="first_choice_time" min="9:00" max="18:00" value="11:30"
-                        required>
-                </div>
+                <h3 class="booking_form-choice">Select your first choice</h3>
+                <section class="booking_form-split">
 
-                <div>
-                    <h3>Second Choice Date and Time</h3>
+                    <div>
+                        <label for="first_choice_date">Date</label>
+                        <input type="date" name="first_choice_date" id="first_choice_date" value="2019-01-08" min="2019-01-01"
+                            max="2019-12-31">
+                    </div>
+                    <div>
+                        <label for="first_choice_time">Time</label>
+                        <input type="time" id="first_choice_time" name="first_choice_time" min="9:00" max="18:00" value="11:30"
+                            required>
+                    </div>
+                </section>
 
-                    <!-- a way to make the current date the most recent value-->
-                    <label for="second_choice_date">Date</label>
-                    <input type="date" name="second_choice_date" id="second_choice_date" value="2019-01-08" min="2019-01-01"
-                        max="2019-12-31">
 
-                    <label for="second_choice_time">Time</label>
-                    <input type="time" id="second_choice_time" name="second_choice_time" min="9:00" max="18:00" value="11:30"
-                        required>
-                </div>
+                <h3 class="booking_form-choice">Select your second choice</h3>
 
-                <div>
-                    <h3>Third Choice Date and Time</h3>
+                <section class="booking_form-split">
+                    <div>
+                        <label for="second_choice_date">Date</label>
+                        <input type="date" name="second_choice_date" id="second_choice_date" value="2019-01-08" min="2019-01-01"
+                            max="2019-12-31">
+                    </div>
+                    <div>
+                        <label for="second_choice_time">Time</label>
+                        <input type="time" id="second_choice_time" name="second_choice_time" min="9:00" max="18:00"
+                            value="11:30" required>
+                    </div>
+                </section>
 
-                    <!-- a way to make the current date the most recent value-->
-                    <label for="third_choice_date">Date</label>
-                    <input type="date" name="third_choice_date" id="third_choice_date" value="2019-01-08" min="2019-01-01"
-                        max="2019-12-31">
 
-                    <label for="third_choice_time">Time</label>
-                    <input type="time" id="third_choice_time" name="third_choice_time" min="9:00" max="18:00" value="11:30"
-                        required>
-                </div>
+                <h3 class="booking_form-choice">Select your third choice</h3>
+
+                <section class="booking_form-split">
+                    <div>
+                        <label for="third_choice_date">Date</label>
+                        <input type="date" name="third_choice_date" id="third_choice_date" value="2019-01-08" min="2019-01-01"
+                            max="2019-12-31">
+                    </div>
+                    <div>
+                        <label for="third_choice_time">Time</label>
+                        <input type="time" id="third_choice_time" name="third_choice_time" min="9:00" max="18:00" value="11:30"
+                            required>
+                    </div>
+                </section>
             </fieldset>
 
             <input class="booking_submit caps-text" type="submit" value="Submit">
@@ -312,13 +333,20 @@
         <section class="booking_instructions">
             <h2>Once you have booked and made your deposit</h2>
             <ol>
-                <li>Have all your participants print and sign this form and bring to class - if they are 17 years old
+                <!-- document linkcopied from original site-->
+                <li class="booking_instructions-item">Have all your participants print
+                    and sign <a class="booking_instructions-link" href="https://docs.google.com/document/d/1LzOu16Sm9eITSxyVuU5HitRQdqaSYmSOja2aWaypyaU/pub">this
+                        form</a> and bring to
+                    class - if they are
+                    17 years old
                     and
                     younger.</li>
-                <li>If you have selected to have light fare and drinks provided, please have ALL participants complete
-                    this
-                    dietary
-                    preferences survey.</li>
+
+                <li class="booking_instructions-item">If you have selected to have light fare and drinks provided,
+                    please have ALL
+                    participants complete
+                    <a class="booking_instructions-link" href="https://goo.gl/forms/qe98M64gUKYocIyx1" id="yui_3_17_2_1_1544522818832_302">this
+                        dietary preferences survey.</a></li>
             </ol>
         </section>
     </section>

@@ -41,15 +41,22 @@
         border-bottom-color: $blue;
         padding-bottom: 8vw;
 
+        &-choice {
+            font-size: 15px;
+            font-weight: $medium-weight;
+            margin-bottom: 2.5vw;
+            padding-left: 2vw;
+        }
+
         &-section {
-            margin-top: 5%;
+            margin-top: 60px;
         }
 
         &-split {
 
             display: grid;
-            grid-template-columns: repeat(2, 48%);
-            grid-gap: 4%;
+            grid-template-columns: repeat(2, 46%);
+            grid-gap: 8%;
         }
     }
 
@@ -59,23 +66,39 @@
         border-bottom-color: $blue;
         margin-left: 10%;
         margin-right: 10%;
-        margin-top: 10%;
-        padding-bottom: 5vw;
+        margin-top: 80px;
+        padding-bottom: 100px;
     }
 
     &_instructions {
         margin-left: 10%;
         margin-right: 10%;
-        margin-top: 10%;
-        line-height: 3vw;
+        margin-top: 120px;
+        padding-bottom: 120px;
+        line-height: 30px;
+
+        &-item {
+            padding-top: 20px;
+            font-weight: $regular-weight;
+        }
+
+        &-link {
+
+            font-weight: $medium-weight;
+        }
+
     }
 
     &_submit {
         color: $white;
         background-color: $pink;
-        width: 100px;
-        height: 40px;
+        font-weight: $bold-weight;
+        width: 120px;
+        height: 50px;
+        padding: 20px;
         border: 0;
+        margin-top: 5vw;
+
 
         &:hover {
             text-decoration: underline;
@@ -88,21 +111,25 @@
     grid-template-columns: repeat(2, 50%);
     background-color: $blue;
     color: $white;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     &_column-1 {
         grid-column: 1/2;
-        margin: $edge-margin;
+        margin-left: 20%;
+        margin-right: 10%;
     }
 
     &_column-2 {
         grid-column: 2/3;
-        margin: $edge-margin;
+        margin-left: 10%;
+        margin-right: 20%;
     }
 
     &_img {
         width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
 
     &_name {
@@ -120,13 +147,12 @@ fieldset {
     border: 0;
 }
 
-input,
-select {
+input {
     width: 100%;
-    padding-top: 20px;
+    margin-top: 20px;
     padding-bottom: 12px;
     padding-left: 2vw;
-    margin-bottom: 3vw;
+    margin-bottom: 50px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -135,9 +161,13 @@ select {
     border-radius: 0;
 }
 
-select {
-    height: 30px;
-    box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
+select,
+    {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: $white;
 }
 
 //makes the area of form you are working on highlight pink//
@@ -146,7 +176,7 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
-    border-bottom-color: $pink;
+    border-color: $pink;
 }
 
 //found code to remove chrome's autofill yellow highlight//
@@ -157,10 +187,15 @@ input:-webkit-autofill {
 label {
     display: block;
     padding-left: 2vw;
+    font-size: $capssize;
+    text-transform: uppercase;
+    letter-spacing: $capsspacing;
 }
 
 legend {
-    margin-bottom: 5vw;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .membership {
@@ -171,7 +206,6 @@ legend {
     border-top-color: $pink;
 
     &_classpass {
-
         &-heading {
             padding-top: 10vw;
             padding-bottom: 10vw;
@@ -189,6 +223,22 @@ ol {
     padding-left: 2vw;
 }
 
-select {
-    margin-bottom: 2vw;
+@media (max-width: $display-nav) {
+
+
+
+    .class-description {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 50%);
+
+        &_column-1 {
+            margin-left: 10%;
+        }
+
+        &_column-2 {
+            grid-column: 1/2;
+            margin-top: 60px;
+            margin-right: 10%;
+        }
+    }
 }
