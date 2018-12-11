@@ -1,8 +1,9 @@
 // Slider init
+console.log("hello")
 const slideshow = document.querySelector("#js-slideshow");
 const slides = slideshow.querySelectorAll(".js-slideshow-slide");
 var slideshowTimer;
-console.log("hello")
+
 // Get screenreaders to announce slides if the slideshow has focus
 window.addEventListener("focusin", function () {
     slideshow.setAttribute("aria-live", "polite");
