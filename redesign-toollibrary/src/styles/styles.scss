@@ -271,11 +271,11 @@ ul {
     margin-right: 20%;
     margin-bottom: 5vw;
 
-    /*This will be where the image carousel we are making in class will be*/
 
     &_contents {
-        grid-column: 4/11;
-        grid-row: 16/19;
+        position: relative;
+        margin-left: 30%;
+        margin-right: 0;
     }
 }
 

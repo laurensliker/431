@@ -32,7 +32,7 @@
 .slideshow {
   padding-bottom: 1%;
   position: relative;
-  width: 75%;
+  width: 100%;
 }
 
 .slideshow__list {
@@ -759,16 +759,12 @@ ul {
   margin-left: 6vw;
   margin-right: 20%;
   margin-bottom: 5vw;
-  /*This will be where the image carousel we are making in class will be*/
 }
 
 .upcomingevents_contents {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 7;
-  grid-column: 4/11;
-  -ms-grid-row: 16;
-  -ms-grid-row-span: 3;
-  grid-row: 16/19;
+  position: relative;
+  margin-left: 30%;
+  margin-right: 0;
 }
 
 @media (max-width: 1020px) {
