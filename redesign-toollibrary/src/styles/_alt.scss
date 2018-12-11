@@ -112,19 +112,28 @@ input {
     margin-bottom: 2vw;
 }
 
-.membership-options {
+.membership {
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 10vw;
+
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: $blue;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-gap: 2vw;
-    text-align-last: center;
-}
 
+    &_classpass {
+
+        &-heading {
+            padding-top: 10vw;
+            padding-bottom: 10vw;
+        }
+
+        &-options {
+            display: grid;
+            grid-template-columns: repeat(2, 350px);
+            grid-gap: 20px;
+        }
+    }
+}
 
 ol {
     padding-left: 2vw;

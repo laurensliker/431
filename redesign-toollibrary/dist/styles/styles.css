@@ -277,19 +277,25 @@ input {
   margin-bottom: 2vw;
 }
 
-.membership-options {
+.membership {
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 10vw;
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: #1b2339;
+}
+
+.membership_classpass-heading {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+.membership_classpass-options {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  grid-gap: 2vw;
-  text-align-last: center;
+  -ms-grid-columns: (350px)[2];
+      grid-template-columns: repeat(2, 350px);
+  grid-gap: 20px;
 }
 
 ol {
