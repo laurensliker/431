@@ -106,7 +106,7 @@
 }
 
 .slideshow__button svg {
-  fill: rgba(0, 0, 0, 0.6);
+  fill: #C1423F;
   height: 36px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
