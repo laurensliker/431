@@ -273,6 +273,9 @@ ul {
 
 
     &_contents {
+        padding-top: 5vw;
+        padding-bottom: 10vw;
+        z-index: -1;
         position: relative;
         margin-left: 30%;
         margin-right: 0;

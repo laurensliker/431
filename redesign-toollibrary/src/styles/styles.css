@@ -79,12 +79,11 @@
 
 .slideshow__image {
   height: auto;
-  max-height: 80%;
   -webkit-transition: -webkit-filter 0.2s ease-in-out;
   transition: -webkit-filter 0.2s ease-in-out;
   transition: filter 0.2s ease-in-out;
   transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
-  width: auto;
+  min-width: 100%;
 }
 
 .slideshow__image[data-src] {
@@ -762,6 +761,9 @@ ul {
 }
 
 .upcomingevents_contents {
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+  z-index: -1;
   position: relative;
   margin-left: 30%;
   margin-right: 0;
