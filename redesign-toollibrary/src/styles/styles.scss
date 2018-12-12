@@ -21,7 +21,7 @@ $footersec-toppadding: 3vw;
 /*far left page margin on desktop layout*/
 $edge-margin: 6vw;
 
-//colors//
+//colors- slightly deviate from brand colors for better readability//
 $white: #FCFCFC;
 $blue:#1b2339;
 $pink:#C1423F;
@@ -32,6 +32,8 @@ $pink:#C1423F;
 @import "alt";
 @import "nav";
 
+
+//links have an underline instead of color change for stronger accessibility//
 a {
     text-decoration: none;
     color: inherit;
@@ -63,6 +65,8 @@ body {
     background: $white;
     font-family: $sans-serif;
 }
+
+
 
 //for all nav, footer, and midtier importance text//
 .caps-text {

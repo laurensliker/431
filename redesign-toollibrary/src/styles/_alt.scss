@@ -101,6 +101,17 @@
     }
 }
 
+.boxlink {
+    color: $pink;
+    font-weight: $bold-weight;
+    text-align: center;
+    height: 50px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $pink;
+}
+
 .class-description {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -214,14 +225,6 @@ input {
     box-shadow: inset 0 0 0px 9999px $white;
 }
 
-select,
-    {
-    width: 100%;
-    margin-top: 20px;
-    height: 50px;
-    border: 1px solid #ccc;
-    background-color: $white;
-}
 
 //makes the area of form you are working on highlight pink//
 input:focus,
@@ -249,9 +252,11 @@ legend {
     font-weight: 700;
 }
 
+//redesigning membership options by seperating into the 2 types rather than reppeating the names on every one, type heirarchy is clearer and consistant with other pages//
 .membership {
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 100px;
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: $blue;
@@ -259,13 +264,24 @@ legend {
     &_classpass {
         &-heading {
             padding-top: 120px;
-            padding-bottom: 150px;
+            padding-bottom: 60px;
         }
 
         &-options {
             display: grid;
             grid-template-columns: repeat(2, 350px);
             grid-gap: 20px;
+            padding-left: 0;
+        }
+    }
+
+    &_scale {
+        &-heading {
+            padding-top: 120px;
+        }
+
+        &-options {
+            margin-bottom: 120px;
         }
     }
 }
@@ -274,6 +290,14 @@ ol {
     padding-left: 2vw;
 }
 
+select,
+    {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: $white;
+}
 
 
 
@@ -307,6 +331,30 @@ ol {
             padding-top: 140px;
 
             margin-left: 160px;
+        }
+    }
+
+    .membership {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 100px;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color: $blue;
+
+        &_classpass {
+            &-heading {
+                padding-top: 120px;
+                padding-bottom: 60px;
+            }
+
+            &-options {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 50vw);
+                grid-gap: 0;
+                padding-left: 0;
+            }
         }
     }
 }

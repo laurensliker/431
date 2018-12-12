@@ -270,6 +270,17 @@
   text-decoration: underline;
 }
 
+.boxlink {
+  color: #C1423F;
+  font-weight: 700;
+  text-align: center;
+  height: 50px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #C1423F;
+}
+
 .class-description {
   display: -ms-grid;
   display: grid;
@@ -407,14 +418,6 @@ input {
           box-shadow: inset 0 0 0px 9999px #FCFCFC;
 }
 
-select {
-  width: 100%;
-  margin-top: 20px;
-  height: 50px;
-  border: 1px solid #ccc;
-  background-color: #FCFCFC;
-}
-
 input:focus,
 select:focus,
 textarea:focus,
@@ -440,6 +443,7 @@ legend {
 .membership {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 100px;
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: #1b2339;
@@ -447,7 +451,7 @@ legend {
 
 .membership_classpass-heading {
   padding-top: 120px;
-  padding-bottom: 150px;
+  padding-bottom: 60px;
 }
 
 .membership_classpass-options {
@@ -456,10 +460,27 @@ legend {
   -ms-grid-columns: (350px)[2];
       grid-template-columns: repeat(2, 350px);
   grid-gap: 20px;
+  padding-left: 0;
+}
+
+.membership_scale-heading {
+  padding-top: 120px;
+}
+
+.membership_scale-options {
+  margin-bottom: 120px;
 }
 
 ol {
   padding-left: 2vw;
+}
+
+select {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: #FCFCFC;
 }
 
 @media (max-width: 750px) {
@@ -486,6 +507,28 @@ ol {
   .error_text {
     padding-top: 140px;
     margin-left: 160px;
+  }
+  .membership {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #1b2339;
+  }
+  .membership_classpass-heading {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .membership_classpass-options {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (50vw)[4];
+        grid-template-rows: repeat(4, 50vw);
+    grid-gap: 0;
+    padding-left: 0;
   }
 }
 

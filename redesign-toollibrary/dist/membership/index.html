@@ -12,9 +12,12 @@
 
 <body>
 
-	<nav class="site-nav">
+	<!--navigation follows with scroll to solve the issue of the previous site where the nav is hidden most of the time. Subnav elements streamline the experience and emphasize learning, getting involved, and donating to the library.-->
 
-	<!-- icon button by includes a name that is visually hidden-->
+<nav class="site-nav">
+
+
+	<!-- icon button with accessible label-->
 
 	<button type="button" aria-label="menu" id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset site-nav__trigger">
 		<h2 class="u-display-reset ">Menu</h2>
@@ -158,6 +161,7 @@
             lights on, and programming affordable. Here are a variety of ways to join and support!</p>
 
         <section class="membership">
+
             <!--list element of types of membership options: class pass and sliding scale. Within Each list element is a list of benefits-->
 
 
@@ -166,13 +170,13 @@
                 <p>Each with a 12 month payment plan</p>
 
             </div>
-            <ul class="membership_classpass-options">
+            <ul class="membership_classpass-options u-liststyle-reset">
                 <li>
                     <h3>$39 per 12 months</h3>
 
                     <strong>Benefits:</strong>
 
-                    <ul>
+                    <ul class="u-listpadding-reset u-liststyle-reset">
                         <li>Your choice of 3 classes for the year </li>
                         <li>20% off classes and products</li>
                         <li>Borrow 8 tools a week </li>
@@ -185,7 +189,7 @@
 
                     <strong>Benefits:</strong>
 
-                    <ul>
+                    <ul class="u-listpadding-reset u-liststyle-reset">
                         <li>Your choice of 2 classes for the year </li>
                         <li>10% off classes and products</li>
                         <li>Borrow 8 tools a week </li>
@@ -198,7 +202,7 @@
 
                     <strong>Benefits:</strong>
 
-                    <ul>
+                    <ul class="u-listpadding-reset u-liststyle-reset">
                         <li>Your choice of 1 class for the year </li>
                         <li>10% off classes and products</li>
                         <li>Borrow 8 tools a week </li>
@@ -211,7 +215,7 @@
 
                     <strong>Benefits:</strong>
 
-                    <ul>
+                    <ul class="u-listpadding-reset u-liststyle-reset">
                         <li>Shop Safety I Class Credit </li>
                         <li>10% off classes and products</li>
                         <li>Borrow 8 tools a week </li>
@@ -219,27 +223,27 @@
                     </ul>
                 </li>
             </ul>
-            <!--keeping ul tag even though there is only 1 item because of the format of a title and descriptors underneath, the section is subject to change and more varieties of this type of membership being added-->
+            <!--keeps ul tag format even though there is only 1 item because of the format of a title and descriptors underneath, the section is subject to change, and more varieties of this type of membership can be added-->
             <div class="membership_scale">
-                <h2>Slading Scale Membership</h2>
+                <h2 class="membership_scale-heading">Slading Scale Membership</h2>
                 <p>One time payment</p>
-                <li>
+
             </div>
-            <ul>
+            <ul class="u-listpadding-reset u-liststyle-reset membership_scale-options">
                 <li>
-                    <h3>$$1/$1,000 annual income
+                    <h3>$1/$1,000 annual income
                     </h3>
 
                     <strong>Benefits:</strong>
 
-                    <ul>
+                    <ul class="u-listpadding-reset u-liststyle-reset">
                         <li>Borrow 8 tools a week </li>
                         <li>Free open shop hours after completion of Shop Safety 1</li>
                     </ul>
                 </li>
             </ul>
 
-            <a href="#">FAQ</a>
+            <a href="#" class="boxlink">FAQ</a>
 
 
         </section>

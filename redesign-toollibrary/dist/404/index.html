@@ -12,9 +12,12 @@
 
 <body>
 
-	<nav class="site-nav">
+	<!--navigation follows with scroll to solve the issue of the previous site where the nav is hidden most of the time. Subnav elements streamline the experience and emphasize learning, getting involved, and donating to the library.-->
 
-	<!-- icon button by includes a name that is visually hidden-->
+<nav class="site-nav">
+
+
+	<!-- icon button with accessible label-->
 
 	<button type="button" aria-label="menu" id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset site-nav__trigger">
 		<h2 class="u-display-reset ">Menu</h2>
@@ -148,6 +151,8 @@
 </nav>
 
  
+<!--the same text format as the originalsite but with brighter colors and accompanied svg and animation for a friendlier tone-->
+
 <div class="error">
     <div class="error_hammer">
         <svg class="error_hammer" viewBox="0 0 792 612">
@@ -157,6 +162,8 @@
         fill="#C1423F" stroke="#FCFCFC" stroke-width="8" />
 </svg>
 </div>
+
+    <!--image divides into one half and text on the other to mimic the hammer "working on" the text-->
     <section class="error_text">
         <p class="error_title">Oops...</p>
         <h2 class="error_body">We couldn't find the page you were looking for. This is either because:</h2>
