@@ -122,10 +122,11 @@ for (let i = 0; i < slideshowButtons.length; i++) {
 }
 
 // Create eventListener for clicking on the buttons
+console.log(slideshowButtons.length + " is length");
 for (let i = 0; i < slideshowButtons.length; i++) {
     slideshowButtons[i].addEventListener("click", function (e) {
         let action = this.dataset.action;
-        // console.log(action);
+        console.log("hello");
 
         if (action === "pause") {
             pauseSlideshow();
