@@ -8,7 +8,7 @@
     transition: max-height 500ms ease;
 }
 
-#nav-parent:hover .nav-child {
+#nav-parent-element:hover .nav-child {
     max-height: 150px;
 }
 
@@ -18,7 +18,7 @@
 
     &__trigger {
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 3vw;
         right: 4vw;
 
@@ -50,13 +50,14 @@
     &__list {
 
         @media screen and (max-width: ($display-nav - 1px)) {
+            z-index: 1;
             background-color: $white;
             flex-direction: column;
             position: absolute;
             top: $top-height;
             left: 0;
             width: 100vw;
-            padding-top: 10vw;
+            padding-top: 4vw;
 
             &[data-visible="true"] {
                 animation: expand 0.3s ease-in-out forwards;
@@ -87,8 +88,8 @@
 
     &__list-item {
         @media screen and (max-width: ($display-nav - 1px)) {
-            justify-content: left;
-            margin-left: 0;
+            margin-top: 10%;
+
         }
 
         @media screen and (min-width: $display-nav) {

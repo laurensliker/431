@@ -1,5 +1,5 @@
 // Slider init
-console.log("hello")
+
 const slideshow = document.querySelector("#js-slideshow");
 const slides = slideshow.querySelectorAll(".js-slideshow-slide");
 var slideshowTimer;

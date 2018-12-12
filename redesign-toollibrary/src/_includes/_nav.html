@@ -21,7 +21,7 @@
 			</a>
 
 			{% for nav in collections.nav %}
-		<li id="nav-parent" class="site-nav__list-item site-nav__link {% if (page.url==nav.url) %}is-active{% endif%}"><a
+		<li id="nav-parent-element" class="site-nav__list-item site-nav__link {% if (page.url==nav.url) %}is-active{% endif%}"><a
 			 href="{{ nav.url}}">{{nav.data.title}}</a>
 
 			{% if nav.data.subnav == "yes" %}
