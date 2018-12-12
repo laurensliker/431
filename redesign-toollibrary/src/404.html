@@ -2,20 +2,20 @@
 layout: layouts/default.njk
 title: 404
 ---
-<div class="error_wrapper">
+<div class="error">
     <div class="error_hammer">
         {% include
         "_hammer.html" %}</div>
     <section class="error_text">
-        <h1>Oops...</h1>
-        <p>We couldn't find the page you were looking for. This is either because:</p>
-        <ul>
+        <p class="error_title">Oops...</p>
+        <h2 class="error_body">We couldn't find the page you were looking for. This is either because:</h2>
+        <ul class="error_body">
             <li>There is an error in the URL entered into your web browser. Please check the URL and try again.</li>
             <li>The page you are looking for has been moved or deleted.</li>
         </ul>
-        <p>
+        <p class="error_body">
             You can return to our homepage by <a href="/">clicking here</a>, or you can try searching for the
-            content you are seeking by <a href="/search">clicking here</a>.
+            content you are seeking by <a href="#">clicking here</a>.
         </p>
     </section>
 </div>
