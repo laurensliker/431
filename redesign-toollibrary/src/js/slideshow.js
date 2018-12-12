@@ -1,7 +1,10 @@
 // Slider init
 
-const slideshow = document.querySelector("#js-slideshow");
-const slides = slideshow.querySelectorAll(".js-slideshow-slide");
+const slideshow = document.getElementById("js-slideshow");
+const slides = document.querySelectorAll(".js-slideshow-slide");
+// Slider actions
+const slideshowButtons = document.querySelectorAll(".js-slideshow-button");
+
 var slideshowTimer;
 
 // Get screenreaders to announce slides if the slideshow has focus
@@ -51,8 +54,6 @@ slides.forEach((slide, index) => {
     }
 });
 
-// Slider actions
-const slideshowButtons = slideshow.querySelectorAll(".js-slideshow-button");
 
 // Determine which slide is next up
 const updateSlide = direction => {
@@ -61,7 +62,7 @@ const updateSlide = direction => {
         ".js-slideshow-slide[data-active=true]"
     );
     currentSlide.setAttribute("data-active", false);
-
+    console.log(direction + " is direction");
     if (direction === "next") {
         // Find the next slide
         let nextSlide = currentSlide.nextElementSibling;
@@ -77,7 +78,7 @@ const updateSlide = direction => {
     if (direction === "previous") {
         // Find the previous slide
         let previousSlide = currentSlide.previousElementSibling;
-
+        console.log("in previous");
         if (previousSlide !== null) {
             // If we are not on the first slide
             var target = previousSlide;
@@ -102,31 +103,12 @@ const pauseSlideshow = () => {
 startSlideshow();
 
 // Create eventListener for clicking on the buttons
-for (let i = 0; i < slideshowButtons.length; i++) {
-    slideshowButtons[i].addEventListener("click", function (e) {
-        let action = this.dataset.action;
-        // console.log(action);
-
-        if (action === "pause") {
-            pauseSlideshow();
-            this.setAttribute("aria-label", "play");
-            this.dataset.action = "play";
-        } else if (action === "play") {
-            startSlideshow();
-            this.setAttribute("aria-label", "pause");
-            this.dataset.action = "pause";
-        } else {
-            updateSlide(action);
-        }
-    });
-}
-
-// Create eventListener for clicking on the buttons
 console.log(slideshowButtons.length + " is length");
 for (let i = 0; i < slideshowButtons.length; i++) {
     slideshowButtons[i].addEventListener("click", function (e) {
         let action = this.dataset.action;
         console.log("hello");
+        console.log(action + "is action");
 
         if (action === "pause") {
             pauseSlideshow();
