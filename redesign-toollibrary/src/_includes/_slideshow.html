@@ -3,7 +3,8 @@
 {% import "_slideshow-slide.njk" as slide %}
 
 <section id="js-slideshow" class="slideshow u-mx-auto">
-    <div class="slideshow-container u-mx-auto">
+    <div class="slideshow-container upcomingevents_contents  u-mx-auto">
+
         <ul class="u-fit slideshow__list-item u-list-reset">
             {{ slide.item("repair-cafe", "Fall Fix It Fair", "An arial image of station from the 2017 Fix it Fair.") }}
 
@@ -11,10 +12,10 @@
             storefront.") }}
 
             {{ slide.item("tooltime", "Tax Credits for Home Improvements", "alt 3 here") }}
-
         </ul>
+        {% include "_slideshow-controls.html" %}
     </div>
 </section>
 
-{% include "_slideshow-controls.html" %}
+
 <script src="/js/slideshow.js"></script>

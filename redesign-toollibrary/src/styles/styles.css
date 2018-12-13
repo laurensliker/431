@@ -16,7 +16,7 @@
 }
 
 .u-fit {
-  max-width: 100%;
+  max-width: 130%;
 }
 
 .u-list-reset {
@@ -30,9 +30,9 @@
 }
 
 .slideshow {
-  padding-bottom: 1%;
+  padding-bottom: 60px;
   position: relative;
-  width: 100%;
+  margin: 0;
 }
 
 .slideshow__list {
@@ -79,11 +79,11 @@
 
 .slideshow__image {
   height: auto;
+  width: 100%;
   -webkit-transition: -webkit-filter 0.2s ease-in-out;
   transition: -webkit-filter 0.2s ease-in-out;
   transition: filter 0.2s ease-in-out;
   transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
-  min-width: 100%;
 }
 
 .slideshow__image[data-src] {
@@ -98,31 +98,41 @@
   position: absolute;
 }
 
+.slideshow__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .slideshow__controls {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (20%)[4];
-      grid-template-columns: repeat(4, 20%);
-  -ms-grid-rows: 40px;
-      grid-template-rows: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  margin-top: 50%;
 }
 
 .slideshow__button {
-  position: relative;
+  position: absolute;
+  top: 40%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .slideshow__button svg {
-  fill: #C1423F;
-  height: 36px;
+  fill: #FCFCFC;
+  height: 5vw;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  width: 20px;
+  width: auto;
 }
 
 .slideshow__button:hover svg {
   fill: black;
+  stroke-width: 10px;
 }
 
 .slideshow__button:focus {
@@ -163,6 +173,8 @@
 }
 
 .slideshow__button[data-action="play"] svg, .slideshow__button[data-action="pause"] svg {
+  position: relative;
+  top: 90%;
   height: 20px;
   width: 20px;
 }
@@ -206,7 +218,7 @@
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #1b2339;
-  padding-bottom: 8vw;
+  padding-bottom: 60px;
 }
 
 .booking_form-choice {
@@ -218,6 +230,22 @@
 
 .booking_form-section {
   margin-top: 60px;
+}
+
+.booking_form_submit {
+  color: #FCFCFC;
+  background-color: #C1423F;
+  font-weight: 700;
+  max-width: 120px;
+  height: 50px;
+  padding: 20px;
+  border: 0;
+  margin-top: 5vw;
+  border-radius: 40px;
+}
+
+.booking_form_submit:hover {
+  text-decoration: underline;
 }
 
 .booking_form-split {
@@ -253,21 +281,7 @@
 
 .booking_instructions-link {
   font-weight: 500;
-}
-
-.booking_submit {
-  color: #FCFCFC;
-  background-color: #C1423F;
-  font-weight: 700;
-  width: 120px;
-  height: 50px;
-  padding: 20px;
-  border: 0;
-  margin-top: 5vw;
-}
-
-.booking_submit:hover {
-  text-decoration: underline;
+  color: #C1423F;
 }
 
 .boxlink {
@@ -275,10 +289,14 @@
   font-weight: 700;
   text-align: center;
   height: 50px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
   border-style: solid;
   border-width: 2px;
   border-color: #C1423F;
+  border-radius: 40px;
 }
 
 .class-description {
@@ -451,7 +469,7 @@ legend {
 
 .membership_classpass-heading {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 .membership_classpass-options {
@@ -463,12 +481,31 @@ legend {
   padding-left: 0;
 }
 
+.membership_faq {
+  padding-bottom: 160px;
+}
+
 .membership_scale-heading {
   padding-top: 120px;
+  padding-bottom: 20px;
 }
 
 .membership_scale-options {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
+}
+
+.membership_join {
+  padding-top: 120px;
+  margin-bottom: 140px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #1b2339;
+  line-height: 35px;
+}
+
+.membership_join-link {
+  font-weight: 500;
+  color: #C1423F;
 }
 
 ol {
@@ -518,7 +555,8 @@ select {
   }
   .membership_classpass-heading {
     padding-top: 120px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .membership_classpass-options {
     display: -ms-grid;
@@ -529,6 +567,7 @@ select {
         grid-template-rows: repeat(4, 50vw);
     grid-gap: 0;
     padding-left: 0;
+    margin-top: 0;
   }
 }
 
@@ -748,6 +787,7 @@ body {
   border-style: solid;
   border-width: 2px;
   border-color: #C1423F;
+  border-radius: 40px;
 }
 
 .footer_border {
@@ -993,16 +1033,16 @@ p {
   border-bottom-width: 1px;
   margin-left: 6vw;
   margin-right: 20%;
-  margin-bottom: 5vw;
 }
 
 .upcomingevents_contents {
-  padding-top: 5vw;
-  padding-bottom: 10vw;
+  margin-top: 100px;
+  margin-bottom: 0;
   z-index: -1;
   position: relative;
-  margin-left: 30%;
+  margin-left: 16%;
   margin-right: 0;
+  padding-left: 0;
 }
 
 @media (max-width: 1020px) {
@@ -1042,7 +1082,13 @@ p {
     margin-right: 10%;
   }
   .upcomingevents_contents {
-    width: 85%;
+    margin-top: 70px;
+  }
+  .slideshow__image {
+    width: 105%;
+  }
+  .u-fit {
+    max-width: 110%;
   }
 }
 
@@ -1131,13 +1177,25 @@ p {
     -ms-grid-row-span: 2;
     grid-row: 3/5;
   }
+  .figcaption {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: .1vw;
+    padding-top: 20px;
+  }
   .upcomingevents {
     margin-right: 6vw;
   }
   .upcomingevents_contents {
-    margin-left: 6vw;
-    width: 125%;
-    padding-bottom: 30%;
+    margin-left: 6.5%;
+    margin-right: 0;
+    margin-top: 100px;
+  }
+  .slideshow__image {
+    width: 117%;
+  }
+  .u-fit {
+    max-width: 120%;
   }
 }
 
@@ -1155,6 +1213,9 @@ p {
     grid-row: 6/11;
     width: 98%;
     margin-left: 6vw;
+  }
+  .upcomingevents_contents {
+    margin-top: 0;
   }
 }
 
