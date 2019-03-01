@@ -291,13 +291,15 @@ p {
 
 
     &_contents {
-        margin-top: 100px;
+        margin-top: 30px;
         margin-bottom: 0;
         z-index: -1;
-        position: relative;
         margin-left: 16%;
         margin-right: 0;
         padding-left: 0;
+        display: grid;
+        grid-template-rows: repeat(5, 10vw);
+
     }
 }
 
@@ -339,23 +341,6 @@ p {
     .heroimage {
         grid-column: 4/10;
         grid-row: 5/8;
-    }
-
-    .upcomingevents {
-        margin-right: 10%;
-
-        &_contents {
-            margin-top: 70px;
-
-        }
-    }
-
-    .slideshow__image {
-        width: 105%;
-    }
-
-    .u-fit {
-        max-width: 110%;
     }
 }
 
@@ -446,23 +431,7 @@ p {
 
     .upcomingevents {
         margin-right: $edge-margin;
-
-
-        &_contents {
-            margin-left: 6.5%;
-            margin-right: 0;
-            margin-top: 100px;
-        }
     }
-
-    .slideshow__image {
-        width: 117%;
-    }
-
-    .u-fit {
-        max-width: 120%;
-    }
-
 
 
 }

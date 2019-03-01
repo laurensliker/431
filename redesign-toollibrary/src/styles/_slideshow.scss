@@ -79,11 +79,6 @@
     position: absolute;
 }
 
-.slideshow__container {
-    display: flex;
-
-}
-
 .slideshow__controls {
     justify-content: space-between;
     display: flex;
@@ -95,6 +90,7 @@
     position: absolute;
     top: 40%;
     transition: all 0.3s ease-in-out;
+    visibility: hidden;
 
 
     svg {
