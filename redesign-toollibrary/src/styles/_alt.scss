@@ -1,0 +1,388 @@
+//all non-home nav pages have the same alternate (alt) grid structure: banner/ heading/ then content and so im styling them in the same section//
+
+.alt {
+
+    &_heading {
+
+        &-banner {
+            width: 100%;
+            height: auto;
+        }
+
+        &-title {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 120px;
+        }
+
+        &-description {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 120px;
+        }
+    }
+}
+
+.booking {
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: $blue;
+        padding-bottom: 60px;
+
+        &-choice {
+            font-size: 15px;
+            font-weight: $medium-weight;
+            margin-bottom: 2.5vw;
+            padding-left: 2vw;
+        }
+
+        &-section {
+            margin-top: 60px;
+        }
+
+        &_submit {
+            color: $white;
+            background-color: $pink;
+            font-weight: $bold-weight;
+            max-width: 120px;
+            height: 50px;
+            padding: 20px;
+            border: 0;
+            margin-top: 5vw;
+            border-radius: 40px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-split {
+
+            display: grid;
+            grid-template-columns: repeat(2, 46%);
+            grid-gap: 8%;
+
+        }
+    }
+
+    &_heading {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $blue;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    &_instructions {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 120px;
+        padding-bottom: 120px;
+        line-height: 30px;
+
+        &-item {
+            padding-top: 20px;
+            font-weight: $regular-weight;
+        }
+
+        &-link {
+            font-weight: $medium-weight;
+            color: $pink;
+        }
+
+    }
+}
+
+
+.boxlink {
+    color: $pink;
+    font-weight: $bold-weight;
+    text-align: center;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $pink;
+    border-radius: 40px;
+}
+
+.class-description {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: $blue;
+    color: $white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &_column-1 {
+        grid-column: 1/2;
+        margin-left: 20%;
+        margin-right: 10%;
+    }
+
+    &_column-2 {
+        grid-column: 2/3;
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+
+    &_img {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    &_name {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $white;
+    }
+}
+
+.error {
+
+    height: 800px;
+    background-color: $pink;
+    color: $white;
+
+    &_body {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: $regular-weight;
+    }
+
+    &_hammer {
+        position: absolute;
+        z-index: 0;
+        width: 380px;
+        margin-top: 120px;
+        transform: rotate(10deg);
+        animation: rotate-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2s both;
+
+
+
+        @keyframes rotate-bottom {
+            0% {
+                transform: rotate(0);
+                transform: rotate(0);
+                transform-origin: bottom;
+                transform-origin: bottom;
+            }
+
+            100% {
+                transform: rotate(10deg);
+                transform: rotate(10deg);
+                transform-origin: bottom;
+                transform-origin: bottom;
+            }
+        }
+
+    }
+
+    &_text {
+        position: absolute;
+        padding-top: 280px;
+        padding-right: 10%;
+        margin-left: 300px;
+    }
+
+    &_title {
+        font-weight: $bold-weight;
+        font-size: 35px;
+        letter-spacing: .1vw;
+    }
+
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+//found code to remove chrome's autofill yellow highlight//
+
+input {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 12px;
+    padding-left: 2vw;
+    margin-bottom: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    background-color: $white;
+    border-radius: 0;
+    box-shadow: inset 0 0 0px 9999px $white;
+}
+
+
+//makes the area of form you are working on highlight pink//
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: $pink;
+}
+
+
+
+
+label {
+    display: block;
+    padding-left: 2vw;
+    font-size: $capssize;
+    text-transform: uppercase;
+    letter-spacing: $capsspacing;
+}
+
+legend {
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+//redesigning membership options by seperating into the 2 types rather than reppeating the names on every one, type heirarchy is clearer and consistant with other pages//
+.membership {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: $blue;
+
+    &_classpass {
+        &-heading {
+            padding-top: 120px;
+            padding-bottom: 20px;
+        }
+
+        &-options {
+            display: grid;
+            grid-template-columns: repeat(2, 350px);
+            grid-gap: 20px;
+            padding-left: 0;
+        }
+    }
+
+    &_faq {
+        padding-bottom: 160px;
+    }
+
+
+    &_scale {
+        &-heading {
+            padding-top: 120px;
+            padding-bottom: 20px;
+        }
+
+        &-options {
+            margin-bottom: 100px;
+        }
+    }
+
+    &_join {
+        padding-top: 120px;
+        margin-bottom: 140px;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color: $blue;
+        line-height: 35px;
+
+        &-link {
+            font-weight: $medium-weight;
+            color: $pink;
+        }
+    }
+}
+
+ol {
+    padding-left: 2vw;
+}
+
+select,
+    {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: $white;
+}
+
+
+
+@media (max-width: $display-nav) {
+
+
+
+    .class-description {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 50%);
+
+        &_column-1 {
+            margin-left: 10%;
+        }
+
+        &_column-2 {
+            grid-column: 1/2;
+            margin-top: 60px;
+            margin-right: 10%;
+        }
+    }
+
+    .error {
+        &_hammer {
+            width: 200px;
+            margin-top: 65px;
+        }
+
+        &_text {
+
+            padding-top: 140px;
+
+            margin-left: 160px;
+        }
+    }
+
+    .membership {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 100px;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color: $blue;
+
+        &_classpass {
+            &-heading {
+                padding-top: 120px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            &-options {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 50vw);
+                grid-gap: 0;
+                padding-left: 0;
+                margin-top: 0;
+            }
+        }
+    }
+}

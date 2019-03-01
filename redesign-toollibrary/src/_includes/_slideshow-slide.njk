@@ -1,0 +1,12 @@
+{% macro item(filename, caption, alt)%}
+
+ <li class="slideshow__list-item js-slideshow-slide">
+        <figure>
+            <img src="/images/{{ filename }}--tiny.jpg"
+              data-src="/images/{{ filename }}--original.jpg" alt="{{ alt }} "class="slideshow__image js-lazy u-fit">
+            <figcaption "class="slideshow__caption">{{ caption }}</figcaption>
+        </figure>
+        
+    </li>
+
+{%endmacro%}

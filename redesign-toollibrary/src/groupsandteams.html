@@ -1,0 +1,211 @@
+---
+layout: layouts/default.njk
+title: Groups & Teams
+parent: get involved
+tags: subnav
+---
+<section class="alt_wrapper">
+    <section class="alt_heading">
+        <img class="alt_heading-banner" aria-hidden="true" src="/images/RepairCafeUccle--cropped.jpg" alt="Arial shot of two members repairing a hairdryer at a tooltable from group repair program">
+
+        <h1 class="alt_heading-title">Group & Team Building Classes</h1>
+        <p class="alt_heading-description">Do you and a group of friends want to learn to make together?
+            Perhaps
+            you’d like to
+            infuse a little
+            camaraderie
+            into
+            the workplace with a team building workshop? Check out these private workshops just for groups!</p>
+
+    </section>
+
+
+    <section class="class-description">
+        <!--2 column format to easily rearrange 1 under other on media q-->
+        <div class="class-description_column-1">
+
+            <h2 class="class-description_name caps-text">Spoons and Spatulas</h2>
+            <p>Freestyle woodworking; no measurements, no rules, and no previous
+                experience
+                necessary! Go home with a
+                useful object that YOU made and you will have completed the requirements of our Shop Safety class as
+                well!</p>
+
+            <img class="class-description_img" aria-hidden="true" src="/images/spoons_and_spatulas.jpg" alt="Final wooden products of spoons and spatualas workshop.">
+
+
+            <p><strong> Learn to use:</strong> Miter saw / Band saw / Drill press / Sanders / Carving tools</p>
+            <p>
+                <strong>Number of Participants:</strong> Min 6, Max 12</p>
+            <p>
+                <strong>Cost: </strong>$65 per person or $75 per person with light fare & drinks</p>
+            </p>
+        </div>
+
+        <div class="class-description_column-2">
+
+            <h2 class="class-description_name caps-text">Serving Boards</h2>
+            <p>Get hands on instruction with shop machinery and leave with a custom
+                crafted
+                serving board
+                that YOU
+                made!
+                This
+                special class is only offered to private groups and fulfills the Shop Safety prerequisite for all of
+                our
+                other
+                classes</p>
+            <img class="class-description_img" aria-hidden="true" src="/images/serving_boards.jpg" alt="Final wooden products of spoons and spatualas workshop.">
+
+            <p><strong> Learn to use:</strong> Miter saw / Band saw / Drill press / Sanders / Scroll saw</p>
+
+            <p><strong>Number of Participants:</strong> Min 6, Max 14</p>
+
+            <p><strong>Cost: </strong> $75 per person or $85 per person with light fare & drinks
+            </p>
+        </div>
+    </section>
+
+    <section class="booking">
+        <section class="booking_heading">
+            <h2>Contact Us to Book</h2>
+            <p>Fill out the form below and we’ll get your booking started! Please note that we
+                require a 50% deposit to secure your date. Group workshops can be scheduled Monday - Thursday
+                between
+                9am-5pm or Fridays between 9am-10pm.</p>
+        </section>
+
+        <!--reorganized structure into 3 sections with friendly language for an easier experience. Linear input styles and capitalized labels to mimic other motifs on the site-->
+        <form action="submit" class="booking_form">
+            <fieldset class="booking_form-section">
+                <legend>How can we contact you?</legend>
+                <section class="booking_form-split">
+                    <div>
+                        <label for="first_name">First name:</label>
+                        <input type="text" name="first_name" id="first_name">
+
+                    </div>
+                    <div>
+                        <label for="last_name">Last name:</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                </section>
+
+                <div>
+                    <label for="email_address">Email Address:</label>
+                    <input type="email" name="email_address" id="email_address">
+                </div>
+
+                <div>
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="tel" name="phone_number" id="phone_number">
+                </div>
+            </fieldset>
+            <fieldset class="booking_form-section">
+                <legend>Tell us about your event...</legend>
+                <div>
+                    <label for="event_name">Event or Company/Organization Name:</label>
+                    <input type="text" name="event_name" id="event_name">
+                </div>
+
+                <div>
+                    <label for="number_of_participants">Number of Participants:</label>
+                    <input type="number" name="number_of_participants" id="number_of_participants">
+                </div>
+                <section class="booking_form-split">
+                    <div>
+                        <label for="workshop">Select a Workshop</label>
+                        <select name="workshop">
+                            <option value="spoons_and_spatulas">Spoons and Spatulas</option>
+                            <option value="serving_boards">Serving Boards</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="fare_refreshments">Light Fare and Refreshments?</label>
+                        <select name="fare_refreshments">
+                            <option value="spoons_and_spatulas">yes</option>
+                            <option value="serving_boards">Serving Boards</option>
+                        </select>
+                    </div>
+                </section>
+            </fieldset>
+
+            <fieldset class="booking_form-section">
+
+                <legend>Choose a date and time for your event...</legend>
+
+                <h3 class="booking_form-choice">Select your first choice</h3>
+                <section class="booking_form-split">
+
+                    <div>
+                        <label for="first_choice_date">Date</label>
+                        <input type="date" name="first_choice_date" id="first_choice_date" value="2019-01-08" min="2019-01-01"
+                            max="2019-12-31">
+                    </div>
+                    <div>
+                        <label for="first_choice_time">Time</label>
+                        <input type="time" id="first_choice_time" name="first_choice_time" min="9:00" max="18:00" value="11:30"
+                            required>
+                    </div>
+                </section>
+
+
+                <h3 class="booking_form-choice">Select your second choice</h3>
+
+                <section class="booking_form-split">
+                    <div>
+                        <label for="second_choice_date">Date</label>
+                        <input type="date" name="second_choice_date" id="second_choice_date" value="2019-01-08" min="2019-01-01"
+                            max="2019-12-31">
+                    </div>
+                    <div>
+                        <label for="second_choice_time">Time</label>
+                        <input type="time" id="second_choice_time" name="second_choice_time" min="9:00" max="18:00"
+                            value="11:30" required>
+                    </div>
+                </section>
+
+
+                <h3 class="booking_form-choice">Select your third choice</h3>
+
+                <section class="booking_form-split">
+                    <div>
+                        <label for="third_choice_date">Date</label>
+                        <input type="date" name="third_choice_date" id="third_choice_date" value="2019-01-08" min="2019-01-01"
+                            max="2019-12-31">
+                    </div>
+                    <div>
+                        <label for="third_choice_time">Time</label>
+                        <input type="time" id="third_choice_time" name="third_choice_time" min="9:00" max="18:00" value="11:30"
+                            required>
+                    </div>
+                </section>
+            </fieldset>
+
+            <button aria-label="submit" class="booking_form_submit  caps-text" type="submit" value="Submit">Submit</button>
+
+        </form>
+
+        <section class="booking_instructions">
+            <h2>Once you have booked and made your deposit</h2>
+            <ol>
+                <!-- document linkcopied from original site-->
+                <li class="booking_instructions-item">Have all your participants print
+                    and sign <a class="booking_instructions-link" href="https://docs.google.com/document/d/1LzOu16Sm9eITSxyVuU5HitRQdqaSYmSOja2aWaypyaU/pub">this
+                        form</a> and bring to
+                    class - if they are
+                    17 years old
+                    and
+                    younger.</li>
+
+                <li class="booking_instructions-item">If you have selected to have light fare and drinks
+                    provided,
+                    please have ALL
+                    participants complete
+                    <a class="booking_instructions-link" href="https://goo.gl/forms/qe98M64gUKYocIyx1" id="yui_3_17_2_1_1544522818832_302">this
+                        dietary preferences survey.</a></li>
+            </ol>
+        </section>
+    </section>
+    </div>

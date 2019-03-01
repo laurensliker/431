@@ -1,0 +1,48 @@
+<!--navigation follows with scroll to solve the issue of the previous site where the nav is hidden most of the time. Subnav elements streamline the experience and emphasize learning, getting involved, and donating to the library.-->
+
+<nav class="site-nav">
+
+
+	<!-- icon button with accessible label-->
+
+	<button type="button" aria-label="menu" id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset site-nav__trigger">
+		<h2 class="u-display-reset ">Menu</h2>
+		<span aria-hidden="true" class="menu-icon">
+			<div class="menu-icon__line"></div>
+			<div class="menu-icon__line"></div>
+			<div class="menu-icon__line"></div>
+		</span>
+	</button>
+
+	<ul id="js-site-nav" class="site-nav__list caps-text u-liststyle-reset " aria-hidden="false" data-visible="false">
+
+		<li class="site-nav_logo" {{nav.data.title}}>
+			<a href="/" class="site-nav__link">
+				<?xml version="1.0" encoding="utf-8"?>
+
+				{% include "_nav-icon.html" %}
+
+			</a>
+
+			{% for nav in collections.nav %}
+		<li id="nav-parent-element" class="site-nav__list-item site-nav__link {% if (page.url==nav.url) %}is-active{% endif%}"><a
+			 href="{{ nav.url}}">{{nav.data.title}}</a>
+
+			{% if nav.data.subnav == "yes" %}
+
+			<ul class="u-listpadding-reset ">
+				{% for subnav in collections.subnav %}
+				{% if subnav.data.parent == nav.data.title %}
+
+				<li class="nav-child"><a href="{{ subnav.url}}">{{ subnav.data.title }}</a></li>
+
+				{% endif %}
+				{% endfor %}
+
+			</ul>
+
+			{% endif %}
+		</li>
+		{% endfor %}
+
+</nav>
